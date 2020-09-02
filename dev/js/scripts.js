@@ -38,6 +38,6 @@
 // @codekit-prepend "gallery/gallerySwipe.js"; 
 // @codekit-prepend "gallery/galleryPin.js"; 
 // @codekit-prepend "gallery/galleryPara.js"; 
-// @codekit-prepend "typed.js";
+
 
 

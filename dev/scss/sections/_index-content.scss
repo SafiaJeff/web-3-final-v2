@@ -585,3 +585,67 @@
 //         }
 //     }
 // }
+
+#index-gallery-slider {
+    background-color: $blue;
+    position: relative;
+    z-index: 900;
+    
+        // padding-bottom: 60px;
+        // @include md{
+        //     padding-bottom: 100px;
+        // }
+    
+    >div {
+        h3{
+            display: flex;
+            justify-content: center;
+            font-weight: 400;
+            padding-bottom: 20px;
+            color: $blue-black;
+            
+            
+
+            @include md{
+                padding-bottom: 30px;
+            }
+            @include md{
+                padding-bottom: 40px;
+            }
+        }
+        .index-slider {
+
+            div {
+                height: 300px;
+
+                @include md {
+                    height: 200px;
+                }
+
+                @include lg {
+                    height: 400px;
+                }
+                
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: auto;
+                    object-position: center;
+                  
+                    
+                }
+            }
+        }
+
+        .tns-controls [aria-controls] {
+            color: $blue-black;
+            background: $yellow;
+            border-radius: 0;
+            // align-items: center;
+            // justify-content: center;
+
+
+
+        }
+    }
+}
