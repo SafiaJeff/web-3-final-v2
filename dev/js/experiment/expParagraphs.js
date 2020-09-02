@@ -28,3 +28,17 @@ ScrollTrigger.create({
         //scrub: 1
 });
 }
+// if(experimentChecker){
+//     const afterObama2 = gsap.timeline();
+
+//     afterObama2.from(".afterObama2", {alpha:0});
+
+// ScrollTrigger.create({
+//     animation: afterObama2,
+//     toggleActions: "play play none none",
+//     trigger:"#section-3-experiment",
+//         start: "top top"
+//         //end: "bottom top",
+//         //scrub: 1
+// });
+// }
