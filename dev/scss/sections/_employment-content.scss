@@ -6,8 +6,10 @@
 
     background-color: $off-white;
 
+    
     div {
 
+    
         #emp-hero {
             #emp-hero-img {
                 background-image: url('../img/employment/stickers-hero.jpg');
@@ -41,13 +43,10 @@
 
                 }
 
-                // position: relative;
             }
 
             #emp-title {
-                // position: absolute;
                 bottom: 200px;
-                // right: 30px;
                 text-align: left;
                 margin-top: -300px;
                 margin-bottom: 90px;
@@ -73,9 +72,8 @@
 
             h2 {
                 text-align: left;
-                // margin-top: 0px;
                 padding: 30px 80px 0px 20px;
-                
+
 
                 @include md {
                     padding-top: 50px;
@@ -117,17 +115,15 @@
 ============= */
 
 #emp-quote {
-    // z-index: 200;
 
     height: 100vh;
     background-color: $dark-blue;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 
     div {
-        // border: solid red 2px;
 
         p {
             text-align: center;
@@ -137,18 +133,10 @@
                 padding-left: 20%;
             }
 
-            @include lg{
-                padding:0;
+            @include lg {
+                padding: 0;
                 text-align: center;
             }
-            
-
-
-            // padding: 0px 10px;
-            // border: solid red 2px;
-            // display: flex;
-            // justify-content: center;
-            // align-items: center;
 
             color: $green-blue;
 
@@ -164,7 +152,6 @@
     z-index: 90;
     background-color: $red;
     position: relative;
-    // top: 0;
 
     #emp-text-content {
 
@@ -193,7 +180,7 @@
                     background-position: center;
                     height: 385px;
                     background-position-x: -100px;
-                    width: 230px;                 
+                    width: 230px;
                     background-size: 270%;
 
 
@@ -244,8 +231,8 @@
                     padding: 0px 20px 0px 80px;
                     margin-top: -70px;
                     color: $blue-black;
-                    text-align:left;
-                    
+                    text-align: left;
+
 
                     @include md {
                         margin-top: -200px;
@@ -310,7 +297,6 @@
 
     @include xl {
         padding: 150px 0px;
-        // height: 100vh;
     }
 
     @include xl {
@@ -339,7 +325,7 @@
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-areas: ". tween ."
                 ". positions .";
-            
+
 
             @include md {
                 grid-template-rows: 1fr;
@@ -353,7 +339,6 @@
                 grid-template-columns: 1fr;
                 grid-template-areas: "tween"
                     "positions";
-                // padding-right: 20px;
                 padding-top: 15vh;
 
             }
@@ -364,29 +349,24 @@
 
             #count-tween {
                 grid-area: tween;
-                // margin-right: 80px;
                 color: $green-blue;
                 padding: 0 20px;
 
                 font-size: rem-calc(100);
                 text-align: center;
-                // padding-left: 50px;
-
-                @include md{
+                @include md {
                     font-size: rem-calc(140);
                     margin-right: 0;
                     margin-left: auto;
-                    
+
                 }
 
-                @include lg{
+                @include lg {
                     font-size: rem-calc(100);
-                   text-align: center;
-                   margin-left: 0;
-                    // padding-left: 190px;
-
+                    text-align: center;
+                    margin-left: 0;
                 }
-                
+
             }
 
             #tween-text {
@@ -394,25 +374,24 @@
                 margin: 0px;
                 padding-left: 0px;
                 text-align: center;
-                line-height:rem-calc(30);
+                line-height: rem-calc(30);
                 color: $dark-blue;
 
                 @include md {
-                    // padding-left: 20px;
                     margin-right: auto;
                     text-align: left;
-                    line-height:rem-calc(40);
+                    line-height: rem-calc(40);
                     margin-top: auto;
                     padding-bottom: 30px;
-                    
+
                     padding-top: 30px;
-                   width: 200px;
-                    
+                    width: 200px;
+
                 }
 
                 @include lg {
                     text-align: center;
-        
+
                     margin-top: -40px;
                     width: auto;
                     padding-top: 10px;
@@ -430,14 +409,12 @@
             @include lg {
                 grid-area: designers;
                 padding-right: 30%;
-                // padding-left: 15%;
-                
                 padding-top: 90px;
 
             }
 
             p {
-                text-align:left;
+                text-align: left;
                 padding-left: 60px;
                 padding-right: 70px;
                 font-size: rem-calc(18);
@@ -453,9 +430,6 @@
                 @include lg {
                     padding: 0px;
                     padding-left: 30%;
-
-                    // display: inline-block;
-
                 }
             }
 
@@ -474,10 +448,9 @@
                 @include lg {
                     padding: 0px;
                     text-align: right;
-                    // display: inline-block;
                 }
 
-                @include xl{
+                @include xl {
                     padding-left: 40%;
                 }
             }
@@ -488,7 +461,7 @@
             padding: 100px 0px;
             padding-top: 50px;
 
-            @include md{
+            @include md {
                 padding: 50px 0px 100px 0pc;
             }
 
@@ -498,16 +471,14 @@
                 border-left: solid 2px $dark-blue;
             }
 
-            @include xl{
+            @include xl {
                 border: none;
-                // background-color: $dark-blue;
             }
 
-            #map { 
-               
+            #map {
+
                 width: 100%;
                 height: 400px;
-                // background-color: grey;
 
                 @include md {
 
@@ -549,8 +520,6 @@
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 grid-template-rows: repeat(5, 1fr);
-                // grid-column-gap: 0px;
-                // grid-row-gap: 100px;
             }
 
             @include lg {
@@ -558,7 +527,6 @@
                 grid-template-rows: repeat(2, 430px);
                 grid-template-areas: ". hi5 three ."
                     ". ssk bluestate .";
-                // gap: 100px;
             }
 
             @include xl {
@@ -574,15 +542,13 @@
                 width: 250px;
                 margin-bottom: 100px;
 
-                @include md{
+                @include md {
                     height: 300px;
                 }
 
-                @include lg{
+                @include lg {
                     height: auto;
                 }
-                
-
 
                 img {
                     padding: 40px 0px 20px 0px;
@@ -599,8 +565,6 @@
                         text-align: left;
                         padding-left: 20px;
                     }
-
-
                 }
 
                 p {
@@ -618,7 +582,7 @@
                         margin-top: 0px;
                         font-size: rem-calc(18);
                         height: 110px;
-                       
+
                     }
                 }
 
@@ -706,7 +670,7 @@
         }
 
         #emp-end {
-           
+
             p {
                 color: $dark-blue;
 
