@@ -1781,11 +1781,10 @@ progress::-moz-progress-bar {
 }
 #experimentation #section-3-experiment {
   position: relative;
-  z-index: 500;
+  background-color: #EF777A;
+  margin: 100px 0;
 }
 #experimentation #section-3-experiment #para-section-3 {
-  padding: 100px 20px;
-  background-color: #EF777A;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1793,13 +1792,12 @@ progress::-moz-progress-bar {
 @media (min-width: 768px) {
   #experimentation #section-3-experiment #para-section-3 {
     height: 100vh;
-    padding: 0px 150px;
   }
 }
 @media (min-width: 1440px) {
   #experimentation #section-3-experiment #para-section-3 {
-    padding-left: 25%;
-    padding-right: 25%;
+    margin-left: 25%;
+    margin-right: 25%;
     height: 100vh;
   }
 }
