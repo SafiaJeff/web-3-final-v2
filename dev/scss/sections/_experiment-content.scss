@@ -200,12 +200,15 @@
 				// margin-top: ;
 				margin-bottom: -400px;
 				text-align: right;
+				background-color: $off-white;
+				padding: 10px;
 
 				@include md {
 					margin-bottom: 0px;
 				}
 				@include lg{
-					margin-bottom: 11vh;
+					background-color: transparent;
+					margin-bottom: 10vh;
 				}
 
 			}
