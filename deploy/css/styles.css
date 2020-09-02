@@ -1730,6 +1730,11 @@ progress::-moz-progress-bar {
     margin-bottom: 0px;
   }
 }
+@media (min-width: 1025px) {
+  #experimentation #section-2-experiment #pullquote-section-2 h3 {
+    margin-bottom: 11vh;
+  }
+}
 @media (min-width: 768px) {
   #experimentation #section-2-experiment #pullquote-section-2 {
     margin: auto 3% auto 30%;

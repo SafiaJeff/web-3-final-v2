@@ -204,6 +204,9 @@
 				@include md {
 					margin-bottom: 0px;
 				}
+				@include lg{
+					margin-bottom: 11vh;
+				}
 
 			}
 
