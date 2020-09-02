@@ -24,7 +24,7 @@
         background-position-y: 50px;
 
         @include md{
-            height: 500px;
+            height: 70vh;
             width: 80%;
             padding-top: 150px;
             margin-left: auto;
@@ -47,7 +47,7 @@
             text-align: right;
             padding-right: 10%;
             font-size: rem-calc(100);
-            margin-top: -380px;
+            margin-top: -500px;
             color: $dark-red;
         }
         
@@ -65,7 +65,7 @@
     background-color: $green-blue;
 
     @include md{
-        height: 100vh;
+        height: 80vh;
     }
 
     
@@ -83,6 +83,7 @@
 
         @include md{
             width: 100vw;
+            height: 80vh;
             background-size: 200%;
             background-position: center;
             background-position-y: -500px;
@@ -92,24 +93,20 @@
     }
 
     #honors-01-p {
-        margin-top: -750px;
-        padding: 100px 20px 0px 20px;
+        margin-top: -700px;
+        padding: 100px 30px 0px 30px;
         color: $off-white;
         // height: 100vh;
         @include md {
-            // display: flex;
+            // display: fle
+            margin-top: -750px;
             text-align: left;
             padding-top: 18%;
             padding-left: 15%;
             padding-right: 15%;
             font-size: rem-calc(17);
             line-height: rem-calc(23);
-
-           
-
         }
-
-     
            
     }
 }
@@ -140,7 +137,7 @@
                 color: $dark-red;
                 padding-left: 20%;
                 text-align: left;
-                margin-top: -400px;
+                margin-top: -500px;
             }
         }
 
@@ -162,9 +159,9 @@
             color: $dark-red;
 
             @include md{
-                padding-left: 20px;
-                padding-right: 52%;
-                margin-top: -150px;
+                padding-left: 40px;
+                padding-right: 55%;
+                margin-top: -100px;
                 text-align: right;
             }
         }
@@ -184,6 +181,7 @@
     background-color: $blue;
 
     @include md{
+        height: 80vh;
         display: grid;
         grid-template-columns: 30% auto;
         grid-template-rows: 50% auto;
@@ -200,7 +198,7 @@
             width: 40vw;
             grid-area: randlogo;
             margin-top: auto;
-            padding-left: 20%;
+            padding-left: 30%;
             
         }
     }
@@ -214,7 +212,7 @@
         @include md{
             grid-area: randtxt;
             margin-bottom: auto;
-            padding-right: 10%;
+            padding-right: 15%;
         }
     }
 }
@@ -230,16 +228,43 @@
     align-items: center;
     flex-direction: column;
     background-color: $red;
+
+    @include md{
+        height: 80vh;
+        display: grid;
+        grid-template-columns: auto 30%;
+        grid-template-rows: 50% auto;
+        grid-template-areas: ". oblogo"
+                            "obtxt .";
+    }
+
     p {
         padding-right: 20px;
         padding-left: 15px;
         padding-top: 80px;
         color: $blue-black;
         text-align: right;
+
+        @include md{
+            text-align: left;
+            padding: 0;
+            grid-area: obtxt;
+            margin-bottom: auto;
+            padding-left: 15%;
+            
+        }
     }
 
     #honors-obama-img {
         width: 50vw;
+
+        @include md{
+            width: 30vw;
+            grid-area: oblogo;
+            // margin-top: auto;
+            margin-left: -100px;
+            // padding-right: 15%;
+        }
     }
 }
 
@@ -254,12 +279,21 @@
             padding-left: 20px;
             padding-bottom: 50px;
             padding-right: 40%;
+
+            @include md{
+                padding-left: 10%;
+            }
         }
 
         #honors-critics-p1 {
             margin: 0;
             padding-left: 15px;
             padding-right: 15px;
+            @include md{
+                padding-left: 10%;
+                padding-right: 20%;
+
+            }
         }
 
         #honors-critics-p2 {
@@ -267,6 +301,12 @@
             padding-left: 15px;
             padding-right: 15px;
             padding-top: 50px;
+
+            @include md{
+                padding-left: 20%;
+                padding-right: 10%;
+                
+            }
         }
     }
 }
@@ -279,12 +319,21 @@
     justify-content: center;
     align-items: center;
 
+    @include md{
+        height: 50vh;
+    }
+
     div{
         #hnrs-pull-quote{
             font-size: rem-calc(40);
             text-align: center;
             padding: 0px 10px;
             color: $dark-blue;
+
+            @include md{
+                text-align: left;
+                padding-left: 10%;
+            }
         }
     }
 }
