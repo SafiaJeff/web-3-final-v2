@@ -3459,6 +3459,7 @@ textarea {
   history
  --------------------------*/
 #index-history {
+  background-color: #F5F5EE;
   height: 100vh;
 }
 #index-history > div #history-photo {
