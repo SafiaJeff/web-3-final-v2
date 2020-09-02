@@ -949,16 +949,17 @@ progress::-moz-progress-bar {
 }
 #employment-start div #emp-hero h2 {
   text-align: left;
-  margin-top: -50px;
-  padding: 0px 80px 0px 20px;
+  padding: 30px 80px 0px 20px;
 }
 @media (min-width: 768px) {
   #employment-start div #emp-hero h2 {
+    padding-top: 50px;
     padding-left: 15%;
   }
 }
 @media (min-width: 1025px) {
   #employment-start div #emp-hero h2 {
+    padding-top: 120px;
     margin-top: -120px;
   }
 }
@@ -969,7 +970,7 @@ progress::-moz-progress-bar {
 }
 #employment-start p {
   color: #EF777A;
-  padding: 100px 80px 0px 20px;
+  padding: 50px 80px 0px 20px;
 }
 @media (min-width: 768px) {
   #employment-start p {
@@ -995,15 +996,19 @@ progress::-moz-progress-bar {
   align-items: center;
 }
 #emp-quote div p {
-  padding: 0px 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   color: #22C9C6;
 }
 @media (min-width: 768px) {
   #emp-quote div p {
     text-align: left;
+    padding-left: 20%;
+  }
+}
+@media (min-width: 1025px) {
+  #emp-quote div p {
+    padding: 0;
+    text-align: center;
   }
 }
 
@@ -1089,17 +1094,10 @@ progress::-moz-progress-bar {
   }
 }
 #emp-text #emp-text-content #xl #emp-text-grid h3 {
-  padding: 0px 20px 0px 20px;
-  margin-top: -55px;
+  padding: 0px 20px 0px 80px;
+  margin-top: -70px;
   color: #2E2E41;
-}
-#emp-text #emp-text-content #xl #emp-text-grid h3 span {
-  color: #fff;
-}
-@media (min-width: 768px) {
-  #emp-text #emp-text-content #xl #emp-text-grid h3 span {
-    color: #2E2E41;
-  }
+  text-align: left;
 }
 @media (min-width: 768px) {
   #emp-text #emp-text-content #xl #emp-text-grid h3 {
@@ -1324,17 +1322,18 @@ progress::-moz-progress-bar {
 }
 #emp-map #emp-map-content #google-map {
   padding: 100px 0px;
+  padding-top: 50px;
 }
 @media (min-width: 768px) {
   #emp-map #emp-map-content #google-map {
-    padding: 100px 0px;
+    padding: 50px 0px 100px 0pc;
   }
 }
 @media (min-width: 1025px) {
   #emp-map #emp-map-content #google-map {
     grid-area: mapgrid;
     padding: 0px;
-    border-left: solid 30px #007785;
+    border-left: solid 2px #007785;
   }
 }
 @media (min-width: 1440px) {

@@ -26,9 +26,9 @@ if(employmentChecker){
         start: "top 60%",
         end: "bottom 70%",
         animation: pullQuoteTimeline,
-        toggleActions: "play play none none",
+        toggleActions: "play none none none",
         // markers: true,
-        scrub: true,
+        // scrub: true,
         id:"pull-quote"
     });
 }
