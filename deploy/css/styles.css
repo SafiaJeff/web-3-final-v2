@@ -758,8 +758,16 @@ footer {
   padding: 50px;
 }
 @media (min-width: 768px) {
+  footer {
+    padding: 20px 90px;
+  }
+}
+@media (min-width: 768px) {
   footer div {
-    display: flex;
+    display: grid;
+    grid-template-columns: 80% auto;
+    grid-template-rows: 20px 1fr;
+    grid-template-areas: "flink flogo" "fcopy flogo";
   }
 }
 @media (min-width: 1440px) {
@@ -767,30 +775,18 @@ footer {
     padding: 0 10vw;
   }
 }
-footer div #footer-title {
-  font-family: "Fjalla One", sans-serif;
-  color: #F5F5EE;
-  margin: 0;
-  font-size: 1.375rem;
-  padding-bottom: 20px;
-  line-height: 1.875rem;
-}
-@media (min-width: 768px) {
-  footer div #footer-title {
-    flex: 1;
-  }
-}
 footer div #footer-links {
   padding-bottom: 20px;
 }
 @media (min-width: 768px) {
   footer div #footer-links {
+    grid-area: flink;
     flex: 2;
   }
 }
 @media (min-width: 768px) {
   footer div #footer-links #break {
-    display: block;
+    display: none;
   }
 }
 @media (min-width: 1025px) {
@@ -807,12 +803,8 @@ footer div #footer-links p {
 }
 @media (min-width: 768px) {
   footer div #footer-links p {
+    font-size: 1.125rem;
     line-height: 1.5625rem;
-  }
-}
-@media (min-width: 1025px) {
-  footer div #footer-links p {
-    font-size: 1.375rem;
   }
 }
 footer div #footer-links a:link,
@@ -827,7 +819,7 @@ footer div #footer-links a:visited:active {
 }
 @media (min-width: 768px) {
   footer div #logos {
-    margin-left: auto;
+    grid-area: flogo;
   }
 }
 footer div #logos ul {
@@ -841,18 +833,48 @@ footer div #logos ul {
     text-align: right;
   }
 }
+@media (min-width: 1025px) {
+  footer div #logos ul {
+    display: flex;
+  }
+}
 footer div #logos ul li {
   flex: 1;
   font-size: 1.25rem;
 }
 footer div #logos ul li a:link,
 footer div #logos ul li a:visited {
-  color: #FFDA37;
+  color: #F5F5EE;
+}
+@media (min-width: 768px) {
+  footer div #logos ul li a:link,
+footer div #logos ul li a:visited {
+    color: #FFDA37;
+  }
 }
 footer div #logos ul li a:link:hover, footer div #logos ul li a:link:active,
 footer div #logos ul li a:visited:hover,
 footer div #logos ul li a:visited:active {
-  color: #F5F5EE;
+  color: #FFDA37;
+}
+@media (min-width: 768px) {
+  footer div #logos ul li a:link:hover, footer div #logos ul li a:link:active,
+footer div #logos ul li a:visited:hover,
+footer div #logos ul li a:visited:active {
+    color: #F5F5EE;
+  }
+}
+footer div #copyright {
+  color: #2E2E41;
+  padding-top: 20px;
+  padding-left: 0;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  footer div #copyright {
+    grid-area: fcopy;
+    font-size: 0.9375rem;
+  }
 }
 
 #progress {
