@@ -545,6 +545,50 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/deploy/img/safi/mac-desktop.jpg": {
+		"ft": 16384,
+		"iS": 131441,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/safi/mac-desktop.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/safi/obama-logo.png": {
+		"ft": 32768,
+		"iS": 21351,
+		"oA": 0,
+		"oAP": "/deploy/img/safi/obama-logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/safi/pen-sketchbook.jpg": {
+		"ft": 16384,
+		"iS": 25522,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/safi/pen-sketchbook.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/safi/rand-logo.png": {
+		"ft": 32768,
+		"iS": 5124,
+		"oA": 0,
+		"oAP": "/deploy/img/safi/rand-logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/deploy/impact.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -1083,6 +1127,17 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/dev/js/tinySlider-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dev/js/typed.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/dev/js/typed-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -2108,7 +2163,7 @@
 			"optionString": "{'allowParens': true}"
 			},
 		"no-console": {
-			"active": 1,
+			"active": 0,
 			"optionString": "{'allow': ['warn', 'error']}"
 			},
 		"no-const-assign": {
@@ -2856,7 +2911,7 @@
 	"externalServerAddress": "http://localhost:8888",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
-	"jsCheckerReservedNamesString": "ScrollTrigger, gsap, TweenLite",
+	"jsCheckerReservedNamesString": "ScrollTrigger, gsap, TweenLite, tns",
 	"jsHintFlags2": {
 		"asi": {
 			"active": 0,

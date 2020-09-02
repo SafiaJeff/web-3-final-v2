@@ -21,10 +21,10 @@
         grid-template-areas: 
         "n1" "n2"
         "n3" "n4";
-        height: 75vh;
+        height: 90%;
         width: 100%;
         @include md {
-            height: 90vh;
+            height: 90%;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(2, auto);
             grid-template-areas: 
@@ -32,7 +32,7 @@
             "n3 n4";
         }
         @include lg{
-            height: 88vh;
+            height: 88%;
         }
         
         li {

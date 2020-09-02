@@ -1,7 +1,7 @@
 if(impactChecker){
     var impactQuotesTimeline = gsap.timeline();
 
-    impactQuotesTimeline.from("#impact-thesis-p", {alpha:0, xPercent: -10, duartion: 1})
+    impactQuotesTimeline.from("#impact-thesis-p", {alpha:0, yPercent: -10, duartion: 1})
 
     ScrollTrigger.create({
         trigger: "#impact-thesis-p",
@@ -18,7 +18,7 @@ if(impactChecker){
 if(impactChecker){
     var impact2QuotesTimeline = gsap.timeline();
 
-    impact2QuotesTimeline.from("#hero-1-quote", {alpha:0, xPercent: 10, duartion: 1})
+    impact2QuotesTimeline.from("#hero-1-quote", {alpha:0, yPercent: 10, duartion: 1})
 
     ScrollTrigger.create({
         trigger: "#hero-1-quote",
@@ -35,7 +35,7 @@ if(impactChecker){
 if(impactChecker){
     var impact3QuotesTimeline = gsap.timeline();
 
-    impact3QuotesTimeline.from("#hero-1-name", {alpha:0, xPercent: 10, duartion: 1})
+    impact3QuotesTimeline.from("#hero-1-name", {alpha:0, yPercent: 10, duartion: 1})
 
     ScrollTrigger.create({
         trigger: "#hero-1-name",

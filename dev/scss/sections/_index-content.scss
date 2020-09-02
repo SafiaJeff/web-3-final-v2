@@ -54,7 +54,7 @@
                 font-size: rem-calc(100);
                 text-align: left;
                 width: 80vw;
-                margin-top: -650px;
+                margin-top: -500px;
                 padding-left: 10vw;
             }
 
@@ -86,7 +86,7 @@
             @include lg {
                 padding-left: 10vw;
                 margin-top: -50px;
-                width: 40vw;
+                width: 50vw;
                 text-align: left;
             }
 
@@ -335,7 +335,7 @@
     >div {
 
         // height: 100vh;
-        img {
+        #publicity-photo {
             background-image: url('../img/experimentation/handshake.jpg');
             background-size: cover;
             background-position: center;
@@ -343,6 +343,7 @@
             height: 50vh;
             width: 100vw;
             border: none;
+            
             // margin-top: 200px;
             // display: flex;
             // justify-content: center;
@@ -434,11 +435,12 @@
   history
  --------------------------*/
 #index-history {
+    background-color: $off-white;
     height: 100vh;
 
     >div {
 
-        img {
+        #history-photo {
             background-image: url('../img/impact/moral-img.jpg');
             background-size: 800%;
             background-position: center;
@@ -487,7 +489,7 @@
             @include lg {
                 padding-left: 10vw;
                 text-align: left;
-                margin-top: -700px;
+                margin-top: -600px;
             }
         }
 
@@ -583,3 +585,67 @@
 //         }
 //     }
 // }
+
+#index-gallery-slider {
+    background-color: $blue;
+    position: relative;
+    z-index: 900;
+    
+        // padding-bottom: 60px;
+        // @include md{
+        //     padding-bottom: 100px;
+        // }
+    
+    >div {
+        h3{
+            display: flex;
+            justify-content: center;
+            font-weight: 400;
+            padding-bottom: 20px;
+            color: $blue-black;
+            
+            
+
+            @include md{
+                padding-bottom: 30px;
+            }
+            @include md{
+                padding-bottom: 40px;
+            }
+        }
+        .index-slider {
+
+            div {
+                height: 300px;
+
+                @include md {
+                    height: 200px;
+                }
+
+                @include lg {
+                    height: 400px;
+                }
+                
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: auto;
+                    object-position: center;
+                  
+                    
+                }
+            }
+        }
+
+        .tns-controls [aria-controls] {
+            color: $blue-black;
+            background: $yellow;
+            border-radius: 0;
+            // align-items: center;
+            // justify-content: center;
+
+
+
+        }
+    }
+}

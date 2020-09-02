@@ -73,14 +73,17 @@
 
             h2 {
                 text-align: left;
-                margin-top: -50px;
-                padding: 0px 80px 0px 20px;
+                // margin-top: 0px;
+                padding: 30px 80px 0px 20px;
+                
 
                 @include md {
+                    padding-top: 50px;
                     padding-left: 15%;
                 }
 
                 @include lg {
+                    padding-top: 120px;
                     margin-top: -120px;
                 }
 
@@ -94,7 +97,7 @@
 
     p {
         color: $red;
-        padding: 100px 80px 0px 20px;
+        padding: 50px 80px 0px 20px;
 
         @include md {
             padding-left: 33%;
@@ -127,16 +130,25 @@
         // border: solid red 2px;
 
         p {
+            text-align: center;
+
             @include md {
                 text-align: left;
+                padding-left: 20%;
             }
 
+            @include lg{
+                padding:0;
+                text-align: center;
+            }
+            
 
-            padding: 0px 10px;
+
+            // padding: 0px 10px;
             // border: solid red 2px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
 
             color: $green-blue;
 
@@ -229,17 +241,11 @@
                 }
 
                 h3 {
-                    padding: 0px 20px 0px 20px;
-                    margin-top: -55px;
+                    padding: 0px 20px 0px 80px;
+                    margin-top: -70px;
                     color: $blue-black;
-
-                    span{
-                        color: $white;
-
-                        @include md{
-                            color: $blue-black;
-                        }
-                    }
+                    text-align:left;
+                    
 
                     @include md {
                         margin-top: -200px;
@@ -480,15 +486,16 @@
 
         #google-map {
             padding: 100px 0px;
+            padding-top: 50px;
 
             @include md{
-                padding: 100px 0px;
+                padding: 50px 0px 100px 0pc;
             }
 
             @include lg {
                 grid-area: mapgrid;
                 padding: 0px;
-                border-left: solid 30px $dark-blue;
+                border-left: solid 2px $dark-blue;
             }
 
             @include xl{

@@ -7,7 +7,7 @@
 	#hero-experiment {
 		padding-top: 90px;
 
-		@include lg{
+		@include lg {
 			padding-top: 200px;
 		}
 
@@ -46,7 +46,7 @@
 				// margin-right: 20%;
 
 			}
- 
+
 			@include lg {
 				margin-left: 0%;
 			}
@@ -71,7 +71,7 @@
 					// font-size: rem-calc(135);
 				}
 
-				
+
 			}
 		}
 
@@ -133,13 +133,14 @@
 				padding-left: 20px;
 
 				@include md {
-					padding-top: 20px;
+					padding-top: 0px;
 					text-align: right;
 					padding-right: 10%;
 					padding-left: 40%;
 				}
 
-				@include xl{
+				@include xl {
+					padding-top: 40px;
 					padding: 0;
 					margin: 0;
 					text-align: center;
@@ -162,15 +163,10 @@
 				height: 30vh;
 			}
 
-			@include lg{
+			@include lg {
 				margin-top: 0px;
 				height: 400px;
 			}
-
-			
-
-
-			
 		}
 
 		#para-section-1 {
@@ -188,7 +184,7 @@
 			@include lg {
 				padding-right: 15%;
 				margin-top: 0px;
-				padding-top: 0px;
+				padding-top: 60px;
 			}
 		}
 	}
@@ -204,9 +200,15 @@
 				// margin-top: ;
 				margin-bottom: -400px;
 				text-align: right;
+				background-color: $off-white;
+				padding: 10px;
 
 				@include md {
 					margin-bottom: 0px;
+				}
+				@include lg{
+					background-color: transparent;
+					margin-bottom: 10vh;
 				}
 
 			}
@@ -215,7 +217,7 @@
 				margin: auto 3% auto 30%;
 			}
 
-			@include xl{
+			@include xl {
 				margin-left: 40%;
 				margin-right: 15%;
 			}
@@ -242,7 +244,7 @@
 				// margin-right: 5%;
 			}
 
-			@include xl{
+			@include xl {
 				margin-left: 10%;
 				width: auto;
 				margin-right: 10%;
@@ -255,24 +257,27 @@
 
 	#section-3-experiment {
 		position: relative;
+		//z-index: 500;
+		background-color: $red;
+		margin: 100px 0;
 
 		#para-section-3 {
-			padding: 100px 20px;
-			background-color: $red;
+			//background-color: $red;
 			display: flex;
 			justify-content: center;
 			align-items: center;
 
 			@include md {
 				height: 100vh;
-				padding: 0px 150px;
+				//padding: 0px 150px;
 
 			}
 
-			@include xl{
-				padding-left: 25%;
-				padding-right: 25%;
+			@include xl {
+				margin-left: 25%;
+				margin-right: 25%;
 				height: 100vh;
+				//margin-bottom: 50%;
 			}
 
 			p {
@@ -290,6 +295,7 @@
 	#section-4-experiment {
 		background-color: $dark-blue;
 		position: relative;
+
 		@include md {
 			column-gap: 20px;
 			display: grid;
@@ -304,7 +310,7 @@
 			align-items: center;
 			height: 100vh;
 
-			@include md { 
+			@include md {
 				grid-column-start: 1;
 				grid-row-start: 1;
 				// background-color: $off-white;
@@ -312,7 +318,7 @@
 				padding-left: 20px;
 			}
 
-			@include lg{
+			@include lg {
 				height: auto;
 			}
 
@@ -333,7 +339,7 @@
 					line-height: rem-calc(45);
 				}
 
-				@include lg{
+				@include lg {
 					padding: 100px;
 					text-align: right;
 				}
@@ -353,7 +359,7 @@
 				// background-color: $blue;
 			}
 
-			@include xl{
+			@include xl {
 				margin-right: 10%;
 			}
 
@@ -370,11 +376,11 @@
 				padding-right: 50px;
 			}
 
-			#ps4p2{
-				@include md{
+			#ps4p2 {
+				@include md {
 					padding-left: 100px;
 				}
-				
+
 				padding-top: 50px;
 			}
 
@@ -387,6 +393,7 @@
 	#section-5-experiment {
 		background-color: $red;
 		height: 100vh;
+
 		@include md {
 			display: grid;
 			gap: 3%;
@@ -398,7 +405,7 @@
 			grid-template-columns: repeat(3, 1fr);
 			// margin: auto 5%;
 			padding: 150px 20px;
-			
+
 		}
 
 		#image-1-section-5 {
