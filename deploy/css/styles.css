@@ -623,12 +623,12 @@ textarea {
   display: grid;
   grid-template-rows: repeat(4, auto);
   grid-template-areas: "n1" "n2" "n3" "n4";
-  height: 75vh;
+  height: 90%;
   width: 100%;
 }
 @media (min-width: 768px) {
   #main-nav ul {
-    height: 90vh;
+    height: 90%;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, auto);
     grid-template-areas: "n1 n2" "n3 n4";
@@ -636,7 +636,7 @@ textarea {
 }
 @media (min-width: 1025px) {
   #main-nav ul {
-    height: 88vh;
+    height: 88%;
   }
 }
 #main-nav ul li {

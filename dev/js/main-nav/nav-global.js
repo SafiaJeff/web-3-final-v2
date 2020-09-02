@@ -21,7 +21,7 @@ function hideShowMainNav() {
     //toggles the css display property
     if (canYouSeeTheMenu === false) {
 
-        burgerAnimationTimeline.play("burgerToX");
+        //burgerAnimationTimeline.play("burgerToX");
 
         //play the main nav animation into view; pull it down
         mainNavTimeline.play();
@@ -29,7 +29,7 @@ function hideShowMainNav() {
         canYouSeeTheMenu = true;
     } else {
 
-        burgerAnimationTimeline.reverse("burgerToXReverse");
+        //burgerAnimationTimeline.reverse("burgerToXReverse");
 
         //reverse the animation of main nav out of view; push it up
         mainNavTimeline.reverse();
