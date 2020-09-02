@@ -55,7 +55,7 @@ if (galleryChecker) {
         scrollTrigger: {
             //scrub:true,
             toggleActions: "restart reverse restart reverse",
-            trigger: "#gallery-content-3",
+            trigger: ".gallery-para-animate",
             start: "top 50%"
         }
     })
