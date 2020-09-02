@@ -1,13 +1,14 @@
 // Can also be included with a regular script tag
-// import Typed from 'typed.js';
+//import Typed from 'typed.js';
 
 var options = {
-  strings: ['<i>First</i> sentence.', ' Scroll down to see more.'],
-  typeSpeed: 50,
-  startDelay: 2000,
-  loop: true,
-  backDelay: 1000,
-  backSpeed: 50
+  strings: ['Campaign work provides a multitude of opportunities to the designer', 'Scroll down to see more!'],
+  typeSpeed: 5,
+  backSpeed: 5,
+  startDelay: 3000,
+  backDelay: 2000,
+  fadeOut: true,
+  loop: true
 };
 
-var typed = new Typed('#typejs', options);
+var typed = new Typed('.typejs', options);

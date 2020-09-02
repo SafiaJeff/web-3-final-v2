@@ -3109,7 +3109,7 @@ textarea {
     font-size: 6.25rem;
     text-align: left;
     width: 80vw;
-    margin-top: -650px;
+    margin-top: -500px;
     padding-left: 10vw;
   }
 }
@@ -3141,7 +3141,7 @@ textarea {
   #index-opening > div h2 {
     padding-left: 10vw;
     margin-top: -50px;
-    width: 40vw;
+    width: 50vw;
     text-align: left;
   }
 }
@@ -3501,7 +3501,7 @@ textarea {
   #index-history > div h3 {
     padding-left: 10vw;
     text-align: left;
-    margin-top: -700px;
+    margin-top: -600px;
   }
 }
 #index-history > div p {
