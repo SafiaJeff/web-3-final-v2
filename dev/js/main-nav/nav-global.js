@@ -29,7 +29,7 @@ function hideShowMainNav() {
         canYouSeeTheMenu = true;
     } else {
 
-        //burgerAnimationTimeline.reverse("burgerToXReverse");
+        burgerAnimationTimeline.reverse("burgerToXReverse");
 
         //reverse the animation of main nav out of view; push it up
         mainNavTimeline.reverse();

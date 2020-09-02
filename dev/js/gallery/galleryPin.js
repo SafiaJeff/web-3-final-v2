@@ -16,7 +16,7 @@ if(galleryChecker){
 
     ScrollTrigger.matchMedia({
         //just desktop = NO MOBILE OR TABLET
-        "(min-width: 850px)": function () {
+        "(min-width: 1025px)": function () {
             // pinning "what goes into a good.." and the quote runs from bottom up
             gsap.to("#gallery-content-2", {
                 ease: "none",
@@ -47,7 +47,7 @@ if(galleryChecker){
             
         },
         //just mobile and tablet = NO DESKTOP
-        "(max-width: 849px)": function () {
+        "(max-width: 1024px)": function () {
             //just the "what goes into a good.." moves; the section is not pinned
             
             gsap.from("#content-2-quote", {
