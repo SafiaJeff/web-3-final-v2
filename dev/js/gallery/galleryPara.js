@@ -1,4 +1,16 @@
 if (galleryChecker) {
+
+    //"animate hero-header
+    gsap.from("#gallery-header", {
+        duration: 1,
+        yPercent: -80,
+        scrollTrigger: {
+            //scrub:true,
+            toggleActions: "play none none none",
+            trigger: "#gallery-page"
+        }
+    })
+
     //"vote for your favorite" animating right to left
     gsap.from("#gallery-animate-text", {
         duration: 1,
