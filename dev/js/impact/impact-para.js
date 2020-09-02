@@ -10,7 +10,7 @@ paragraphTimeline.from("#moral-para-1", {alpha:0, yPercent:paragraphYPercent})
 
 ScrollTrigger.create({
     trigger: "#moral-para-1",
-    start: "top 50%",
+    start: "top 75%",
     end: "bottom 50%",
     animation: paragraphTimeline,
     toggleActions: "play play none none",
@@ -27,7 +27,7 @@ paragraph2Timeline.from("#moral-para-2", {alpha:0, yPercent:paragraphYPercent})
 
 ScrollTrigger.create({
     trigger: "#moral-para-2",
-    start: "top 50%",
+    start: "top 75%",
     end: "bottom 50%",
     animation: paragraph2Timeline,
     toggleActions: "play play none none",
@@ -44,7 +44,7 @@ calloutTimeline.from("#moral-callout", {alpha:0, xPercent:20})
 
 ScrollTrigger.create({
     trigger: "#moral-callout",
-    start: "top 50%",
+    start: "top 75%",
     end: "bottom 50%",
     animation: calloutTimeline,
     toggleActions: "play play none none",
@@ -61,7 +61,7 @@ paragraph3Timeline.from("#change-body-1", {alpha:0, yPercent:paragraphYPercent})
 
 ScrollTrigger.create({
     trigger: "#change-body-1",
-    start: "top 50%",
+    start: "top 75%",
     end: "bottom 50%",
     animation: paragraph3Timeline,
     toggleActions: "play play none none",
@@ -78,7 +78,7 @@ paragraph4Timeline.from("#change-body-2", {alpha:0, yPercent:paragraphYPercent})
 
 ScrollTrigger.create({
     trigger: "#change-body-2",
-    start: "top 50%",
+    start: "top 75%",
     end: "bottom 50%",
     animation: paragraph4Timeline,
     toggleActions: "play play none none",
@@ -95,7 +95,7 @@ paragraph5Timeline.from("#sway-body", {alpha:0, yPercent:paragraphYPercent})
 
 ScrollTrigger.create({
     trigger: "#sway-body",
-    start: "top 50%",
+    start: "top 75%",
     end: "bottom 50%",
     animation: paragraph5Timeline,
     toggleActions: "play play none none",

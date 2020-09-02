@@ -19,7 +19,7 @@ if (galleryChecker) {
             //scrub:true,
             toggleActions: "restart reverse restart reverse",
             trigger: "#gallery-form",
-            start: "top 50%"
+            start: "top 75%"
         }
     })
     //animating pull-quote-1 from right to left
@@ -56,7 +56,7 @@ if (galleryChecker) {
             //scrub:true,
             toggleActions: "restart reverse restart reverse",
             trigger: ".gallery-para-animate",
-            start: "top 50%"
+            start: "top 75%"
         }
     })
 
@@ -69,7 +69,7 @@ if (galleryChecker) {
             //scrub:true,
             toggleActions: "restart reverse restart reverse",
             trigger: "#gallery-logo-1",
-            start: "top 50%"
+            start: "top 75%"
         }
     })
 
@@ -82,7 +82,7 @@ if (galleryChecker) {
             //scrub:true,
             toggleActions: "restart reverse restart reverse",
             trigger: "#gallery-logo-2",
-            start: "top 50%"
+            start: "top 75%"
         }
     })
 
