@@ -1087,6 +1087,17 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/dev/js/typed.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/typed-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/dev/safi.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -2108,7 +2119,7 @@
 			"optionString": "{'allowParens': true}"
 			},
 		"no-console": {
-			"active": 1,
+			"active": 0,
 			"optionString": "{'allow': ['warn', 'error']}"
 			},
 		"no-const-assign": {
@@ -2556,7 +2567,7 @@
 			"optionString": ""
 			},
 		"no-unused-vars": {
-			"active": 1,
+			"active": 0,
 			"optionString": "{'vars': 'all', 'args': 'after-used', 'caughtErrors': 'none', 'ignoreRestSiblings': false}"
 			},
 		"no-use-before-define": {
@@ -2856,7 +2867,7 @@
 	"externalServerAddress": "http://localhost:8888",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
-	"jsCheckerReservedNamesString": "ScrollTrigger, gsap, TweenLite",
+	"jsCheckerReservedNamesString": "ScrollTrigger, gsap, TweenLite, tns, Typed, ",
 	"jsHintFlags2": {
 		"asi": {
 			"active": 0,
