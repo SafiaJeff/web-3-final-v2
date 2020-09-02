@@ -3461,7 +3461,7 @@ textarea {
 #index-history {
   height: 100vh;
 }
-#index-history > div img {
+#index-history > div #history-photo {
   background-image: url("../img/impact/moral-img.jpg");
   background-size: 800%;
   background-position: center;
@@ -3471,7 +3471,7 @@ textarea {
   width: 100vw;
 }
 @media (min-width: 768px) {
-  #index-history > div img {
+  #index-history > div #history-photo {
     margin-top: 80px;
     background-size: 300%;
     background-position-x: -400px;
@@ -3481,7 +3481,7 @@ textarea {
   }
 }
 @media (min-width: 1025px) {
-  #index-history > div img {
+  #index-history > div #history-photo {
     height: 100vh;
     width: 100vw;
     background-size: 120%;
