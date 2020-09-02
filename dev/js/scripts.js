@@ -8,7 +8,7 @@
 // @codekit-prepend "scrollTrigger/headerST.js";
 // @codekit-prepend "headerScroll.js";
 // @codekit-prepend "burgerAnimation.js";
-// @codekit-prepend "typed.js";
+
 
 // @codekit-prepend "main-nav/nav-global.js";
 // @codekit-prepend "main-nav/main-nav-click.js";
@@ -38,6 +38,6 @@
 // @codekit-prepend "gallery/gallerySwipe.js"; 
 // @codekit-prepend "gallery/galleryPin.js"; 
 // @codekit-prepend "gallery/galleryPara.js"; 
-
+// @codekit-prepend "typed.js";
 
 
