@@ -335,7 +335,7 @@
     >div {
 
         // height: 100vh;
-        img {
+        #publicity-photo {
             background-image: url('../img/experimentation/handshake.jpg');
             background-size: cover;
             background-position: center;
@@ -343,6 +343,7 @@
             height: 50vh;
             width: 100vw;
             border: none;
+            
             // margin-top: 200px;
             // display: flex;
             // justify-content: center;
@@ -434,11 +435,12 @@
   history
  --------------------------*/
 #index-history {
+    background-color: $off-white;
     height: 100vh;
 
     >div {
 
-        img {
+        #history-photo {
             background-image: url('../img/impact/moral-img.jpg');
             background-size: 800%;
             background-position: center;

@@ -475,21 +475,21 @@ h2 {
 h3 {
   text-align: left;
   font-family: "Exo", sans-serif;
-  font-size: 1.875rem;
-  line-height: 3.125rem;
+  font-size: 3.125rem;
+  line-height: 4.375rem;
   color: #D43732;
 }
 @media (min-width: 768px) {
   h3 {
-    font-size: 2.5rem;
-    line-height: 3.4375rem;
+    font-size: 3.75rem;
+    line-height: 5rem;
   }
 }
 @media (min-width: 1025px) {
   h3 {
     font-weight: 700;
-    font-size: 2.8125rem;
-    line-height: 3.75rem;
+    font-size: 4.375rem;
+    line-height: 5.625rem;
   }
 }
 
@@ -758,8 +758,16 @@ footer {
   padding: 50px;
 }
 @media (min-width: 768px) {
+  footer {
+    padding: 20px 90px;
+  }
+}
+@media (min-width: 768px) {
   footer div {
-    display: flex;
+    display: grid;
+    grid-template-columns: 80% auto;
+    grid-template-rows: 20px 1fr;
+    grid-template-areas: "flink flogo" "fcopy flogo";
   }
 }
 @media (min-width: 1440px) {
@@ -767,30 +775,18 @@ footer {
     padding: 0 10vw;
   }
 }
-footer div #footer-title {
-  font-family: "Fjalla One", sans-serif;
-  color: #F5F5EE;
-  margin: 0;
-  font-size: 1.375rem;
-  padding-bottom: 20px;
-  line-height: 1.875rem;
-}
-@media (min-width: 768px) {
-  footer div #footer-title {
-    flex: 1;
-  }
-}
 footer div #footer-links {
   padding-bottom: 20px;
 }
 @media (min-width: 768px) {
   footer div #footer-links {
+    grid-area: flink;
     flex: 2;
   }
 }
 @media (min-width: 768px) {
   footer div #footer-links #break {
-    display: block;
+    display: none;
   }
 }
 @media (min-width: 1025px) {
@@ -807,12 +803,8 @@ footer div #footer-links p {
 }
 @media (min-width: 768px) {
   footer div #footer-links p {
+    font-size: 1.125rem;
     line-height: 1.5625rem;
-  }
-}
-@media (min-width: 1025px) {
-  footer div #footer-links p {
-    font-size: 1.375rem;
   }
 }
 footer div #footer-links a:link,
@@ -827,7 +819,7 @@ footer div #footer-links a:visited:active {
 }
 @media (min-width: 768px) {
   footer div #logos {
-    margin-left: auto;
+    grid-area: flogo;
   }
 }
 footer div #logos ul {
@@ -841,18 +833,48 @@ footer div #logos ul {
     text-align: right;
   }
 }
+@media (min-width: 1025px) {
+  footer div #logos ul {
+    display: flex;
+  }
+}
 footer div #logos ul li {
   flex: 1;
   font-size: 1.25rem;
 }
 footer div #logos ul li a:link,
 footer div #logos ul li a:visited {
-  color: #FFDA37;
+  color: #F5F5EE;
+}
+@media (min-width: 768px) {
+  footer div #logos ul li a:link,
+footer div #logos ul li a:visited {
+    color: #FFDA37;
+  }
 }
 footer div #logos ul li a:link:hover, footer div #logos ul li a:link:active,
 footer div #logos ul li a:visited:hover,
 footer div #logos ul li a:visited:active {
-  color: #F5F5EE;
+  color: #FFDA37;
+}
+@media (min-width: 768px) {
+  footer div #logos ul li a:link:hover, footer div #logos ul li a:link:active,
+footer div #logos ul li a:visited:hover,
+footer div #logos ul li a:visited:active {
+    color: #F5F5EE;
+  }
+}
+footer div #copyright {
+  color: #2E2E41;
+  padding-top: 20px;
+  padding-left: 0;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  footer div #copyright {
+    grid-area: fcopy;
+    font-size: 0.9375rem;
+  }
 }
 
 #progress {
@@ -949,16 +971,17 @@ progress::-moz-progress-bar {
 }
 #employment-start div #emp-hero h2 {
   text-align: left;
-  margin-top: -50px;
-  padding: 0px 80px 0px 20px;
+  padding: 30px 80px 0px 20px;
 }
 @media (min-width: 768px) {
   #employment-start div #emp-hero h2 {
+    padding-top: 50px;
     padding-left: 15%;
   }
 }
 @media (min-width: 1025px) {
   #employment-start div #emp-hero h2 {
+    padding-top: 120px;
     margin-top: -120px;
   }
 }
@@ -969,7 +992,7 @@ progress::-moz-progress-bar {
 }
 #employment-start p {
   color: #EF777A;
-  padding: 100px 80px 0px 20px;
+  padding: 50px 80px 0px 20px;
 }
 @media (min-width: 768px) {
   #employment-start p {
@@ -995,15 +1018,19 @@ progress::-moz-progress-bar {
   align-items: center;
 }
 #emp-quote div p {
-  padding: 0px 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   color: #22C9C6;
 }
 @media (min-width: 768px) {
   #emp-quote div p {
     text-align: left;
+    padding-left: 20%;
+  }
+}
+@media (min-width: 1025px) {
+  #emp-quote div p {
+    padding: 0;
+    text-align: center;
   }
 }
 
@@ -1089,17 +1116,10 @@ progress::-moz-progress-bar {
   }
 }
 #emp-text #emp-text-content #xl #emp-text-grid h3 {
-  padding: 0px 20px 0px 20px;
-  margin-top: -55px;
+  padding: 0px 20px 0px 80px;
+  margin-top: -70px;
   color: #2E2E41;
-}
-#emp-text #emp-text-content #xl #emp-text-grid h3 span {
-  color: #fff;
-}
-@media (min-width: 768px) {
-  #emp-text #emp-text-content #xl #emp-text-grid h3 span {
-    color: #2E2E41;
-  }
+  text-align: left;
 }
 @media (min-width: 768px) {
   #emp-text #emp-text-content #xl #emp-text-grid h3 {
@@ -1324,17 +1344,18 @@ progress::-moz-progress-bar {
 }
 #emp-map #emp-map-content #google-map {
   padding: 100px 0px;
+  padding-top: 50px;
 }
 @media (min-width: 768px) {
   #emp-map #emp-map-content #google-map {
-    padding: 100px 0px;
+    padding: 50px 0px 100px 0pc;
   }
 }
 @media (min-width: 1025px) {
   #emp-map #emp-map-content #google-map {
     grid-area: mapgrid;
     padding: 0px;
-    border-left: solid 30px #007785;
+    border-left: solid 2px #007785;
   }
 }
 @media (min-width: 1440px) {
@@ -3362,7 +3383,7 @@ textarea {
     height: 100vh;
   }
 }
-#index-publicity > div img {
+#index-publicity > div #publicity-photo {
   background-image: url("../img/experimentation/handshake.jpg");
   background-size: cover;
   background-position: center;
@@ -3373,14 +3394,14 @@ textarea {
   margin-top: 50px;
 }
 @media (min-width: 768px) {
-  #index-publicity > div img {
+  #index-publicity > div #publicity-photo {
     margin-right: 30vw;
     width: 70vw;
     height: 70vh;
   }
 }
 @media (min-width: 1025px) {
-  #index-publicity > div img {
+  #index-publicity > div #publicity-photo {
     margin-right: 0;
     margin-right: 70vw;
     height: 70vh;
@@ -3389,7 +3410,7 @@ textarea {
   }
 }
 @media (min-width: 1440px) {
-  #index-publicity > div img {
+  #index-publicity > div #publicity-photo {
     margin-left: 10%;
   }
 }
@@ -3458,9 +3479,10 @@ textarea {
   history
  --------------------------*/
 #index-history {
+  background-color: #F5F5EE;
   height: 100vh;
 }
-#index-history > div img {
+#index-history > div #history-photo {
   background-image: url("../img/impact/moral-img.jpg");
   background-size: 800%;
   background-position: center;
@@ -3470,7 +3492,7 @@ textarea {
   width: 100vw;
 }
 @media (min-width: 768px) {
-  #index-history > div img {
+  #index-history > div #history-photo {
     margin-top: 80px;
     background-size: 300%;
     background-position-x: -400px;
@@ -3480,7 +3502,7 @@ textarea {
   }
 }
 @media (min-width: 1025px) {
-  #index-history > div img {
+  #index-history > div #history-photo {
     height: 100vh;
     width: 100vw;
     background-size: 120%;
