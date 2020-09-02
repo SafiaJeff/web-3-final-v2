@@ -545,12 +545,12 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/deploy/img/safi/mac-desktop.jpg": {
+	"/deploy/img/safi/mac-hero.jpg": {
 		"ft": 16384,
-		"iS": 131441,
+		"iS": 126094,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/safi/mac-desktop.jpg",
+		"oAP": "/deploy/img/safi/mac-hero.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -587,6 +587,17 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/safi/tablet-mac.jpg": {
+		"ft": 16384,
+		"iS": 50839,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/safi/tablet-mac.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"/deploy/impact.html": {

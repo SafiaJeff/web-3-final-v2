@@ -12,19 +12,21 @@
 ============= */
 #honors-hero {
     background-color: $off-white;
+    height: 100vh;
 
     #honors-hero-img {
-        background-image: url('../img/safi/mac-desktop.jpg');
+        background-image: url('../img/safi/mac-hero.jpg');
         background-position: center;
         background-size: 400%;
+        background-repeat: no-repeat;
         height: 800px;
         width: 100vw;
-        background-position-y: -10px;
+        background-position-y: 50px;
 
     }
 
     #honors-title {
-        color: $red;
+        color: $blue-black;
         bottom: 200px;
         font-size: rem-calc(70);
         text-align: left;
@@ -39,23 +41,25 @@
     Section 01
 ============= */
 #honors-01 {
-    display: grid;
-    grid-template-rows: auto auto;
-    grid-template-areas: "hnrs01txt" 
-                        "hnrs01img";
-    padding-top: 100px ;
-    
+    height: 80vh;
     background-color: $green-blue;
+
     #honors-01-img {
-        height: 300px;
-        width: 100%;
-        grid-area: hnrs01img;
-        padding-top: 100px;
+        background-image: url('../img/safi/tablet-mac.jpg');
+        background-position: center;
+        background-size: 350%;
+        height: 800px;
+        // width: 100vw;
+        background-position-y: -300px;
+        background-position-x: -700px;
+        // display: none;
 
     }
 
     #honors-01-p {
-        grid-area: hnrs01txt;
+        margin-top: -750px;
+        padding: 100px 20px 0px 20px;
+        color: $off-white;
         
     }
 }
@@ -69,13 +73,21 @@
     div {
         h3 {
             text-align: right;
-            padding-right: 10px;
+            padding-right: 10%;
+            padding-left: 10%;
+            margin-top: -350px;
+            padding-bottom: 250px;
+            color: $red;
         }
 
-        #honors-logo-img {}
+        #honors-logo-img {
+            width: 50vw;
+            // margin-top: -100px;
+            height: 50vh;
+        }
 
         p {
-            
+            color: $dark-red;
         }
     }
 }
@@ -87,11 +99,14 @@
 #honors-rand {
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: $blue;
 
-    #honors-rand-img {}
+    #honors-rand-img {
+        width: 80vw;
+    }
 
     p {
         padding-right: 20px;
@@ -109,6 +124,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     background-color: $red;
     p {
         padding-right: 20px;
@@ -117,7 +133,9 @@
         text-align: right;
     }
 
-    #honors-obama-img {}
+    #honors-obama-img {
+        width: 50vw;
+    }
 }
 
 /* =============
