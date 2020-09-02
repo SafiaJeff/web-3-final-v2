@@ -11,8 +11,8 @@ if(experimentChecker){
         trigger:"#para-section-3",
         pin: true,
         pinSpacing: false,
-            start: "top 76",
-            end: "bottom 76",
+            start: "top 80",
+            end: "bottom bottom",
             //scrub: 1
             id:"afterObama"
     });

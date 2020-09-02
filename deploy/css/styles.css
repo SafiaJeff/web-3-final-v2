@@ -1781,6 +1781,7 @@ progress::-moz-progress-bar {
 }
 #experimentation #section-3-experiment {
   position: relative;
+  z-index: 500;
 }
 #experimentation #section-3-experiment #para-section-3 {
   padding: 100px 20px;
