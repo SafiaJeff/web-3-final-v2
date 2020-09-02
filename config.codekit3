@@ -171,6 +171,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/deploy/img/experimentation/handshake.jpg": {
+		"ft": 16384,
+		"iS": 563236,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/experimentation/handshake.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/deploy/img/experimentation/logos.jpg": {
 		"ft": 16384,
 		"iS": 186121,
