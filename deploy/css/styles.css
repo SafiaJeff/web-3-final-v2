@@ -3363,7 +3363,7 @@ textarea {
     height: 100vh;
   }
 }
-#index-publicity > div img {
+#index-publicity > div #publicity-photo {
   background-image: url("../img/experimentation/handshake.jpg");
   background-size: cover;
   background-position: center;
@@ -3374,14 +3374,14 @@ textarea {
   margin-top: 50px;
 }
 @media (min-width: 768px) {
-  #index-publicity > div img {
+  #index-publicity > div #publicity-photo {
     margin-right: 30vw;
     width: 70vw;
     height: 70vh;
   }
 }
 @media (min-width: 1025px) {
-  #index-publicity > div img {
+  #index-publicity > div #publicity-photo {
     margin-right: 0;
     margin-right: 70vw;
     height: 70vh;
@@ -3390,7 +3390,7 @@ textarea {
   }
 }
 @media (min-width: 1440px) {
-  #index-publicity > div img {
+  #index-publicity > div #publicity-photo {
     margin-left: 10%;
   }
 }
