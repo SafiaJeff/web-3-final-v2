@@ -1,0 +1,499 @@
+/* =============
+    Impact
+============= */
+#impact{
+    background-color: $off-white;
+    z-index: 100;
+}
+
+.impact-container{
+    padding: 0 15px;
+                @include md{
+                    padding: 0 30px;
+                }
+}
+#impact-intro{
+     height: 100vh;
+    // background-image:url('../img/impact/impact-intro-mobile.jpg') ;
+    //     background-size: cover;
+    //     background-position: center;
+    //     background-repeat: no-repeat;
+    //     height: 50vh;
+    //     width: 100vw;
+        // display: flex;
+    //    margin-bottom: -220px;
+    //   padding-bottom: 100px;
+
+        @include md{
+            background-image: none;
+            display: grid;
+   grid-template-columns: 50% auto;
+   grid-template-areas: "im-c im-i";
+   height: 50vh;
+   margin-bottom: 0;
+        }
+
+        @include lg{
+            height: 100vh;
+
+        }
+
+#impact-content{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    grid-area: im-c;
+    z-index: 800;
+    margin-top: -220px;
+    padding: 0 20px;
+    
+    @include md{
+        padding: 0;
+        margin-top: 0;
+    }
+    
+    h1{font-size: rem-calc(100);
+        color: $blue-black;
+        
+        @include md{
+            font-size: rem-calc(125);
+            margin: 0 -150px 0 0;
+        }
+
+        @include lg{
+            font-size: rem-calc(200);
+            margin: 0 -100px 0 0;
+        }
+    }
+
+    h2{ font-size: rem-calc(20);
+        
+        color: $dark-blue;
+
+        @include md{
+            margin: 0 -150px 0 0;
+            text-align: right;
+            width: 50vw;
+        }
+
+
+        @include lg{
+            margin: 0 -200px 0 0;
+        text-align: right;
+        font-size: rem-calc(30px);
+        width: 50vw;
+        }
+    }
+}
+    #impact-img{
+        z-index: 700;
+        grid-area: im-i;
+        background-image:url('../img/impact/impact-intro-mobile.jpg') ;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 50vh;
+            width: 100vw;
+            
+        @include md{
+            z-index: 100;
+            grid-area: im-i;
+            background-image:url('../img/impact/impact-intro.jpg') ;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 50vh;
+            width: 50vw;
+            display: flex;
+            opacity: 70%;
+        }
+
+        @include lg{
+            height: 100vh;
+        }
+
+    }
+}
+
+/* --------------------------
+    Impact-Thesis
+ --------------------------*/
+
+ #impact-thesis{
+     background-color: $dark-blue;
+     z-index: 200;
+    
+     >div{display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 100px 20px 100px 20px;
+     
+      @include md{
+        padding: 100px 10vw 100px 0;
+      }
+      @include lg{
+        height: 100vh;
+          padding: 0;
+          justify-content: center;
+
+      }
+        p{
+            text-align: right;
+            color: $off-white;
+            @include md{
+                width: 80vw;
+            }
+        }
+     }
+    
+
+ }
+
+ /* --------------------------
+    Moral
+ --------------------------*/
+
+ #moral-section{
+    position: relative;
+    z-index: 300;
+    background-color: $off-white;
+    padding-top: 1px;
+
+    div{
+
+        @include md{
+            display: grid;
+            grid-template-columns: auto 40%;
+            grid-template-areas: 
+            "mc-1 m-img"
+            "mco mco"
+            "mc-2 mc-2";
+        }
+
+        @include lg{
+            grid-template-areas: 
+            "mc-1 m-img"
+            "mco m-img"
+            "mc-2 m-img";
+        }
+
+       
+        #moral-img{
+            grid-area: m-img;
+          
+           img{display: none;
+            @include md{display: initial;
+                object-position: center;
+            object-fit: cover;
+            width: 40vw;
+           height: 40vh;
+            }
+           @include lg{
+               height: 100%;
+           }
+           }
+        }
+        #moral-content-1{
+            grid-area: mc-1;
+            display: inline;
+            @include md{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+               
+            }
+
+            @include lg{
+                padding-top: 100px;
+            }
+            h3{color: $dark-red;
+                background-image:url('../img/impact/moral-img.jpg') ;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                padding: 100px 15px 20px ;
+                @include md{background-image: none;
+                    padding: 0;
+                    width: auto ;
+                    text-align: right;
+                    margin: 0 -100px 0 100px;
+                }
+                @include lg{
+                    margin: 0 -150px 0 400px;
+                }
+
+            }
+            p{
+                padding: 0 15px;
+                @include md{
+                    padding: 0 30px;
+
+                }
+
+                @include lg{padding-right: 20px;
+                    padding-left: 15vw;
+                }
+            }
+        }
+        #moral-callout{display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            grid-area: mco;
+            h2{color: $dark-blue;
+                text-align: center;
+                width: 95vw;
+                font-size: rem-calc(17);
+                line-height: 30px;
+
+                @include md{font-size: rem-calc(23);
+                    width: auto;
+                    width: 70vw;
+                    padding-top: 20px;
+                }
+
+                @include lg{
+                    width: 45vw;
+                    padding-top: 0;
+                }
+              
+            }
+        }
+        #moral-content-2{
+            grid-area: mc-2;
+            
+            @include md{
+                display: flex;
+                justify-content: flex-start;
+                align-content: center;
+            }
+            p{padding: 0 15px;
+                @include md{
+                    width: 90vw;
+                    padding: 0 30px;
+                }
+
+              
+                @include lg{
+                    padding-left: 15vw;
+                    width: 100%;
+                    padding-bottom: 100px;
+                }
+            }
+        }
+
+    }
+ }
+
+ /* --------------------------
+    Hero-1
+ --------------------------*/
+
+#impact-hero-1{
+    background-image:url('../img/impact/hero-1.jpg') ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    padding: 40px 15px 0;
+    z-index: 400;
+
+    @include md{
+        height: 50vh;
+    }
+
+    @include lg{justify-content: center;
+        height: 100vh;
+    }
+
+     h1{
+        font-size: rem-calc(50);
+        
+     }
+     p{
+        text-align: right;
+
+        @include md{
+            padding-right: 20vh;
+        }
+
+        @include lg{ padding-bottom: 40vh;
+            padding-right: 60vh;
+        }
+     }
+}
+
+ /* --------------------------
+    Change
+ --------------------------*/
+#change-section{
+    z-index: 500;
+    position: relative;
+    >div{
+        background-color: $blue;
+        padding: 100px 0;
+
+        @include md{
+            display: grid;
+            grid-template-columns: 40% auto;
+            grid-template-areas: 
+            "c-img ct"
+            "c-img cb1"
+            "cb2 cb2";
+        }
+
+        @include lg{padding: 150px 0;
+            grid-template-rows: 30vh auto auto;
+            grid-template-areas: 
+            "c-img ct"
+            ".cb1"
+            ". cb2";
+        }
+        
+        #change-img{
+            grid-area: c-img;
+            img{z-index: 400;
+                object-position: center;
+                object-fit: cover;
+                height: 30vh;
+                width: 100vw;
+
+                @include md{
+                    width: 100%;
+                    height: 100%;
+                }
+
+                @include lg{
+                    height: 100vh;
+                    // margin-bottom: 100px;
+                }
+            }
+        }
+        #change-title{
+    
+            grid-area: ct;
+            @include md{ z-index: 500;
+                padding-top: 100px;
+                margin: 0 0 0 -100px;
+            }
+
+            @include lg{
+                width: 50vw;
+                margin: 0 0 0 -150px;
+            }
+
+        }
+        #change-body-1{
+            grid-area: cb1;
+            @include lg{
+                padding-right: 10vw;
+            }
+        }
+        #change-body-2{
+            grid-area: cb2;
+            @include lg{
+                padding-right: 10vw;
+            }
+        }
+
+    }
+}
+ /* --------------------------
+    Hero-2
+ --------------------------*/
+
+ #impact-hero-2{
+    background-image:url('../img/impact/hero-2.jpg') ;
+    background-size: cover;
+    background-position: bottom ;
+    background-repeat: no-repeat;
+    height: 40vh;
+    z-index: 700;
+    position: relative;
+   
+    @include md{
+        height: 50vh;
+    }
+    @include xl{
+        height: 100vh;
+        background-position: center -650px ;
+    }
+}
+ /* --------------------------
+    Sway
+ --------------------------*/
+ #sway-section{
+    z-index: 900;
+    position: relative;
+    background-color: $off-white;
+    >div{
+        @include md{
+            display: grid;
+            grid-template-columns: 50% auto;
+            grid-template-areas: "st si"
+            "sb .";
+        }
+
+        @include lg{
+            grid-template-columns: 60% auto;
+            padding-top: 100px;
+            grid-template-areas: "st si"
+            "sb .";
+        }
+        #sway-content{
+            @include lg{z-index: 1500;
+                padding-left: 20vw;
+                // position: absolute;
+            }
+            h3{
+                color: $blue-black;
+                
+                background-image:url('../img/impact/sway-img-mobile.jpg') ;
+                background-size: cover;
+                background-position: right center;
+                background-repeat: no-repeat;
+                padding: 100px 15px 20px ;
+                grid-area: st;
+                @include  md{
+                    background-image: none;
+                    padding:100px 30px 0;
+                    text-align: right ;
+
+                }
+
+                @include lg{z-index: 800;
+                    margin: 0 -10vw 0 20vw ;
+                    position: relative;
+                }
+            }
+            p{grid-area: sb;
+                
+    
+            }
+           
+         }
+         #sway-img{grid-area: si;
+            
+            img{z-index: 1400;
+                display: none;
+
+                @include md{
+                    display: initial;
+                    width: 100%;
+                    height: 90vh;
+                }
+
+                @include lg{
+                    display: initial;
+                    width: 100%;
+                    height: 110vh;
+                }
+            }
+        }
+    }
+ }
+ 

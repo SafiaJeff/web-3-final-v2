@@ -1,0 +1,166 @@
+/* =============
+    Typography
+============= */
+
+// font-family: 'Exo', sans-serif;
+// bold 700
+// font-family: 'Fjalla One', sans-serif;
+// reg 400
+// font-family: 'Libre Baskerville', serif;
+// reg 400
+// font-family: 'Libre Franklin', sans-serif;
+// thin 100
+// reg 400 
+// bold 700
+
+//remember: if adding in a new font family, must embed it in head.kit
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    //titles at top of page "employment" "impact"
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+    color: $blue-black;
+
+    font-size: rem-calc(90);
+    font-weight: 400;
+
+    @include md{
+        font-size: rem-calc(100);
+    }
+
+    @include lg {
+        font-size: rem-calc(150);
+    }
+
+}
+
+h2 {
+    //text directly below title of page
+    text-align: left;
+    font-family: 'Libre Baskerville', sans-serif;
+    color: $blue-black;
+    font-size: rem-calc(30);
+    line-height: rem-calc(50);
+
+  
+
+    @include lg {
+        font-size: rem-calc(40);
+        line-height: rem-calc(60);
+    }
+}
+
+
+h3 {
+    //subheadings "campaign design needs designers desperately"
+    text-align: left;
+    font-family: 'Exo', sans-serif;
+    font-size: rem-calc(30);
+        line-height: rem-calc(50);
+        color: $dark-red;
+
+        @include md{
+            font-size: rem-calc(40);
+            line-height: rem-calc(55);
+        }
+
+    @include lg {
+        font-weight: 700;
+        font-size: rem-calc(45);
+        line-height: rem-calc(60);
+    }
+}
+
+h4{
+    //used for titles on cards in employment page
+    font-size: rem-calc(19);
+        line-height: rem-calc(22);
+
+    @include md {
+        text-align: left;
+        font-size: rem-calc(20);
+        line-height: rem-calc(24);
+    }
+
+    color: $blue-black;
+
+    font-family: 'Libre Franklin',
+    sans-serif;
+
+    @include lg {
+        font-size: rem-calc(21);
+        line-height: rem-calc(26);
+    }
+}
+
+.body-text {
+    //regular paragraph text
+    padding: 0px 10px;
+    
+    color: $blue-black;
+    text-align: justify;
+
+    font-size: rem-calc(16);
+        line-height: rem-calc(22);
+
+    @include md {
+        text-align: left;
+        font-size: rem-calc(17);
+        line-height: rem-calc(23);
+    }
+
+    font-family: 'Libre Franklin',
+    sans-serif;
+
+    @include lg {
+        font-size: rem-calc(21);
+        line-height: rem-calc(26);
+    }
+}
+
+.open-text {
+    //light paragraph w/ opened leading
+    line-height: rem-calc(40);
+    font-size: rem-calc(20);
+    font-family: 'Libre Franklin', sans-serif;
+    color: $blue-black;
+    
+margin: 0;
+    @include md{
+        font-size: rem-calc(25);
+        line-height: rem-calc(45);
+    }
+
+    @include lg {
+        font-weight: 100;
+        font-size: rem-calc(30);
+        line-height: rem-calc(54);
+    }
+
+}
+
+.pull-quote {
+    //large quote seen in employment/impact page
+    font-size: rem-calc(60);
+    line-height: rem-calc(75);
+
+    font-family: 'Libre Baskerville', sans-serif;
+
+   
+
+    @include lg {
+        font-size: rem-calc(70);
+        line-height: rem-calc(100);
+    }
+}

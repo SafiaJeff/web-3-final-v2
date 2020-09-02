@@ -1,0 +1,30 @@
+@charset 'utf-8';
+
+// Helpers Styles
+@import "helpers/_mixins";
+@import "helpers/_variables";
+
+// Base Styles
+@import "base/_normalize";
+@import "base/_base";
+@import "base/_typography";
+
+// Components Styles
+@import "components/_buttons";
+@import "components/_forms";
+@import "components/_navigation";
+
+// Layout Styles
+@import "layout/_header";
+@import "layout/_footer";
+@import "layout/_progress-bar";
+
+// Sections Styles
+@import "sections/employment-content.scss";
+@import "sections/experiment-content.scss";
+@import "sections/gallery-content.scss";
+@import "sections/impact-content.scss";
+@import "sections/index-content.scss";
+@import "sections/safi-content.scss";
+
+

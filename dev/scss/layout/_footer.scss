@@ -1,0 +1,123 @@
+/* =============
+    Footer
+============= */
+
+footer {
+    background-color: $dark-blue;
+    padding: 50px;
+
+    div {
+        @include md {
+            display: flex;
+            // border: red solid 3px;
+        }
+
+        @include xl{
+            padding: 0 10vw;
+        }
+
+        #footer-title {
+            @include md {
+                flex: 1;
+            }
+
+            font-family: 'Fjalla One',
+            sans-serif;
+            color: $off-white;
+            margin: 0;
+            font-size: rem-calc(22);
+            padding-bottom: 20px;
+            line-height: rem-calc(30);
+        }
+
+        #footer-links {
+            @include md {
+                flex: 2;
+
+            }
+
+            padding-bottom: 20px;
+
+            #break {
+                @include md {
+                    display: block;
+                }
+
+                @include lg {
+                    display: none;
+                }
+            }
+
+            p {
+                color: #FFDA37;
+                font-family: 'Fjalla One', sans-serif;
+                font-size: rem-calc(18);
+                margin: 0;
+                line-height: rem-calc(40);
+
+
+                @include md {
+                    line-height: rem-calc(25);
+                }
+
+                @include lg {
+                    font-size: rem-calc(22);
+                }
+            }
+
+            a:link,
+            a:visited {
+                color: $yellow;
+                text-decoration: none;
+
+                &:hover,
+                &:active {
+                    color: $off-white;
+                }
+            }
+
+
+        }
+
+        #logos {
+            @include md {
+                // flex: 1;
+
+                margin-left: auto;
+                // margin-right: -100px;
+                // text-align: right;
+            }
+
+            ul {
+                display: flex;
+
+                @include md {
+                    display: grid;
+                    grid-template-rows: repeat(2, 40px);
+                    grid-template-columns: repeat(2, 40px);
+                    text-align: right;
+
+                }
+
+                li {
+                    flex: 1;
+                    font-size: rem-calc(20);
+                    // margin-left: auto;
+
+                    a:link,
+                    a:visited {
+                        color: $yellow;
+
+                        &:hover,
+                        &:active {
+                            color: $off-white;
+                        }
+                    }
+
+                }
+            }
+
+
+        }
+    }
+}

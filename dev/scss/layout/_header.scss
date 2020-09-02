@@ -1,0 +1,57 @@
+/* =============
+    Header
+============= */
+
+header{
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: $dark-blue;
+    z-index: 2000;
+   
+    div{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding: 20px;
+        #logo-container{
+            width: 20%;
+            a{
+                h1{
+                    color: $yellow;
+                    font-weight: 400;
+                    font-size: rem-calc(20);
+                    line-height: rem-calc(27);
+                    text-align: left;
+                    transition: 0.25s;
+                    cursor: pointer;
+                    &:hover,
+                    &:active {
+                        color: $off-white;
+                    }
+                }
+                text-decoration: none;
+            }
+        }
+        #burger-container{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            #burger{
+                cursor: pointer;
+
+                #lines {
+                    stroke: $yellow;
+                    transition: 0.25s;
+                }
+
+                &:hover {
+                    #lines {
+                        color: $off-white;
+                    }
+                }
+            }
+           
+        }
+    }
+}

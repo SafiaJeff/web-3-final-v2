@@ -1,0 +1,83 @@
+/* =============
+    Base
+============= */
+
+ul{
+    padding: 0;
+    margin: 0;
+    li{
+        list-style: none;
+    }
+}
+
+.grid-container {
+    //side padding for responsive sizes, when using, put content in section>div
+    //limits things expanding forever at XL size
+    display: grid;
+    grid-template-columns: 15px auto 15px;
+    grid-template-areas: ". container .";
+
+    @include xl {
+        grid-template-columns: auto 1440px auto;
+    }
+
+    >div {
+        grid-area: container;
+    }
+}
+
+.content-spacing {
+    //padding above/below sections in a page
+    padding: 100px 0px;
+
+    @include lg {
+        padding: 100px 0px
+    }
+
+}
+
+.content-spacing-aaron {
+    //padding above/below sections in a page
+    margin: 100px 0px;
+
+    @include lg {
+        margin: 150px 0px;
+
+    }
+
+}
+
+.show-for-sm{
+    //appear only on mobile
+
+    @include md {
+        display: none;
+    }
+}
+
+.show-for-md {
+    //appear on tablet
+    display: none;
+
+    @include md {
+        display: block;
+    }
+}
+
+.show-for-lg {
+    //appear on desktop
+    display: none;
+
+    @include lg {
+        display: block;
+    }
+}
+
+.show-for-xl {
+    //appear on super desktop
+    display: none;
+
+    @include xl {
+        display: block;
+    }
+}

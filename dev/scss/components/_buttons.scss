@@ -1,0 +1,27 @@
+/* =============
+    Buttons
+============= */
+.button {
+    align-items: center;
+    font-family: 'Exo', sans-serif;
+    font-size: rem-calc(20);
+    background-color: $yellow;
+    color: $red;
+    cursor: pointer;
+    padding: 10px 20px;
+    text-align: center;
+    transition: 0.25s;
+
+    @include md {
+        
+    }
+
+    @include lg {
+    }
+
+    &:hover,
+    &:active {
+        color: $dark-red;
+        background-color: $off-white;
+    }
+}

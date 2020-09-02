@@ -1,0 +1,136 @@
+/* =============
+    Safi Honors Pg
+============= */
+#honors-page{
+    p{
+        margin: 0;
+    }
+}
+
+/* =============
+    Hero
+============= */
+#honors-hero {
+    background-color: $off-white;
+
+    #honors-hero-img {
+        background-image: url('../img/employment/stickers-hero.jpg');
+        background-position: center;
+        background-size: 300%;
+        height: 800px;
+        width: 100vw;
+        background-position-y: -10px;
+
+    }
+
+    #honors-title {
+        color: $red;
+        bottom: 200px;
+        font-size: rem-calc(70);
+        text-align: left;
+        margin-top: -500px;
+        margin-bottom: 100px;
+        padding: 0px 5px;
+        
+    }
+}
+
+/* =============
+    Section 01
+============= */
+#honors-01 {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-areas: "hnrs01txt" 
+                        "hnrs01img";
+    padding-top: 100px ;
+    
+    background-color: $green-blue;
+    #honors-01-img {
+        height: 300px;
+        width: 100%;
+        grid-area: hnrs01img;
+        padding-top: 100px;
+
+    }
+
+    #honors-01-p {
+        grid-area: hnrs01txt;
+        
+    }
+}
+
+/* =============
+    Logo Design 101
+============= */
+
+#honors-logo-design {
+    background-color: $off-white;
+    div {
+        h3 {
+            text-align: right;
+            padding-right: 10px;
+        }
+
+        #honors-logo-img {}
+
+        p {
+            
+        }
+    }
+}
+
+/* =============
+   Rand
+============= */
+
+#honors-rand {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $blue;
+
+    #honors-rand-img {}
+
+    p {
+        padding-right: 20px;
+        padding-left: 20px;
+        color: $dark-red;
+    }
+}
+
+/* =============
+    Obama
+============= */
+
+#honors-obama {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $red;
+    p {
+        padding-right: 20px;
+        padding-left: 20px;
+        color: $blue-black;
+        text-align: right;
+    }
+
+    #honors-obama-img {}
+}
+
+/* =============
+    Critics
+============= */
+
+#honors-critics {
+    background-color: $off-white;
+    div {
+
+
+        #honors-critics-p1 {}
+
+        #honors-critics-p2 {}
+    }
+}
