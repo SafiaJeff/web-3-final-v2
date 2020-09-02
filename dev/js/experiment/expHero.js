@@ -3,7 +3,7 @@ var experimentChecker = document.querySelector("#experimentation");
 if(experimentChecker){
     const expHeaderTimeline = gsap.timeline();
 
-    expHeaderTimeline.from(".headerSlide", {duration: 1, yPercent:2});
+    expHeaderTimeline.from(".headerSlide", {yPercent:-100, alpha:0});
     
     ScrollTrigger.create({
         animation: expHeaderTimeline,
@@ -16,7 +16,7 @@ if(experimentChecker){
 } 
 if(experimentChecker){
     const needsDesigners = gsap.timeline();
-    needsDesigners.from(".subHeaderSlide", {duration: 1, xPercent:-10});
+    needsDesigners.from(".subHeaderSlide", {xPercent:-10});
     
     ScrollTrigger.create({
         animation: needsDesigners,

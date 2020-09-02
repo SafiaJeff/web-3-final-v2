@@ -1,7 +1,7 @@
 if(experimentChecker){
     const galleryTimeline = gsap.timeline();
 
-    galleryTimeline.from(".g-photos", {duration: 2, yPercent:100, stagger:.5});
+    galleryTimeline.from(".g-photos", {yPercent:100, stagger:.5});
     
     ScrollTrigger.create({
         animation: galleryTimeline,

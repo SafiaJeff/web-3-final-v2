@@ -1,7 +1,7 @@
 if(experimentChecker){
     const expParaTimeline = gsap.timeline();
 
-expParaTimeline.from(".para1", {duration: 3, yPercent:30});
+expParaTimeline.from(".para1", {yPercent:30, alpha:0});
 
 ScrollTrigger.create({
     animation: expParaTimeline,
@@ -17,7 +17,7 @@ ScrollTrigger.create({
 if(experimentChecker){
     const expPara2Timeline = gsap.timeline();
 
-expPara2Timeline.from(".para2", {duration: 1, yPercent:10});
+expPara2Timeline.from(".para2", {yPercent:10});
 
 ScrollTrigger.create({
     animation: expPara2Timeline,

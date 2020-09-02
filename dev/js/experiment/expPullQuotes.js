@@ -1,7 +1,7 @@
 
 if(experimentChecker){
     const asAResult = gsap.timeline();
-    asAResult.from(".pq1", {duration: 1, xPercent:-10});
+    asAResult.from(".pq1", {xPercent:-10});
     
     ScrollTrigger.create({
         animation: asAResult,
@@ -18,7 +18,7 @@ if(experimentChecker){
 
 if(experimentChecker){
     const whoCanForget = gsap.timeline();
-    whoCanForget.from(".pq2", {duration: 1, xPercent:-10});
+    whoCanForget.from(".pq2", {alpha: 0, xPercent:-10});
     
     ScrollTrigger.create({
         animation: whoCanForget,

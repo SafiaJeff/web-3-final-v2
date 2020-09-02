@@ -1661,7 +1661,7 @@ progress::-moz-progress-bar {
 }
 @media (min-width: 768px) {
   #experimentation #section-1-experiment #pullquote-section-1 p {
-    padding-top: 20px;
+    padding-top: 0px;
     text-align: right;
     padding-right: 10%;
     padding-left: 40%;
@@ -1669,6 +1669,7 @@ progress::-moz-progress-bar {
 }
 @media (min-width: 1440px) {
   #experimentation #section-1-experiment #pullquote-section-1 p {
+    padding-top: 40px;
     padding: 0;
     margin: 0;
     text-align: center;
