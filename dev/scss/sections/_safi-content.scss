@@ -453,9 +453,10 @@
 
 #honors-end-quote{
     height: 80vh;
-    background-color: $blue;
+    background-color: $dark-blue;
     z-index: 100;
     position: relative;
+    border-bottom: 2px $off-white solid;
 
     display: flex;
     justify-content: center;
@@ -474,7 +475,8 @@
             font-size: rem-calc(40);
             text-align: center;
             padding: 0px 10px;
-            color: $dark-blue;
+            color: $green-blue;
+            
 
             @include md{
                 text-align: left;

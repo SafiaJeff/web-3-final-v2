@@ -4244,9 +4244,10 @@ textarea {
 
 #honors-end-quote {
   height: 80vh;
-  background-color: #B9DFE6;
+  background-color: #007785;
   z-index: 100;
   position: relative;
+  border-bottom: 2px #F5F5EE solid;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -4265,7 +4266,7 @@ textarea {
   font-size: 2.5rem;
   text-align: center;
   padding: 0px 10px;
-  color: #007785;
+  color: #22C9C6;
 }
 @media (min-width: 768px) {
   #honors-end-quote div #hnrs-pull-quote {
