@@ -8,9 +8,16 @@
 
     
     div {
+        padding-top: 0px;
 
+        @include md{
+            padding-top: 45px;
+
+        }
     
         #emp-hero {
+            // padding-top: 0px;
+
             #emp-hero-img {
                 background-image: url('../img/employment/stickers-hero.jpg');
                 background-position: center;
