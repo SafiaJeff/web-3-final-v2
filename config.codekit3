@@ -424,17 +424,6 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/deploy/img/impact/change-img-2.jpg": {
-		"ft": 16384,
-		"iS": 3063362,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/impact/change-img-2.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
 	"/deploy/img/impact/change-img.jpg": {
 		"ft": 16384,
 		"iS": 806214,
@@ -446,12 +435,12 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/deploy/img/impact/hero-1.jpg": {
+	"/deploy/img/impact/hero-1-2.jpg": {
 		"ft": 16384,
-		"iS": 1629327,
+		"iS": 1966969,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/impact/hero-1.jpg",
+		"oAP": "/deploy/img/impact/hero-1-2.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -490,12 +479,12 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/deploy/img/impact/moral-img-1.jpg": {
+	"/deploy/img/impact/moral-img-mobile.jpg": {
 		"ft": 16384,
-		"iS": 1482984,
+		"iS": 521289,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/impact/moral-img-1.jpg",
+		"oAP": "/deploy/img/impact/moral-img-mobile.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -512,34 +501,45 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/deploy/img/impact/sway-img-1.jpg": {
+	"/deploy/img/impact/sway-img-2-mobile.jpg": {
 		"ft": 16384,
-		"iS": 1870968,
+		"iS": 867501,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/impact/sway-img-1.jpg",
+		"oAP": "/deploy/img/impact/sway-img-2-mobile.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/deploy/img/impact/sway-img-mobile.jpg": {
+	"/deploy/img/impact/sway-img-2.jpg": {
 		"ft": 16384,
-		"iS": 1548094,
+		"iS": 455501,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/impact/sway-img-mobile.jpg",
+		"oAP": "/deploy/img/impact/sway-img-2.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/deploy/img/impact/sway-img.jpg": {
+	"/deploy/img/index/handshake2.jpg": {
 		"ft": 16384,
-		"iS": 832273,
+		"iS": 670177,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/impact/sway-img.jpg",
+		"oAP": "/deploy/img/index/handshake2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/index/index-impact.jpg": {
+		"ft": 16384,
+		"iS": 169915,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/index/index-impact.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -551,6 +551,17 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/deploy/img/index/intro-index.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/index/nav-img.jpg": {
+		"ft": 16384,
+		"iS": 111038,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/index/nav-img.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,

@@ -608,56 +608,44 @@ textarea {
 /* =============
     Navigation
 ============= */
-#main-nav {
-  background-color: #B9DFE6;
-  display: flex;
-  align-items: flex-end;
+#main-nav > div {
   position: fixed;
   top: 0;
-  bottom: 0;
-  left: 0;
   right: 0;
   z-index: 900;
+  background-color: #007785;
+  width: 80vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  #main-nav > div {
+    width: 50vw;
+  }
 }
 #main-nav ul {
   display: grid;
   grid-template-rows: repeat(4, auto);
   grid-template-areas: "n1" "n2" "n3" "n4";
-  height: 90%;
-  width: 100%;
-}
-@media (min-width: 768px) {
-  #main-nav ul {
-    height: 90%;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, auto);
-    grid-template-areas: "n1 n2" "n3 n4";
-  }
-}
-@media (min-width: 1025px) {
-  #main-nav ul {
-    height: 88%;
-  }
+  height: auto;
 }
 #main-nav ul li {
   font-family: "Exo", sans-serif;
 }
 #main-nav ul li a:link,
 #main-nav ul li a:visited {
-  color: #2E2E41;
-  display: block;
-  width: 100%;
-  height: 100%;
+  color: #FFDA37;
   text-decoration: none;
-  text-align: center;
   transition: 0.25s;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 #main-nav ul li a:link > div,
 #main-nav ul li a:visited > div {
+  padding: 30px;
+  border-bottom: 2px solid #F5F5EE;
+  text-align: right;
   font-size: 1.875rem;
 }
 @media (min-width: 768px) {
@@ -678,26 +666,52 @@ textarea {
     font-size: 3.75rem;
   }
 }
-#main-nav ul li a:link:hover, #main-nav ul li a:link:active,
-#main-nav ul li a:visited:hover,
-#main-nav ul li a:visited:active {
-  background-color: #fff;
-}
 #main-nav ul #nav-impact {
-  background-color: #B9DFE6;
   grid-area: n1;
 }
+#main-nav ul #nav-impact a:hover,
+#main-nav ul #nav-impact a:active {
+  color: #EF777A;
+}
 #main-nav ul #nav-experiment {
-  background-color: #D43732;
   grid-area: n2;
+}
+#main-nav ul #nav-experiment a:hover,
+#main-nav ul #nav-experiment a:active {
+  color: #fff;
 }
 #main-nav ul #nav-employment {
   grid-area: n3;
-  background-color: #FFDA37;
+}
+#main-nav ul #nav-employment a:hover,
+#main-nav ul #nav-employment a:active {
+  color: #D43732;
 }
 #main-nav ul #nav-gallery {
   grid-area: n4;
-  background-color: #EF777A;
+}
+#main-nav ul #nav-gallery a:hover,
+#main-nav ul #nav-gallery a:active {
+  color: #22C9C6;
+}
+#main-nav ul #nav-gallery div {
+  border-bottom: none;
+}
+#main-nav #nav-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 900;
+  width: 20vw;
+  height: 100vh;
+  background-image: url(../img/index/nav-img.jpg);
+  background-size: cover;
+  background-position: center;
+}
+@media (min-width: 768px) {
+  #main-nav #nav-img {
+    width: 50vw;
+  }
 }
 
 /* =============
@@ -714,11 +728,9 @@ header {
 header div {
   display: flex;
   align-items: center;
-  justify-items: flex-end;
+  justify-content: flex-end;
+  justify-content: space-between;
   padding: 20px;
-}
-header div #logo-container {
-  width: 100%;
 }
 header div #logo-container a {
   text-decoration: none;
@@ -757,6 +769,8 @@ header div #burger-container #burger:hover #lines {
 footer {
   background-color: #007785;
   padding: 50px;
+  z-index: 2000;
+  position: relative;
 }
 @media (min-width: 768px) {
   footer {
@@ -1561,7 +1575,7 @@ progress::-moz-progress-bar {
   background-color: #F5F5EE;
 }
 #experimentation #hero-experiment {
-  padding-top: 90px;
+  padding-top: 70px;
 }
 @media (min-width: 1025px) {
   #experimentation #hero-experiment {
@@ -1599,8 +1613,8 @@ progress::-moz-progress-bar {
 }
 @media (min-width: 768px) {
   #experimentation #hero-experiment #title-experiment {
-    padding-top: 100px;
     margin-bottom: 180px;
+    padding-top: 100px;
   }
 }
 @media (min-width: 1025px) {
@@ -1644,10 +1658,10 @@ progress::-moz-progress-bar {
 }
 @media (min-width: 1440px) {
   #experimentation #hero-experiment #subtitle-experiment {
-    padding: 0px;
-    margin-top: -120px;
     margin-left: 50%;
     margin-right: 10%;
+    margin-top: -120px;
+    padding: 0px;
   }
 }
 @media (min-width: 768px) {
@@ -1658,8 +1672,8 @@ progress::-moz-progress-bar {
 }
 @media (min-width: 1025px) {
   #experimentation #section-1-experiment {
-    margin: auto 5%;
     column-gap: 10%;
+    margin: auto 5%;
   }
 }
 @media (min-width: 768px) {
@@ -1676,89 +1690,70 @@ progress::-moz-progress-bar {
   }
 }
 #experimentation #section-1-experiment #pullquote-section-1 p {
-  text-align: left;
   color: #EF777A;
-  padding-right: 20px;
   padding-left: 20px;
+  padding-right: 20px;
+  text-align: left;
 }
 @media (min-width: 768px) {
   #experimentation #section-1-experiment #pullquote-section-1 p {
+    padding-left: 40%;
+    padding-right: 10%;
     padding-top: 0px;
     text-align: right;
-    padding-right: 10%;
-    padding-left: 40%;
   }
 }
 @media (min-width: 1440px) {
   #experimentation #section-1-experiment #pullquote-section-1 p {
-    padding-top: 40px;
-    padding: 0;
     margin: 0;
+    padding: 0;
+    padding-top: 40px;
     text-align: center;
   }
 }
 #experimentation #section-1-experiment #image-section-1 {
   background-image: url("../img/experimentation/obama.jpg");
   background-position: center;
-  background-size: cover;
-  height: 50vh;
-  margin-top: 100px;
   background-position-x: -150px;
+  background-size: cover;
+  height: 30vh;
+  margin-top: 100px;
 }
 @media (min-width: 768px) {
   #experimentation #section-1-experiment #image-section-1 {
-    padding-top: 100px;
     grid-column-start: 1;
     grid-row-start: 2;
     height: 30vh;
+    padding-top: 100px;
   }
 }
 @media (min-width: 1025px) {
   #experimentation #section-1-experiment #image-section-1 {
-    margin-top: 0px;
     height: 400px;
+    margin-top: 0px;
   }
 }
-#experimentation #section-1-experiment #para-section-1 {
-  padding-top: 100px;
+#experimentation #section-1-experiment #para-section-1 p {
+  padding: 15px 15px 0;
 }
 @media (min-width: 768px) {
   #experimentation #section-1-experiment #para-section-1 {
-    padding-left: 20px;
+    padding-top: 100px;
     grid-column-start: 2;
     grid-row-start: 2;
+    padding-left: 20px;
     padding-top: 100px;
   }
 }
 @media (min-width: 1025px) {
   #experimentation #section-1-experiment #para-section-1 {
-    padding-right: 15%;
     margin-top: 0px;
+    padding-right: 15%;
     padding-top: 60px;
   }
 }
 #experimentation #section-2-experiment #pullquote-section-2 {
-  margin-top: 150px;
-}
-#experimentation #section-2-experiment #pullquote-section-2 h3 {
-  color: #22C9C6;
-  padding-right: 20px;
-  padding-left: 20px;
-  margin-bottom: -400px;
-  text-align: right;
-  background-color: #F5F5EE;
-  padding: 10px;
-}
-@media (min-width: 768px) {
-  #experimentation #section-2-experiment #pullquote-section-2 h3 {
-    margin-bottom: 0px;
-  }
-}
-@media (min-width: 1025px) {
-  #experimentation #section-2-experiment #pullquote-section-2 h3 {
-    background-color: transparent;
-    margin-bottom: 10vh;
-  }
+  margin-top: 0px;
 }
 @media (min-width: 768px) {
   #experimentation #section-2-experiment #pullquote-section-2 {
@@ -1767,8 +1762,26 @@ progress::-moz-progress-bar {
 }
 @media (min-width: 1440px) {
   #experimentation #section-2-experiment #pullquote-section-2 {
-    margin-left: 40%;
+    margin-left: 30%;
     margin-right: 15%;
+  }
+}
+#experimentation #section-2-experiment #pullquote-section-2 h3 {
+  color: #22C9C6;
+  margin-bottom: -400px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: right;
+}
+@media (min-width: 768px) {
+  #experimentation #section-2-experiment #pullquote-section-2 h3 {
+    margin-bottom: 0px;
+  }
+}
+@media (min-width: 1025px) {
+  #experimentation #section-2-experiment #pullquote-section-2 h3 {
+    margin-bottom: 10vh;
   }
 }
 #experimentation #section-2-experiment #image-section-2 {
@@ -1786,30 +1799,35 @@ progress::-moz-progress-bar {
 }
 @media (min-width: 1025px) {
   #experimentation #section-2-experiment #image-section-2 {
+    height: 80vh;
     margin: 0px;
     margin-top: -100px;
     width: 100vw;
-    height: 80vh;
   }
 }
 @media (min-width: 1440px) {
   #experimentation #section-2-experiment #image-section-2 {
+    margin-bottom: 150px;
     margin-left: 10%;
-    width: auto;
     margin-right: 10%;
     margin-top: -115px;
-    margin-bottom: 150px;
+    width: auto;
   }
 }
 #experimentation #section-3-experiment {
-  position: relative;
   background-color: #EF777A;
-  margin: 100px 0;
+  padding: 100px 0;
+  position: relative;
+}
+@media (min-width: 1025px) {
+  #experimentation #section-3-experiment {
+    padding: 150px 0;
+  }
 }
 #experimentation #section-3-experiment #para-section-3 {
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 @media (min-width: 768px) {
   #experimentation #section-3-experiment #para-section-3 {
@@ -1818,18 +1836,25 @@ progress::-moz-progress-bar {
 }
 @media (min-width: 1440px) {
   #experimentation #section-3-experiment #para-section-3 {
+    height: 100vh;
     margin-left: 25%;
     margin-right: 25%;
-    height: 100vh;
   }
 }
 #experimentation #section-3-experiment #para-section-3 p {
+  padding: 0 15px;
   color: #fff;
   text-align: justify;
 }
 @media (min-width: 768px) {
   #experimentation #section-3-experiment #para-section-3 p {
     text-align: left;
+    padding: 0 100px;
+  }
+}
+@media (min-width: 1025px) {
+  #experimentation #section-3-experiment #para-section-3 p {
+    height: 100vh;
   }
 }
 #experimentation #section-4-experiment {
@@ -1838,24 +1863,27 @@ progress::-moz-progress-bar {
 }
 @media (min-width: 768px) {
   #experimentation #section-4-experiment {
+    background-color: #F5F5EE;
     column-gap: 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding-top: 100px;
-    background-color: #F5F5EE;
   }
 }
 #experimentation #section-4-experiment #pullquote-section-4 {
+  align-items: top;
   display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100vh;
+  justify-content: center;
+  padding-top: 100px;
 }
 @media (min-width: 768px) {
   #experimentation #section-4-experiment #pullquote-section-4 {
+    align-items: center;
     grid-column-start: 1;
     grid-row-start: 1;
     padding-left: 20px;
+    padding-top: auto;
   }
 }
 @media (min-width: 1025px) {
@@ -1864,16 +1892,16 @@ progress::-moz-progress-bar {
   }
 }
 #experimentation #section-4-experiment #pullquote-section-4 h3 {
+  color: #B9DFE6;
   padding-left: 10px;
   padding-right: 10px;
   text-align: right;
-  color: #B9DFE6;
+  font-size: 1.25rem;
+  line-height: 2.5rem;
 }
 @media (min-width: 768px) {
   #experimentation #section-4-experiment #pullquote-section-4 h3 {
     color: #007785;
-    line-height: 2.5rem;
-    font-size: 1.25rem;
     font-family: "Libre Franklin", sans-serif;
     font-size: 1.5625rem;
     line-height: 2.8125rem;
@@ -1889,7 +1917,7 @@ progress::-moz-progress-bar {
   background-image: url("../img/experimentation/logos.jpg");
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  height: 50vh;
 }
 @media (min-width: 768px) {
   #experimentation #section-4-experiment #image-section-4 {
@@ -1902,11 +1930,22 @@ progress::-moz-progress-bar {
     margin-right: 10%;
   }
 }
+#experimentation #section-4-experiment #para-section-4 {
+  margin-top: -70vh;
+}
+#experimentation #section-4-experiment #para-section-4 p {
+  color: #F5F5EE;
+}
+@media (min-width: 768px) {
+  #experimentation #section-4-experiment #para-section-4 p {
+    color: #2E2E41;
+  }
+}
 @media (min-width: 768px) {
   #experimentation #section-4-experiment #para-section-4 {
     grid-column-end: 3;
     grid-column-start: 1;
-    margin-top: -200px;
+    margin-top: -400px;
     padding-left: 50px;
     padding-right: 50px;
   }
@@ -1926,7 +1965,11 @@ progress::-moz-progress-bar {
 }
 #experimentation #section-5-experiment {
   background-color: #EF777A;
-  height: 100vh;
+  overflow: hidden;
+  display: grid;
+  gap: 3%;
+  grid-template-columns: auto;
+  padding: 100px 20px;
 }
 @media (min-width: 768px) {
   #experimentation #section-5-experiment {
@@ -1944,13 +1987,15 @@ progress::-moz-progress-bar {
 }
 #experimentation #section-5-experiment #image-1-section-5 {
   background-image: url("../img/experimentation/scotland.jpg");
-  background-position: center;
+  background-position: -500px;
   background-size: cover;
   height: 50vh;
+  grid-column-start: 1;
+  grid-row-start: 1;
 }
 @media (min-width: 768px) {
   #experimentation #section-5-experiment #image-1-section-5 {
-    background-position: -50px;
+    background-position: 0px;
     grid-column-start: 1;
     grid-row-start: 1;
   }
@@ -1965,6 +2010,8 @@ progress::-moz-progress-bar {
   background-position: center;
   background-size: cover;
   height: 50vh;
+  grid-column-start: 1;
+  grid-row-start: 2;
 }
 @media (min-width: 768px) {
   #experimentation #section-5-experiment #image-2-section-5 {
@@ -1986,6 +2033,8 @@ progress::-moz-progress-bar {
   background-position: center;
   background-size: cover;
   height: 50vh;
+  grid-column-start: 1;
+  grid-row-start: 3;
 }
 @media (min-width: 768px) {
   #experimentation #section-5-experiment #image-3-section-5 {
@@ -2651,7 +2700,7 @@ textarea {
     display: grid;
     grid-template-columns: 50% auto;
     grid-template-areas: "im-c im-i";
-    height: 50vh;
+    height: 70vh;
     margin-bottom: 0;
   }
 }
@@ -2684,6 +2733,7 @@ textarea {
   #impact-intro #impact-content h1 {
     font-size: 7.8125rem;
     margin: 0 -150px 0 0;
+    margin-top: 50px;
   }
 }
 @media (min-width: 1025px) {
@@ -2698,9 +2748,9 @@ textarea {
 }
 @media (min-width: 768px) {
   #impact-intro #impact-content h2 {
-    margin: 0 -150px 0 0;
+    margin: 0 20px 0 20px;
     text-align: right;
-    width: 50vw;
+    width: 45vw;
   }
 }
 @media (min-width: 1025px) {
@@ -2729,7 +2779,7 @@ textarea {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 50vh;
+    height: 70vh;
     width: 50vw;
     display: flex;
     opacity: 70%;
@@ -2745,7 +2795,7 @@ textarea {
     Impact-Thesis
  --------------------------*/
 #impact-thesis {
-  background-color: #007785;
+  background-color: #EF777A;
   z-index: 200;
 }
 #impact-thesis > div {
@@ -2753,6 +2803,7 @@ textarea {
   justify-content: flex-end;
   align-items: center;
   padding: 100px 20px 100px 20px;
+  overflow: hidden;
 }
 @media (min-width: 768px) {
   #impact-thesis > div {
@@ -2767,12 +2818,18 @@ textarea {
   }
 }
 #impact-thesis > div p {
+  color: #F5F5EE;
   text-align: right;
   color: #F5F5EE;
 }
 @media (min-width: 768px) {
   #impact-thesis > div p {
     width: 80vw;
+  }
+}
+@media (min-width: 1025px) {
+  #impact-thesis > div p {
+    width: 50vw;
   }
 }
 
@@ -2784,6 +2841,12 @@ textarea {
   z-index: 300;
   background-color: #F5F5EE;
   padding-top: 1px;
+  overflow: hidden;
+}
+@media (min-width: 1025px) {
+  #moral-section {
+    margin-bottom: -150px;
+  }
 }
 @media (min-width: 768px) {
   #moral-section div {
@@ -2806,15 +2869,15 @@ textarea {
 @media (min-width: 768px) {
   #moral-section div #moral-img img {
     display: initial;
-    object-position: center;
+    object-position: -200px;
     object-fit: cover;
-    width: 40vw;
-    height: 40vh;
+    z-index: 200;
+    height: 50vh;
   }
 }
 @media (min-width: 1025px) {
   #moral-section div #moral-img img {
-    height: 100%;
+    height: 110vh;
   }
 }
 #moral-section div #moral-content-1 {
@@ -2835,17 +2898,19 @@ textarea {
 }
 #moral-section div #moral-content-1 h3 {
   color: #D43732;
-  background-image: url("../img/impact/moral-img.jpg");
+  background-image: url("../img/impact/moral-img-mobile.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding: 100px 15px 20px;
+  z-index: 500;
+  position: relative;
 }
 @media (min-width: 768px) {
   #moral-section div #moral-content-1 h3 {
     background-image: none;
     padding: 0;
-    width: auto;
+    width: 70vw;
     text-align: right;
     margin: 0 -100px 0 100px;
   }
@@ -2853,6 +2918,7 @@ textarea {
 @media (min-width: 1025px) {
   #moral-section div #moral-content-1 h3 {
     margin: 0 -150px 0 400px;
+    width: auto;
   }
 }
 #moral-section div #moral-content-1 p {
@@ -2885,7 +2951,6 @@ textarea {
 @media (min-width: 768px) {
   #moral-section div #moral-callout h2 {
     font-size: 1.4375rem;
-    width: auto;
     width: 70vw;
     padding-top: 20px;
   }
@@ -2927,7 +2992,7 @@ textarea {
    Hero-1
 --------------------------*/
 #impact-hero-1 {
-  background-image: url("../img/impact/hero-1.jpg");
+  background-image: url("../img/impact/hero-1-2.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -2938,6 +3003,7 @@ textarea {
   align-content: center;
   padding: 40px 15px 0;
   z-index: 400;
+  overflow: hidden;
 }
 @media (min-width: 768px) {
   #impact-hero-1 {
@@ -2952,6 +3018,14 @@ textarea {
 }
 #impact-hero-1 h1 {
   font-size: 3.125rem;
+  color: #007785;
+  line-height: 60px;
+}
+@media (min-width: 1025px) {
+  #impact-hero-1 h1 {
+    font-size: 3.75rem;
+    margin-top: -100px;
+  }
 }
 #impact-hero-1 p {
   text-align: right;
@@ -2976,7 +3050,8 @@ textarea {
   position: relative;
 }
 #change-section > div {
-  background-color: #B9DFE6;
+  overflow: hidden;
+  background-color: #007785;
   padding: 100px 0;
 }
 @media (min-width: 768px) {
@@ -2989,7 +3064,7 @@ textarea {
 @media (min-width: 1025px) {
   #change-section > div {
     padding: 150px 0;
-    grid-template-rows: 30vh auto auto;
+    grid-template-rows: 35vh auto;
     grid-template-areas: "c-img ct" ".cb1" ". cb2";
   }
 }
@@ -3015,6 +3090,7 @@ textarea {
   }
 }
 #change-section > div #change-title {
+  color: #EF777A;
   grid-area: ct;
 }
 @media (min-width: 768px) {
@@ -3026,11 +3102,12 @@ textarea {
 }
 @media (min-width: 1025px) {
   #change-section > div #change-title {
-    width: 50vw;
+    width: 40vw;
     margin: 0 0 0 -150px;
   }
 }
 #change-section > div #change-body-1 {
+  color: #F5F5EE;
   grid-area: cb1;
 }
 @media (min-width: 1025px) {
@@ -3039,6 +3116,7 @@ textarea {
   }
 }
 #change-section > div #change-body-2 {
+  color: #F5F5EE;
   grid-area: cb2;
 }
 @media (min-width: 1025px) {
@@ -3079,6 +3157,9 @@ textarea {
   position: relative;
   background-color: #F5F5EE;
 }
+#sway-section > div {
+  overflow: hidden;
+}
 @media (min-width: 768px) {
   #sway-section > div {
     display: grid;
@@ -3101,15 +3182,16 @@ textarea {
 }
 #sway-section > div #sway-content h3 {
   color: #2E2E41;
-  background-image: url("../img/impact/sway-img-mobile.jpg");
+  background-image: url("../img/impact/sway-img-2-mobile.jpg");
   background-size: cover;
-  background-position: right center;
+  background-position: right top;
   background-repeat: no-repeat;
   padding: 100px 15px 20px;
   grid-area: st;
 }
 @media (min-width: 768px) {
   #sway-section > div #sway-content h3 {
+    color: #007785;
     background-image: none;
     padding: 100px 30px 0;
     text-align: right;
@@ -3118,7 +3200,7 @@ textarea {
 @media (min-width: 1025px) {
   #sway-section > div #sway-content h3 {
     z-index: 800;
-    margin: 0 -10vw 0 20vw;
+    margin: 0 0 0 5vw;
     position: relative;
   }
 }
@@ -3129,18 +3211,18 @@ textarea {
   grid-area: si;
 }
 #sway-section > div #sway-img img {
-  z-index: 1400;
   display: none;
 }
 @media (min-width: 768px) {
   #sway-section > div #sway-img img {
     display: initial;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
   }
 }
 @media (min-width: 1025px) {
   #sway-section > div #sway-img img {
+    z-index: 1400;
     display: initial;
     width: 100%;
     height: 110vh;
@@ -3157,32 +3239,42 @@ textarea {
 /* --------------------------
     Intro
  --------------------------*/
-@media (min-width: 768px) {
-  #index-opening {
-    height: 100vh;
-  }
+#index-opening {
+  height: 100vh;
 }
 #index-opening > div {
   align-items: center;
 }
 #index-opening > div #index-opening-hero {
   background-image: url("../img/index/intro-index.jpg");
-  background-size: 500%;
+  background-size: cover;
   background-position-x: -200px;
   background-repeat: no-repeat;
-  height: 500px;
+  height: 60vh;
 }
 @media (min-width: 768px) {
   #index-opening > div #index-opening-hero {
     background-size: 200%;
+    height: 70vh;
+    background-position: center bottom;
+  }
+}
+@media (min-width: 1025px) {
+  #index-opening > div #index-opening-hero {
+    height: 65vh;
+    background-position-y: -500px;
+  }
+}
+@media (min-width: 1440px) {
+  #index-opening > div #index-opening-hero {
     height: 100vh;
   }
 }
 #index-opening > div h1 {
   font-size: 3.125rem;
   color: #2E2E41;
-  margin-top: -300px;
-  padding-bottom: 90px;
+  margin-top: -350px;
+  padding-bottom: 140px;
   text-align: right;
   padding-right: 20px;
 }
@@ -3190,7 +3282,7 @@ textarea {
   #index-opening > div h1 {
     font-size: 5rem;
     text-align: left;
-    margin-top: -600px;
+    margin-top: -350px;
     padding: 0px 50px 100px 50px;
   }
 }
@@ -3199,15 +3291,17 @@ textarea {
     font-size: 6.25rem;
     text-align: left;
     width: 80vw;
-    margin-top: -500px;
+    margin-top: -400px;
     padding-left: 10vw;
   }
 }
 @media (min-width: 1440px) {
   #index-opening > div h1 {
-    padding-right: 10vw;
+    font-size: 7.8125rem;
+    padding-right: 20vw;
     padding-left: 20vw;
-    width: 60%;
+    width: auto;
+    margin-top: -650px;
   }
 }
 #index-opening > div h2 {
@@ -3224,13 +3318,12 @@ textarea {
     text-align: left;
     padding-right: 20%;
     padding-left: 20%;
-    color: #2E2E41;
   }
 }
 @media (min-width: 1025px) {
   #index-opening > div h2 {
     padding-left: 10vw;
-    margin-top: -50px;
+    margin-top: 0px;
     width: 50vw;
     text-align: left;
   }
@@ -3245,23 +3338,39 @@ textarea {
    Experimentation
  --------------------------*/
 #index-experimentation {
-  height: 100vh;
-  margin-bottom: 100px;
+  margin-top: -50px;
 }
 @media (min-width: 768px) {
   #index-experimentation {
     margin-bottom: 0;
   }
 }
+@media (min-width: 1025px) {
+  #index-experimentation {
+    margin-top: -150px;
+  }
+}
+@media (min-width: 1440px) {
+  #index-experimentation {
+    margin-top: 100px;
+  }
+}
 #index-experimentation > div {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 250px;
 }
 @media (min-width: 768px) {
   #index-experimentation > div {
+    padding-top: 100px;
     display: grid;
     grid-template-columns: 50% auto;
     grid-template-areas: "e-t e-im" "e-c e-im";
+    padding-bottom: 150px;
+  }
+}
+@media (min-width: 1025px) {
+  #index-experimentation > div {
+    padding-top: 150px;
+    padding-bottom: 150px;
   }
 }
 #index-experimentation > div img {
@@ -3292,7 +3401,7 @@ textarea {
   }
 }
 #index-experimentation > div h3 {
-  margin-top: -100px;
+  margin-top: -150px;
   color: #2E2E41;
   width: 80vw;
   grid-area: e-t;
@@ -3305,21 +3414,25 @@ textarea {
     justify-content: center;
     align-items: flex-end;
     text-align: right;
-    margin-right: -100px;
+    margin-right: -105px;
+    color: #007785;
   }
 }
 @media (min-width: 1025px) {
   #index-experimentation > div h3 {
     margin-right: -40vw;
-    padding-top: 100px;
-    padding-left: 50vw;
+    padding-top: 70px;
+    padding-left: 65vw;
+    text-align: left;
   }
 }
 @media (min-width: 1440px) {
   #index-experimentation > div h3 {
     margin-right: 0;
+    text-align: right;
     padding: 0;
-    padding-left: 30%;
+    padding-left: 40%;
+    width: 20%;
   }
 }
 #index-experimentation > div p {
@@ -3327,11 +3440,12 @@ textarea {
   padding-top: 50px;
   text-align: right;
   padding-right: 20px;
-  padding-left: 20px;
+  padding-left: 30px;
   color: #D43732;
 }
 @media (min-width: 768px) {
   #index-experimentation > div p {
+    padding-top: 20px;
     text-align: right;
     width: auto;
   }
@@ -3339,16 +3453,16 @@ textarea {
 @media (min-width: 1025px) {
   #index-experimentation > div p {
     text-align: right;
-    padding: 20px 100px 0 9vw;
-    margin-top: -300px;
+    padding: 20px 100px 0 5vw;
+    margin-top: -250px;
   }
 }
 @media (min-width: 1440px) {
   #index-experimentation > div p {
     margin-top: 0px;
-    padding-top: 70px;
-    margin-right: -20%;
+    padding-top: 20px;
     padding-left: 40%;
+    width: 400px;
   }
 }
 
@@ -3356,79 +3470,94 @@ textarea {
   Impact
  --------------------------*/
 #index-impact {
+  margin-top: -170px;
   height: 100vh;
 }
+@media (min-width: 768px) {
+  #index-impact {
+    margin-top: 0;
+  }
+}
+@media (min-width: 1440px) {
+  #index-impact {
+    width: 100vw;
+  }
+}
 #index-impact > div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url("../img/impact/impact-intro-mobile.jpg");
-  background-size: cover;
-  background-position: center;
+  background-image: url("../img/index/index-impact.jpg");
+  background-size: 330%;
+  background-position: -60px center;
   background-repeat: no-repeat;
+  background-position-y: -100px;
   height: 100vh;
   width: 100vw;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
+}
+@media (min-width: 768px) {
+  #index-impact > div {
+    background-size: 200%;
+  }
 }
 @media (min-width: 1025px) {
   #index-impact > div {
-    height: 100vh;
+    background-position: center;
+    background-size: 120%;
+    width: 100vw;
+  }
+}
+@media (min-width: 1440px) {
+  #index-impact > div {
     width: 100vw;
   }
 }
 #index-impact > div h3 {
-  color: #007785;
-  margin-top: -100px;
+  color: #D43732;
+  padding-left: 50px;
+  text-align: right;
+  margin-top: 200px;
 }
 @media (min-width: 768px) {
   #index-impact > div h3 {
     color: #D43732;
-    padding-bottom: 20px;
     padding-left: 20vw;
   }
 }
 @media (min-width: 1025px) {
   #index-impact > div h3 {
-    padding-left: 10vw;
+    padding-right: 10vw;
+    margin-top: -10vh;
   }
 }
 @media (min-width: 1440px) {
   #index-impact > div h3 {
-    text-align: center;
-    padding: 0;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 50px;
+    text-align: right;
   }
 }
 #index-impact > div p {
   padding-top: 20px;
-  color: #2E2E41;
+  color: #F5F5EE;
   text-align: right;
+  padding-left: 25vw;
 }
 @media (min-width: 768px) {
   #index-impact > div p {
-    text-align: left;
-    padding-left: 20vw;
+    text-align: right;
+    padding-left: 30vw;
   }
 }
 @media (min-width: 1025px) {
   #index-impact > div p {
-    padding-left: 10vw;
-    padding-right: 40vw;
-    text-align: left;
+    padding-left: 30vw;
+    padding-right: 10vw;
+    text-align: right;
   }
 }
 @media (min-width: 1440px) {
   #index-impact > div p {
-    padding: 0;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50vw;
+    padding-left: 50vw;
   }
 }
 /* --------------------------
@@ -3440,92 +3569,116 @@ textarea {
   position: relative;
   background-color: #F5F5EE;
 }
+@media (min-width: 768px) {
+  #index-publicity {
+    padding-bottom: 100px;
+  }
+}
 @media (min-width: 1025px) {
   #index-publicity {
-    height: 100vh;
+    padding: 0;
   }
 }
 #index-publicity > div #publicity-photo {
-  background-image: url("../img/experimentation/handshake.jpg");
+  grid-area: p-i;
+  background-image: url("../img/index/handshake2.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: center -240px;
   background-repeat: no-repeat;
-  height: 50vh;
+  height: 30vh;
   width: 100vw;
   border: none;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 @media (min-width: 768px) {
   #index-publicity > div #publicity-photo {
+    margin-top: -30px;
     margin-right: 30vw;
-    width: 70vw;
-    height: 70vh;
+    width: 50vw;
+    height: 80vh;
+    background-position: center -140px;
   }
 }
 @media (min-width: 1025px) {
   #index-publicity > div #publicity-photo {
-    margin-right: 0;
     margin-right: 70vw;
-    height: 70vh;
-    width: 35vw;
+    margin-left: 10vw;
+    height: 60vh;
+    width: 40vw;
     margin-top: 0;
+    background-position: center -140px;
   }
 }
 @media (min-width: 1440px) {
   #index-publicity > div #publicity-photo {
-    margin-left: 10%;
+    margin-left: 15%;
+    width: 30vw;
   }
 }
 #index-publicity > div h3 {
+  grid-area: p-t;
   color: #2E2E41;
   text-align: right;
   padding-left: 50px;
   padding-right: 20px;
-  margin-top: -490px;
+  margin-top: -400px;
   padding-bottom: 100px;
 }
 @media (min-width: 768px) {
   #index-publicity > div h3 {
-    color: #D43732;
     font-size: 3.125rem;
     text-align: left;
-    padding-right: 30vw;
-    padding-left: 15vw;
-    margin-top: -650px;
+    padding-right: 2vw;
+    padding-left: 55vw;
+    margin-top: -700px;
   }
 }
 @media (min-width: 1025px) {
   #index-publicity > div h3 {
-    padding-left: 25vw;
+    padding-left: 60vw;
     padding-top: 150px;
+    margin-top: -500px;
     text-align: left;
-    padding-right: 35vw;
+    padding-right: 5vw;
   }
 }
 @media (min-width: 1440px) {
   #index-publicity > div h3 {
-    padding-left: 30%;
-    padding-right: 40vw;
-    padding-bottom: 50px;
+    padding-left: 35%;
+    margin-top: -620px;
+    padding-right: 35vw;
   }
 }
 #index-publicity > div p {
-  padding-top: 150px;
-  padding-left: 40px;
+  grid-area: p-p;
+  padding-top: 100px;
+  padding-left: 20px;
   padding-right: 40px;
 }
 @media (min-width: 768px) {
   #index-publicity > div p {
     text-align: left;
     padding-left: 40vw;
+    padding-top: 0px;
+    margin-top: -10px;
   }
 }
 @media (min-width: 1025px) {
   #index-publicity > div p {
-    padding-left: 50vw;
     text-align: left;
-    padding-top: 0;
-    padding-right: 10vw;
+    padding: 0;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20vw;
+    padding-right: 20vw;
+  }
+}
+@media (min-width: 1440px) {
+  #index-publicity > div p {
+    padding-left: 50vw;
+    margin-top: -100px;
+    padding-bottom: 50px;
   }
 }
 #index-publicity > div p span {
@@ -3541,34 +3694,37 @@ textarea {
   history
  --------------------------*/
 #index-history {
+  z-index: 200;
+  position: relative;
   background-color: #F5F5EE;
   height: 100vh;
 }
-#index-history > div #history-photo {
+#index-history > div {
   background-image: url("../img/impact/moral-img.jpg");
-  background-size: 800%;
-  background-position: center;
-  background-position-x: -950px;
+  background-size: cover;
+  background-position: -260px center;
   background-repeat: no-repeat;
   height: 100vh;
   width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 20px 0;
 }
 @media (min-width: 768px) {
-  #index-history > div #history-photo {
-    margin-top: 80px;
-    background-size: 300%;
-    background-position-x: -400px;
-    margin-left: 20vw;
-    width: 80vw;
-    height: 70vh;
+  #index-history > div {
+    align-items: center;
+    background-size: 250%;
+    background-position-x: -350px;
+    width: 100vw;
+    height: 100vh;
   }
 }
 @media (min-width: 1025px) {
-  #index-history > div #history-photo {
-    height: 100vh;
-    width: 100vw;
-    background-size: 120%;
-    background-position-x: 0px;
+  #index-history > div {
+    background-size: 150%;
+    background-position-x: -100px;
     margin-top: 0px;
     margin-left: 0vw;
   }
@@ -3577,69 +3733,66 @@ textarea {
   color: #D43732;
   padding-right: 150px;
   text-align: left;
-  margin-top: -700px;
 }
 @media (min-width: 768px) {
   #index-history > div h3 {
     color: #D43732;
     text-align: left;
     padding-left: 10vw;
-    margin-top: 0;
-    margin-top: -450px;
   }
 }
 @media (min-width: 1025px) {
   #index-history > div h3 {
-    padding-left: 10vw;
+    padding-left: 0;
+    width: 35%;
     text-align: left;
-    margin-top: -600px;
   }
 }
 #index-history > div p {
   padding-top: 20px;
-  padding-left: 10px;
+  padding-left: 20px;
   padding-right: 40px;
   text-align: left;
+  width: 60vw;
 }
 @media (min-width: 768px) {
   #index-history > div p {
+    width: auto;
     text-align: left;
-    padding-left: 30vw;
-    padding-right: 10%;
+    padding-left: 10vw;
+    padding-right: 50vw;
     color: #2E2E41;
   }
 }
 @media (min-width: 1025px) {
   #index-history > div p {
-    padding-left: 10vw;
+    padding-left: 11vw;
     text-align: left;
     padding-right: 50vw;
   }
 }
-@media (min-width: 768px) {
-  #index-history > div p span {
-    color: #F5F5EE;
-  }
-}
-@media (min-width: 1025px) {
-  #index-history > div p span {
-    color: #2E2E41;
-  }
-}
 
-/* --------------------------
-  Gallery
- --------------------------*/
 #index-gallery-slider {
   background-color: #B9DFE6;
   position: relative;
-  z-index: 900;
+  z-index: 400;
+  margin: 0;
+}
+#index-gallery-slider > div {
+  padding-bottom: 100px;
+}
+@media (min-width: 1025px) {
+  #index-gallery-slider > div {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 }
 #index-gallery-slider > div h3 {
   display: flex;
   justify-content: center;
   font-weight: 400;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
+  text-align: center;
   color: #2E2E41;
 }
 @media (min-width: 768px) {
@@ -3647,9 +3800,9 @@ textarea {
     padding-bottom: 30px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1025px) {
   #index-gallery-slider > div h3 {
-    padding-bottom: 40px;
+    padding-bottom: 60px;
   }
 }
 #index-gallery-slider > div .index-slider div {
@@ -3657,12 +3810,12 @@ textarea {
 }
 @media (min-width: 768px) {
   #index-gallery-slider > div .index-slider div {
-    height: 200px;
+    height: 50vh;
   }
 }
 @media (min-width: 1025px) {
   #index-gallery-slider > div .index-slider div {
-    height: 400px;
+    height: 65vh;
   }
 }
 #index-gallery-slider > div .index-slider div img {
@@ -3671,10 +3824,24 @@ textarea {
   object-fit: auto;
   object-position: center;
 }
+#index-gallery-slider > div #gallery-swipe {
+  font-size: 1.25rem;
+  text-align: center;
+  color: #007785;
+  font-family: "Exo", sans-serif;
+}
+@media (min-width: 768px) {
+  #index-gallery-slider > div #gallery-swipe {
+    font-size: 1.5625rem;
+  }
+}
+@media (min-width: 1025px) {
+  #index-gallery-slider > div #gallery-swipe {
+    font-size: 1.875rem;
+  }
+}
 #index-gallery-slider > div .tns-controls [aria-controls] {
-  color: #2E2E41;
-  background: #FFDA37;
-  border-radius: 0;
+  display: none;
 }
 
 /* =============
@@ -3750,7 +3917,7 @@ textarea {
 ============= */
 #honors-01 {
   height: 80vh;
-  background-color: #22C9C6;
+  background-color: #B9DFE6;
 }
 @media (min-width: 768px) {
   #honors-01 {
@@ -4123,9 +4290,10 @@ textarea {
 
 #honors-end-quote {
   height: 80vh;
-  background-color: #B9DFE6;
+  background-color: #007785;
   z-index: 100;
   position: relative;
+  border-bottom: 2px #F5F5EE solid;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -4144,7 +4312,7 @@ textarea {
   font-size: 2.5rem;
   text-align: center;
   padding: 0px 10px;
-  color: #007785;
+  color: #22C9C6;
 }
 @media (min-width: 768px) {
   #honors-end-quote div #hnrs-pull-quote {

@@ -24,7 +24,7 @@ if(indexChecker){
     
     ScrollTrigger.create({
         trigger: "#index-impact-h",
-        start: "top 60%",
+        start: "top 70%",
         end: "bottom 50%",
         animation: indexHeaderTimeline2,
         toggleActions: "play play none none"

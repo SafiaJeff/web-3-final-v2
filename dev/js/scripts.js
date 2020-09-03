@@ -7,10 +7,9 @@
 // @codekit-prepend "scrollTrigger/pullQuoteST.js";
 // @codekit-prepend "scrollTrigger/headerST.js";
 // @codekit-prepend "headerScroll.js";
-// @codekit-prepend "burgerAnimation.js";
-
 
 // @codekit-prepend "main-nav/nav-global.js";
+// @codekit-prepend "burgerAnimation.js";
 // @codekit-prepend "main-nav/main-nav-click.js";
 
 // @codekit-prepend "index/index-header.js"; 
