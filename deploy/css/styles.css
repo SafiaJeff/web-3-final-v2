@@ -925,6 +925,14 @@ progress::-moz-progress-bar {
 #employment-start {
   background-color: #F5F5EE;
 }
+#employment-start div {
+  padding-top: 0px;
+}
+@media (min-width: 768px) {
+  #employment-start div {
+    padding-top: 45px;
+  }
+}
 #employment-start div #emp-hero #emp-hero-img {
   background-image: url("../img/employment/stickers-hero.jpg");
   background-position: center;
@@ -1084,6 +1092,7 @@ progress::-moz-progress-bar {
   background-position-x: -100px;
   width: 230px;
   background-size: 270%;
+  background-repeat: no-repeat;
 }
 @media (min-width: 768px) {
   #emp-text #emp-text-content #xl #emp-text-grid #suitcase-img {
@@ -1097,7 +1106,7 @@ progress::-moz-progress-bar {
     grid-area: suitcase;
     width: 42vw;
     margin-top: 100px;
-    background-size: 150%;
+    background-size: 160%;
     background-position-x: -10px;
   }
 }
@@ -1164,7 +1173,7 @@ progress::-moz-progress-bar {
 @media (min-width: 1025px) {
   #emp-text #emp-text-content #emp-p2 {
     padding: 0px 20vw;
-    margin-top: -40px;
+    margin-top: -100px;
   }
 }
 @media (min-width: 1440px) {
@@ -3859,6 +3868,7 @@ textarea {
 #honors-hero {
   background-color: #F5F5EE;
   height: 100vh;
+  padding-top: 50px;
 }
 #honors-hero #honors-hero-img {
   background-image: url("../img/safi/mac-hero.jpg");
