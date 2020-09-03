@@ -54,7 +54,7 @@ if (galleryChecker) {
         alpha: 0,
         scrollTrigger: {
             //scrub:true,
-            toggleActions: "restart reverse restart reverse",
+            toggleActions: "play none none none",
             trigger: ".gallery-para-animate",
             start: "top 75%"
         }
@@ -67,7 +67,7 @@ if (galleryChecker) {
         alpha: 0,
         scrollTrigger: {
             //scrub:true,
-            toggleActions: "restart reverse restart reverse",
+            toggleActions: "play none none none",
             trigger: "#gallery-logo-1",
             start: "top 75%"
         }
@@ -80,7 +80,7 @@ if (galleryChecker) {
         alpha: 0,
         scrollTrigger: {
             //scrub:true,
-            toggleActions: "restart reverse restart reverse",
+            toggleActions: "play none none none",
             trigger: "#gallery-logo-2",
             start: "top 75%"
         }

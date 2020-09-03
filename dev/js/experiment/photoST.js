@@ -1,3 +1,4 @@
+//animates gallery photos to move up one at a time
 if(experimentChecker){
     const galleryTimeline = gsap.timeline();
 
@@ -9,8 +10,8 @@ if(experimentChecker){
         trigger:"#section-5-experiment",
         pin: true,
             pinSpacing: true,
-            start: "top top",
-            end: "bottom top"
+            start: "top 20%",
+            end: "bottom 90%"
         //scrub: 1
     });
 }

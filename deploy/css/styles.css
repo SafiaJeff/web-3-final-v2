@@ -712,12 +712,13 @@ header {
   z-index: 2000;
 }
 header div {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  align-items: center;
+  justify-items: flex-end;
   padding: 20px;
 }
 header div #logo-container {
-  width: 20%;
+  width: 100%;
 }
 header div #logo-container a {
   text-decoration: none;
@@ -756,8 +757,6 @@ header div #burger-container #burger:hover #lines {
 footer {
   background-color: #007785;
   padding: 50px;
-  z-index: 2000;
-  position: relative;
 }
 @media (min-width: 768px) {
   footer {
@@ -940,7 +939,7 @@ progress::-moz-progress-bar {
 @media (min-width: 1440px) {
   #employment-start div #emp-hero #emp-hero-img {
     width: 80vw;
-    background-size: 180%;
+    background-size: 150%;
     background-position-y: -150px;
     background-position-x: -300px;
   }
@@ -1600,8 +1599,8 @@ progress::-moz-progress-bar {
 }
 @media (min-width: 768px) {
   #experimentation #hero-experiment #title-experiment {
-    padding-top: 100px;
     margin-bottom: 180px;
+    padding-top: 100px;
   }
 }
 @media (min-width: 1025px) {
@@ -1645,10 +1644,10 @@ progress::-moz-progress-bar {
 }
 @media (min-width: 1440px) {
   #experimentation #hero-experiment #subtitle-experiment {
-    padding: 0px;
-    margin-top: -120px;
     margin-left: 50%;
     margin-right: 10%;
+    margin-top: -120px;
+    padding: 0px;
   }
 }
 @media (min-width: 768px) {
@@ -1659,8 +1658,8 @@ progress::-moz-progress-bar {
 }
 @media (min-width: 1025px) {
   #experimentation #section-1-experiment {
-    margin: auto 5%;
     column-gap: 10%;
+    margin: auto 5%;
   }
 }
 @media (min-width: 768px) {
@@ -1677,47 +1676,47 @@ progress::-moz-progress-bar {
   }
 }
 #experimentation #section-1-experiment #pullquote-section-1 p {
-  text-align: left;
   color: #EF777A;
-  padding-right: 20px;
   padding-left: 20px;
+  padding-right: 20px;
+  text-align: left;
 }
 @media (min-width: 768px) {
   #experimentation #section-1-experiment #pullquote-section-1 p {
+    padding-left: 40%;
+    padding-right: 10%;
     padding-top: 0px;
     text-align: right;
-    padding-right: 10%;
-    padding-left: 40%;
   }
 }
 @media (min-width: 1440px) {
   #experimentation #section-1-experiment #pullquote-section-1 p {
-    padding-top: 40px;
-    padding: 0;
     margin: 0;
+    padding: 0;
+    padding-top: 40px;
     text-align: center;
   }
 }
 #experimentation #section-1-experiment #image-section-1 {
   background-image: url("../img/experimentation/obama.jpg");
   background-position: center;
+  background-position-x: -150px;
   background-size: cover;
   height: 50vh;
   margin-top: 100px;
-  background-position-x: -150px;
 }
 @media (min-width: 768px) {
   #experimentation #section-1-experiment #image-section-1 {
-    padding-top: 100px;
     grid-column-start: 1;
     grid-row-start: 2;
     height: 30vh;
+    padding-top: 100px;
   }
 }
 @media (min-width: 1025px) {
   #experimentation #section-1-experiment #image-section-1 {
-    margin-top: 0px;
     height: 400px;
+    margin-top: 0px;
   }
 }
 #experimentation #section-1-experiment #para-section-1 {
@@ -1725,16 +1724,16 @@ progress::-moz-progress-bar {
 }
 @media (min-width: 768px) {
   #experimentation #section-1-experiment #para-section-1 {
-    padding-left: 20px;
     grid-column-start: 2;
     grid-row-start: 2;
+    padding-left: 20px;
     padding-top: 100px;
   }
 }
 @media (min-width: 1025px) {
   #experimentation #section-1-experiment #para-section-1 {
-    padding-right: 15%;
     margin-top: 0px;
+    padding-right: 15%;
     padding-top: 60px;
   }
 }
@@ -1743,12 +1742,11 @@ progress::-moz-progress-bar {
 }
 #experimentation #section-2-experiment #pullquote-section-2 h3 {
   color: #22C9C6;
-  padding-right: 20px;
-  padding-left: 20px;
   margin-bottom: -400px;
-  text-align: right;
-  background-color: #F5F5EE;
   padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: right;
 }
 @media (min-width: 768px) {
   #experimentation #section-2-experiment #pullquote-section-2 h3 {
@@ -1757,7 +1755,6 @@ progress::-moz-progress-bar {
 }
 @media (min-width: 1025px) {
   #experimentation #section-2-experiment #pullquote-section-2 h3 {
-    background-color: transparent;
     margin-bottom: 10vh;
   }
 }
@@ -1768,7 +1765,7 @@ progress::-moz-progress-bar {
 }
 @media (min-width: 1440px) {
   #experimentation #section-2-experiment #pullquote-section-2 {
-    margin-left: 40%;
+    margin-left: 30%;
     margin-right: 15%;
   }
 }
@@ -1787,30 +1784,30 @@ progress::-moz-progress-bar {
 }
 @media (min-width: 1025px) {
   #experimentation #section-2-experiment #image-section-2 {
+    height: 80vh;
     margin: 0px;
     margin-top: -100px;
     width: 100vw;
-    height: 80vh;
   }
 }
 @media (min-width: 1440px) {
   #experimentation #section-2-experiment #image-section-2 {
+    margin-bottom: 150px;
     margin-left: 10%;
-    width: auto;
     margin-right: 10%;
     margin-top: -115px;
-    margin-bottom: 150px;
+    width: auto;
   }
 }
 #experimentation #section-3-experiment {
-  position: relative;
   background-color: #EF777A;
   margin: 100px 0;
+  position: relative;
 }
 #experimentation #section-3-experiment #para-section-3 {
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 @media (min-width: 768px) {
   #experimentation #section-3-experiment #para-section-3 {
@@ -1819,9 +1816,9 @@ progress::-moz-progress-bar {
 }
 @media (min-width: 1440px) {
   #experimentation #section-3-experiment #para-section-3 {
+    height: 100vh;
     margin-left: 25%;
     margin-right: 25%;
-    height: 100vh;
   }
 }
 #experimentation #section-3-experiment #para-section-3 p {
@@ -1839,18 +1836,18 @@ progress::-moz-progress-bar {
 }
 @media (min-width: 768px) {
   #experimentation #section-4-experiment {
+    background-color: #F5F5EE;
     column-gap: 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding-top: 100px;
-    background-color: #F5F5EE;
   }
 }
 #experimentation #section-4-experiment #pullquote-section-4 {
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
   height: 100vh;
+  justify-content: center;
 }
 @media (min-width: 768px) {
   #experimentation #section-4-experiment #pullquote-section-4 {
@@ -1865,16 +1862,14 @@ progress::-moz-progress-bar {
   }
 }
 #experimentation #section-4-experiment #pullquote-section-4 h3 {
+  color: #B9DFE6;
   padding-left: 10px;
   padding-right: 10px;
   text-align: right;
-  color: #B9DFE6;
 }
 @media (min-width: 768px) {
   #experimentation #section-4-experiment #pullquote-section-4 h3 {
     color: #007785;
-    line-height: 2.5rem;
-    font-size: 1.25rem;
     font-family: "Libre Franklin", sans-serif;
     font-size: 1.5625rem;
     line-height: 2.8125rem;
@@ -1927,7 +1922,7 @@ progress::-moz-progress-bar {
 }
 #experimentation #section-5-experiment {
   background-color: #EF777A;
-  height: 100vh;
+  overflow: hidden;
 }
 @media (min-width: 768px) {
   #experimentation #section-5-experiment {
@@ -2018,12 +2013,12 @@ img {
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
 }
 @media (min-width: 768px) {
   #gallery-hero div {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
   }
 }
 #gallery-hero div img {
@@ -2031,6 +2026,7 @@ img {
 }
 @media (min-width: 768px) {
   #gallery-hero div img {
+    object-position: left center;
     display: block;
     height: 550px;
     width: 90%;
@@ -2043,14 +2039,16 @@ img {
 }
 #gallery-hero div > div {
   background-image: url(../img/gallery/hero-1.jpg);
+  background-position: left top;
+  background-size: cover;
   width: 100vw;
-  height: 70vh;
+  height: 80vh;
 }
 @media (min-width: 768px) {
   #gallery-hero div > div {
     height: auto;
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: center;
     background-image: none;
     position: absolute;
@@ -2059,24 +2057,25 @@ img {
 }
 #gallery-hero div > div h1 {
   text-align: center;
-  color: #EF777A;
+  color: #D43732;
+  padding-bottom: 100px;
 }
 @media (min-width: 768px) {
   #gallery-hero div > div h1 {
+    padding-bottom: 0px;
     text-align: left;
-    margin: 300px 0 0 6%;
+    margin: 40vh 7% 0 0;
   }
 }
 #gallery-hero div p {
-  margin: 0 15%;
+  margin: 0 12%;
   text-align: justify;
-  color: #EF777A;
+  color: #D43732;
 }
 @media (min-width: 768px) {
   #gallery-hero div p {
     width: 550px;
-    text-align: right;
-    margin-right: 10%;
+    margin-left: 10%;
   }
 }
 
@@ -2088,6 +2087,8 @@ img {
   background-position: top center;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+  overflow: hidden;
 }
 @media (min-width: 768px) {
   #gallery-content-1 #gallery-quote-1 {
@@ -2096,13 +2097,14 @@ img {
 }
 #gallery-content-1 #gallery-quote-1 p {
   width: auto;
-  margin: 5%;
+  margin: 0 10%;
   color: #F5F5EE;
 }
 @media (min-width: 768px) {
   #gallery-content-1 #gallery-quote-1 p {
-    margin-left: 10%;
-    width: 70vw;
+    text-align: right;
+    margin-right: 10%;
+    margin-left: 36%;
   }
 }
 @media (min-width: 1025px) {
@@ -2166,9 +2168,11 @@ img {
 
 #gallery-content-2 {
   background-color: #22C9C6;
-  height: 70vh;
+  height: 80vh;
+  position: relative;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 @media (min-width: 1025px) {
   #gallery-content-2 {
@@ -2176,29 +2180,74 @@ img {
   }
 }
 #gallery-content-2 img {
-  width: 40%;
-  height: 70vh;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 80vh;
 }
 @media (min-width: 768px) {
   #gallery-content-2 img {
-    width: 60%;
+    width: 45%;
   }
 }
 @media (min-width: 1025px) {
   #gallery-content-2 img {
+    width: 55%;
     height: 100vh;
   }
 }
-#gallery-content-2 p {
-  width: 230px;
-  margin-left: -16%;
-  text-align: justify;
+#gallery-content-2 #gallery-content-2-text {
+  height: auto;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 40% auto 15px;
+  grid-template-rows: "auto auto";
+  grid-template-areas: "content-2-1 content-2-1 content-2-1" ". content-2-2 .";
 }
 @media (min-width: 768px) {
-  #gallery-content-2 p {
+  #gallery-content-2 #gallery-content-2-text {
+    display: grid;
+    grid-template-columns: 35% 20% auto;
+    grid-template-rows: "auto auto";
+    grid-template-areas: ". content-2-1 content-2-1" ". . content-2-2";
+  }
+}
+@media (min-width: 1025px) {
+  #gallery-content-2 #gallery-content-2-text {
+    display: grid;
+    grid-template-columns: 45% 20% auto;
+    grid-template-rows: "auto auto";
+    grid-template-areas: ". content-2-1 content-2-1" ". . content-2-2";
+  }
+}
+#gallery-content-2 #gallery-content-2-text h3 {
+  color: #2E2E41;
+  padding-left: 10%;
+  width: 340px;
+}
+@media (min-width: 768px) {
+  #gallery-content-2 #gallery-content-2-text h3 {
+    width: unset;
+    padding: 0 10% 0 0;
+    grid-area: content-2-1;
+  }
+}
+#gallery-content-2 #gallery-content-2-text p {
+  grid-area: content-2-2;
+  color: #2E2E41;
+}
+@media (min-width: 768px) {
+  #gallery-content-2 #gallery-content-2-text p {
+    margin-top: -12%;
+    padding-right: 10%;
     text-align: left;
-    width: 350px;
-    margin-left: -5%;
+  }
+}
+@media (min-width: 1025px) {
+  #gallery-content-2 #gallery-content-2-text p {
+    width: 380px;
   }
 }
 
@@ -2246,18 +2295,25 @@ img {
   }
 }
 #gallery-content-3 > div p {
+  padding: 50px 5%;
   text-align: justify;
-  padding-left: 5%;
-  padding-right: 5%;
   width: auto;
   color: #F5F5EE;
-  line-height: 1.75rem;
+  line-height: 1.5625rem;
 }
 @media (min-width: 768px) {
   #gallery-content-3 > div p {
+    line-height: 1.75rem;
+    padding-top: 100px;
+    padding-bottom: 100px;
     text-align: left;
     width: 50%;
     padding-left: 15%;
+  }
+}
+@media (min-width: 1025px) {
+  #gallery-content-3 > div p {
+    padding-top: 150px;
   }
 }
 #gallery-content-3 > div :nth-child(1) {
@@ -2433,23 +2489,23 @@ img {
 }
 #gallery-form > div h3 {
   color: #FFDA37;
-  font-size: 3.0625rem;
   position: absolute;
   text-align: right;
-  top: -3%;
+  top: -5%;
   right: 8%;
 }
 @media (min-width: 768px) {
   #gallery-form > div h3 {
-    top: 9%;
-    right: 8%;
+    top: 7%;
+    right: 12%;
   }
 }
 @media (min-width: 1025px) {
   #gallery-form > div h3 {
-    top: 12%;
-    left: 8%;
+    top: 10%;
+    left: -5%;
     right: unset;
+    width: 400px;
   }
 }
 @media (min-width: 1440px) {
@@ -2685,7 +2741,7 @@ textarea {
     Impact-Thesis
  --------------------------*/
 #impact-thesis {
-  background-color: #EF777A;
+  background-color: #007785;
   z-index: 200;
 }
 #impact-thesis > div {
@@ -2693,7 +2749,6 @@ textarea {
   justify-content: flex-end;
   align-items: center;
   padding: 100px 20px 100px 20px;
-  overflow: hidden;
 }
 @media (min-width: 768px) {
   #impact-thesis > div {
@@ -2708,18 +2763,12 @@ textarea {
   }
 }
 #impact-thesis > div p {
-  color: #F5F5EE;
   text-align: right;
   color: #F5F5EE;
 }
 @media (min-width: 768px) {
   #impact-thesis > div p {
     width: 80vw;
-  }
-}
-@media (min-width: 1025px) {
-  #impact-thesis > div p {
-    width: 50vw;
   }
 }
 
@@ -2731,20 +2780,6 @@ textarea {
   z-index: 300;
   background-color: #F5F5EE;
   padding-top: 1px;
-  overflow: hidden;
-}
-@media (min-width: 1025px) {
-  #moral-section {
-    margin-bottom: -150px;
-  }
-}
-@media (min-width: 1025px) {
-  #moral-section {
-    margin-bottom: -150px;
-  }
-}
-#moral-section div {
-  overflow: hidden;
 }
 @media (min-width: 768px) {
   #moral-section div {
@@ -2767,15 +2802,15 @@ textarea {
 @media (min-width: 768px) {
   #moral-section div #moral-img img {
     display: initial;
-    object-position: -200px;
+    object-position: center;
     object-fit: cover;
-    z-index: 200;
-    height: 50vh;
+    width: 40vw;
+    height: 40vh;
   }
 }
 @media (min-width: 1025px) {
   #moral-section div #moral-img img {
-    height: 110vh;
+    height: 100%;
   }
 }
 #moral-section div #moral-content-1 {
@@ -2796,19 +2831,17 @@ textarea {
 }
 #moral-section div #moral-content-1 h3 {
   color: #D43732;
-  background-image: url("../img/impact/moral-img-mobile.jpg");
+  background-image: url("../img/impact/moral-img.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding: 100px 15px 20px;
-  z-index: 500;
-  position: relative;
 }
 @media (min-width: 768px) {
   #moral-section div #moral-content-1 h3 {
     background-image: none;
     padding: 0;
-    width: 70vw;
+    width: auto;
     text-align: right;
     margin: 0 -100px 0 100px;
   }
@@ -2816,7 +2849,6 @@ textarea {
 @media (min-width: 1025px) {
   #moral-section div #moral-content-1 h3 {
     margin: 0 -150px 0 400px;
-    width: auto;
   }
 }
 #moral-section div #moral-content-1 p {
@@ -2849,6 +2881,7 @@ textarea {
 @media (min-width: 768px) {
   #moral-section div #moral-callout h2 {
     font-size: 1.4375rem;
+    width: auto;
     width: 70vw;
     padding-top: 20px;
   }
@@ -2890,7 +2923,7 @@ textarea {
    Hero-1
 --------------------------*/
 #impact-hero-1 {
-  background-image: url("../img/impact/hero-1-2.jpg");
+  background-image: url("../img/impact/hero-1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -2901,7 +2934,6 @@ textarea {
   align-content: center;
   padding: 40px 15px 0;
   z-index: 400;
-  overflow: hidden;
 }
 @media (min-width: 768px) {
   #impact-hero-1 {
@@ -2916,14 +2948,6 @@ textarea {
 }
 #impact-hero-1 h1 {
   font-size: 3.125rem;
-  color: #007785;
-  line-height: 60px;
-}
-@media (min-width: 1025px) {
-  #impact-hero-1 h1 {
-    font-size: 3.75rem;
-    margin-top: -100px;
-  }
 }
 #impact-hero-1 p {
   text-align: right;
@@ -2948,8 +2972,7 @@ textarea {
   position: relative;
 }
 #change-section > div {
-  overflow: hidden;
-  background-color: #007785;
+  background-color: #B9DFE6;
   padding: 100px 0;
 }
 @media (min-width: 768px) {
@@ -2962,7 +2985,7 @@ textarea {
 @media (min-width: 1025px) {
   #change-section > div {
     padding: 150px 0;
-    grid-template-rows: 35vh auto;
+    grid-template-rows: 30vh auto auto;
     grid-template-areas: "c-img ct" ".cb1" ". cb2";
   }
 }
@@ -2988,7 +3011,6 @@ textarea {
   }
 }
 #change-section > div #change-title {
-  color: #EF777A;
   grid-area: ct;
 }
 @media (min-width: 768px) {
@@ -3000,12 +3022,11 @@ textarea {
 }
 @media (min-width: 1025px) {
   #change-section > div #change-title {
-    width: 40vw;
+    width: 50vw;
     margin: 0 0 0 -150px;
   }
 }
 #change-section > div #change-body-1 {
-  color: #F5F5EE;
   grid-area: cb1;
 }
 @media (min-width: 1025px) {
@@ -3014,7 +3035,6 @@ textarea {
   }
 }
 #change-section > div #change-body-2 {
-  color: #F5F5EE;
   grid-area: cb2;
 }
 @media (min-width: 1025px) {
@@ -3055,9 +3075,6 @@ textarea {
   position: relative;
   background-color: #F5F5EE;
 }
-#sway-section > div {
-  overflow: hidden;
-}
 @media (min-width: 768px) {
   #sway-section > div {
     display: grid;
@@ -3080,16 +3097,15 @@ textarea {
 }
 #sway-section > div #sway-content h3 {
   color: #2E2E41;
-  background-image: url("../img/impact/sway-img-2-mobile.jpg");
+  background-image: url("../img/impact/sway-img-mobile.jpg");
   background-size: cover;
-  background-position: right top;
+  background-position: right center;
   background-repeat: no-repeat;
   padding: 100px 15px 20px;
   grid-area: st;
 }
 @media (min-width: 768px) {
   #sway-section > div #sway-content h3 {
-    color: #007785;
     background-image: none;
     padding: 100px 30px 0;
     text-align: right;
@@ -3098,7 +3114,7 @@ textarea {
 @media (min-width: 1025px) {
   #sway-section > div #sway-content h3 {
     z-index: 800;
-    margin: 0 0 0 5vw;
+    margin: 0 -10vw 0 20vw;
     position: relative;
   }
 }
@@ -3109,18 +3125,18 @@ textarea {
   grid-area: si;
 }
 #sway-section > div #sway-img img {
+  z-index: 1400;
   display: none;
 }
 @media (min-width: 768px) {
   #sway-section > div #sway-img img {
     display: initial;
     width: 100%;
-    height: 100vh;
+    height: 90vh;
   }
 }
 @media (min-width: 1025px) {
   #sway-section > div #sway-img img {
-    z-index: 1400;
     display: initial;
     width: 100%;
     height: 110vh;
@@ -3137,15 +3153,7 @@ textarea {
 /* --------------------------
     Intro
  --------------------------*/
-#index-opening {
-  height: 100vh;
-}
 @media (min-width: 768px) {
-  #index-opening {
-    height: 75vh;
-  }
-}
-@media (min-width: 1025px) {
   #index-opening {
     height: 100vh;
   }
@@ -3156,28 +3164,21 @@ textarea {
 #index-opening > div #index-opening-hero {
   background-image: url("../img/index/intro-index.jpg");
   background-size: 500%;
-  background-position-x: -200px;
+  background-position-x: -1500px;
   background-repeat: no-repeat;
-  height: 50vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 500px;
 }
 @media (min-width: 768px) {
   #index-opening > div #index-opening-hero {
     background-size: 200%;
-    height: 50vh;
-  }
-}
-@media (min-width: 1025px) {
-  #index-opening > div #index-opening-hero {
     height: 100vh;
+    background-position-x: -600px;
   }
 }
 #index-opening > div h1 {
   font-size: 3.125rem;
   color: #2E2E41;
-  margin-top: -200px;
+  margin-top: -300px;
   padding-bottom: 90px;
   text-align: right;
   padding-right: 20px;
@@ -3186,7 +3187,7 @@ textarea {
   #index-opening > div h1 {
     font-size: 5rem;
     text-align: left;
-    margin-top: -300px;
+    margin-top: -600px;
     padding: 0px 50px 100px 50px;
   }
 }
@@ -3209,9 +3210,10 @@ textarea {
 #index-opening > div h2 {
   font-size: 1.4375rem;
   text-align: left;
-  padding: 20px 30px;
+  padding: 20px 30px 0;
   padding-bottom: 100px;
   color: #007785;
+  height: 10vh;
 }
 @media (min-width: 768px) {
   #index-opening > div h2 {
@@ -3240,15 +3242,9 @@ textarea {
 /* --------------------------
    Experimentation
  --------------------------*/
-#index-experimentation {
-  height: 100vh;
-  margin-bottom: 100px;
-  margin-top: -100px;
-}
 @media (min-width: 768px) {
   #index-experimentation {
     margin-bottom: 0;
-    margin-top: 0;
   }
 }
 #index-experimentation > div {
@@ -3262,22 +3258,21 @@ textarea {
     grid-template-areas: "e-t e-im" "e-c e-im";
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1025px) {
   #index-experimentation > div {
-    display: grid;
-    grid-template-columns: 60% auto;
+    padding-top: 150px;
+    padding-bottom: 150px;
   }
 }
 #index-experimentation > div img {
   grid-area: e-im;
-  object-position: top;
+  object-position: center;
   object-fit: cover;
-  height: 30vh;
+  height: 45vh;
   width: 100vw;
 }
 @media (min-width: 768px) {
   #index-experimentation > div img {
-    object-position: -500px top;
     height: 75vh;
     width: 80vw;
     width: 100%;
@@ -3285,7 +3280,6 @@ textarea {
 }
 @media (min-width: 1025px) {
   #index-experimentation > div img {
-    object-position: right top;
     height: 75vh;
     width: 100%;
   }
@@ -3298,14 +3292,13 @@ textarea {
   }
 }
 #index-experimentation > div h3 {
-  margin-top: -170px;
-  color: #F5F5EE;
+  margin-top: -100px;
+  color: #2E2E41;
   width: 80vw;
   grid-area: e-t;
 }
 @media (min-width: 768px) {
   #index-experimentation > div h3 {
-    color: #22C9C6;
     margin-top: 0;
     width: auto;
     display: flex;
@@ -3317,15 +3310,16 @@ textarea {
 }
 @media (min-width: 1025px) {
   #index-experimentation > div h3 {
-    margin-right: -5vw;
-    padding-left: 20vw;
+    margin-right: -40vw;
+    padding-top: 100px;
+    padding-left: 50vw;
   }
 }
 @media (min-width: 1440px) {
   #index-experimentation > div h3 {
     margin-right: 0;
     padding: 0;
-    padding-left: 40vw;
+    padding-left: 30%;
   }
 }
 #index-experimentation > div p {
@@ -3340,18 +3334,21 @@ textarea {
   #index-experimentation > div p {
     text-align: right;
     width: auto;
-    padding-top: 0;
   }
 }
 @media (min-width: 1025px) {
   #index-experimentation > div p {
-    padding-bottom: 75px;
+    text-align: right;
+    padding: 20px 100px 0 9vw;
+    margin-top: -300px;
   }
 }
 @media (min-width: 1440px) {
   #index-experimentation > div p {
-    margin-right: 14%;
-    padding-left: 10vw;
+    margin-top: 0px;
+    padding-top: 70px;
+    margin-right: -10%;
+    padding-left: 30%;
   }
 }
 
@@ -3359,76 +3356,79 @@ textarea {
   Impact
  --------------------------*/
 #index-impact {
-  margin-top: -170px;
-}
-@media (min-width: 768px) {
-  #index-impact {
-    margin-top: 0;
-  }
+  height: 100vh;
 }
 #index-impact > div {
-  background-image: url("../img/index/index-impact.jpg");
-  background-size: cover;
-  background-position: -60px center;
-  background-repeat: no-repeat;
-  height: 60vh;
-  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url("../img/impact/impact-intro-mobile.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
   flex-direction: column;
 }
 @media (min-width: 1025px) {
   #index-impact > div {
-    background-position: center;
-    height: 70vh;
+    height: 100vh;
     width: 100vw;
   }
 }
 #index-impact > div h3 {
-  color: #D43732;
-  width: 80vw;
-  text-align: right;
+  color: #007785;
+  margin-top: -100px;
 }
 @media (min-width: 768px) {
   #index-impact > div h3 {
     color: #D43732;
+    padding-bottom: 20px;
     padding-left: 20vw;
   }
 }
 @media (min-width: 1025px) {
   #index-impact > div h3 {
-    padding-right: 10vw;
-    margin-top: -10vh;
+    padding-left: 10vw;
   }
 }
 @media (min-width: 1440px) {
   #index-impact > div h3 {
-    text-align: right;
+    text-align: center;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
   }
 }
 #index-impact > div p {
   padding-top: 20px;
-  color: #F5F5EE;
+  color: #2E2E41;
   text-align: right;
-  padding-left: 25vw;
 }
 @media (min-width: 768px) {
   #index-impact > div p {
-    text-align: right;
-    padding-left: 30vw;
+    text-align: left;
+    padding-left: 20vw;
   }
 }
 @media (min-width: 1025px) {
   #index-impact > div p {
-    padding-left: 30vw;
-    padding-right: 10vw;
-    text-align: right;
+    padding-left: 10vw;
+    padding-right: 40vw;
+    text-align: left;
   }
 }
 @media (min-width: 1440px) {
   #index-impact > div p {
-    padding-left: 50vw;
+    padding: 0;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vw;
   }
 }
 /* --------------------------
@@ -3440,28 +3440,35 @@ textarea {
   position: relative;
   background-color: #F5F5EE;
 }
+@media (min-width: 768px) {
+  #index-publicity {
+    padding-top: 0px;
+    height: 90vh;
+  }
+}
 @media (min-width: 1025px) {
-  #index-publicity > div {
-    margin: 0 0 150px 0;
+  #index-publicity {
+    height: 95vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 #index-publicity > div #publicity-photo {
-  grid-area: p-i;
   background-image: url("../img/experimentation/handshake.jpg");
   background-size: cover;
-  background-position: center -240px;
+  background-position: center;
   background-repeat: no-repeat;
-  height: 30vh;
+  height: 50vh;
   width: 100vw;
   border: none;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 @media (min-width: 768px) {
   #index-publicity > div #publicity-photo {
+    margin-top: 0px;
     margin-right: 30vw;
-    width: 50vw;
-    height: 80vh;
-    background-position: center -140px;
+    width: 70vw;
+    height: 70vh;
   }
 }
 @media (min-width: 1025px) {
@@ -3471,7 +3478,6 @@ textarea {
     height: 70vh;
     width: 35vw;
     margin-top: 0;
-    background-position: center -140px;
   }
 }
 @media (min-width: 1440px) {
@@ -3480,12 +3486,11 @@ textarea {
   }
 }
 #index-publicity > div h3 {
-  grid-area: p-t;
   color: #2E2E41;
   text-align: right;
   padding-left: 50px;
   padding-right: 20px;
-  margin-top: -400px;
+  margin-top: -500px;
   padding-bottom: 100px;
 }
 @media (min-width: 768px) {
@@ -3493,16 +3498,15 @@ textarea {
     color: #D43732;
     font-size: 3.125rem;
     text-align: left;
-    padding-right: 10vw;
-    padding-left: 40vw;
-    margin-top: -775px;
+    padding-right: 30vw;
+    padding-left: 15vw;
+    margin-top: -650px;
   }
 }
 @media (min-width: 1025px) {
   #index-publicity > div h3 {
     padding-left: 25vw;
     padding-top: 150px;
-    margin-top: -650px;
     text-align: left;
     padding-right: 35vw;
   }
@@ -3515,8 +3519,7 @@ textarea {
   }
 }
 #index-publicity > div p {
-  grid-area: p-p;
-  padding-top: 100px;
+  padding-top: 150px;
   padding-left: 40px;
   padding-right: 40px;
 }
@@ -3548,32 +3551,36 @@ textarea {
  --------------------------*/
 #index-history {
   background-color: #F5F5EE;
-  height: 100vh;
-}
-#index-history > div {
-  background-image: url("../img/impact/moral-img.jpg");
-  background-size: cover;
-  background-position: -100px center;
-  background-repeat: no-repeat;
-  height: 70vh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
+  height: 100%;
+  position: relative;
 }
 @media (min-width: 768px) {
-  #index-history > div {
-    align-items: center;
-    background-size: 200%;
-    background-position-x: -200px;
-    width: 100vw;
+  #index-history {
+    margin-top: -100px;
+  }
+}
+#index-history > div #history-photo {
+  background-image: url("../img/impact/moral-img.jpg");
+  background-size: 800%;
+  background-position: center;
+  background-position-x: -150px;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+}
+@media (min-width: 768px) {
+  #index-history > div #history-photo {
+    margin-top: 80px;
+    background-size: 300%;
+    background-position-x: -400px;
+    margin-left: 20vw;
+    width: 80vw;
     height: 70vh;
   }
 }
 @media (min-width: 1025px) {
-  #index-history > div {
-    height: 70vh;
+  #index-history > div #history-photo {
+    height: 100vh;
     width: 100vw;
     background-size: 120%;
     background-position-x: 0px;
@@ -3585,34 +3592,38 @@ textarea {
   color: #D43732;
   padding-right: 150px;
   text-align: left;
+  margin-top: -600px;
 }
 @media (min-width: 768px) {
   #index-history > div h3 {
     color: #D43732;
     text-align: left;
     padding-left: 10vw;
+    margin-top: 0;
+    margin-top: -550px;
   }
 }
 @media (min-width: 1025px) {
   #index-history > div h3 {
     padding-left: 10vw;
     text-align: left;
+    margin-top: -600px;
   }
 }
 #index-history > div p {
   padding-top: 20px;
-  padding-left: 20px;
+  padding-left: 10px;
   padding-right: 40px;
   text-align: left;
-  width: 60vw;
+  padding-bottom: 20px;
 }
 @media (min-width: 768px) {
   #index-history > div p {
-    width: auto;
     text-align: left;
     padding-left: 10vw;
-    padding-right: 50vw;
+    padding-right: 25%;
     color: #2E2E41;
+    padding-bottom: 50px;
   }
 }
 @media (min-width: 1025px) {
@@ -3620,6 +3631,11 @@ textarea {
     padding-left: 10vw;
     text-align: left;
     padding-right: 50vw;
+  }
+}
+@media (min-width: 1025px) {
+  #index-history > div p span {
+    color: #2E2E41;
   }
 }
 
@@ -3631,22 +3647,30 @@ textarea {
   position: relative;
   z-index: 900;
 }
+#index-gallery-slider > div {
+  padding-bottom: 100px;
+}
+@media (min-width: 1025px) {
+  #index-gallery-slider > div {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+}
 #index-gallery-slider > div h3 {
   display: flex;
   justify-content: center;
   font-weight: 400;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   color: #2E2E41;
-  text-align: center;
 }
 @media (min-width: 768px) {
   #index-gallery-slider > div h3 {
     padding-bottom: 30px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1025px) {
   #index-gallery-slider > div h3 {
-    padding-bottom: 40px;
+    padding-bottom: 60px;
   }
 }
 #index-gallery-slider > div .index-slider div {
@@ -3654,12 +3678,12 @@ textarea {
 }
 @media (min-width: 768px) {
   #index-gallery-slider > div .index-slider div {
-    height: 40vh;
+    height: 200px;
   }
 }
 @media (min-width: 1025px) {
   #index-gallery-slider > div .index-slider div {
-    height: 65vh;
+    height: 400px;
   }
 }
 #index-gallery-slider > div .index-slider div img {
@@ -3667,6 +3691,11 @@ textarea {
   width: 100%;
   object-fit: auto;
   object-position: center;
+}
+#index-gallery-slider > div .tns-controls [aria-controls] {
+  color: #2E2E41;
+  background: #FFDA37;
+  border-radius: 0;
 }
 
 /* =============
@@ -3681,43 +3710,151 @@ textarea {
 ============= */
 #honors-hero {
   background-color: #F5F5EE;
+  height: 100vh;
 }
 #honors-hero #honors-hero-img {
-  background-image: url("../img/safi/mac-desktop.jpg");
+  background-image: url("../img/safi/mac-hero.jpg");
   background-position: center;
   background-size: 400%;
-  height: 800px;
+  background-repeat: no-repeat;
+  height: 100vh;
   width: 100vw;
-  background-position-y: -10px;
+  background-position-y: -90px;
+}
+@media (min-width: 768px) {
+  #honors-hero #honors-hero-img {
+    height: 70vh;
+    width: 80%;
+    padding-top: 150px;
+    margin-left: auto;
+    background-size: 250%;
+    background-position-y: -50px;
+  }
+}
+@media (min-width: 1025px) {
+  #honors-hero #honors-hero-img {
+    width: 90%;
+    background-size: 150%;
+    background-position-y: -150px;
+    background-position-x: -150px;
+  }
 }
 #honors-hero #honors-title {
-  color: #EF777A;
+  color: #D43732;
   bottom: 200px;
-  font-size: 4.375rem;
+  font-size: 5.625rem;
   text-align: left;
   margin-top: -500px;
   margin-bottom: 100px;
   padding: 0px 5px;
+  padding-left: 20px;
+}
+@media (min-width: 768px) {
+  #honors-hero #honors-title {
+    padding-left: 30%;
+    text-align: right;
+    padding-right: 10%;
+    font-size: 6.25rem;
+    margin-top: -500px;
+    color: #D43732;
+  }
+}
+@media (min-width: 1025px) {
+  #honors-hero #honors-title {
+    font-size: 9.375rem;
+    margin-top: -600px;
+  }
 }
 
 /* =============
     Section 01
 ============= */
 #honors-01 {
-  display: grid;
-  grid-template-rows: auto auto;
-  grid-template-areas: "hnrs01txt" "hnrs01img";
-  padding-top: 100px;
+  height: 80vh;
   background-color: #22C9C6;
 }
+@media (min-width: 768px) {
+  #honors-01 {
+    height: 80vh;
+  }
+}
+@media (min-width: 1025px) {
+  #honors-01 {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-columns: "ho1img ho1txt";
+  }
+}
+@media (min-width: 1025px) {
+  #honors-01 {
+    grid-template-columns: 30% auto;
+  }
+}
 #honors-01 #honors-01-img {
-  height: 300px;
-  width: 100%;
-  grid-area: hnrs01img;
-  padding-top: 100px;
+  background-image: url("../img/safi/tablet-mac.jpg");
+  background-position: center;
+  background-size: 450%;
+  height: 800px;
+  background-position-y: -600px;
+  background-position-x: -1000px;
+}
+@media (min-width: 768px) {
+  #honors-01 #honors-01-img {
+    width: 100vw;
+    height: 80vh;
+    background-size: 200%;
+    background-position: center;
+    background-position-y: -500px;
+    background-position-x: -700px;
+  }
+}
+@media (min-width: 1025px) {
+  #honors-01 #honors-01-img {
+    width: 100%;
+    background-size: 300%;
+    background-position: center;
+    background-position-x: -500px;
+  }
+}
+@media (min-width: 1440px) {
+  #honors-01 #honors-01-img {
+    background-position-x: -800px;
+    background-position-y: -400px;
+  }
 }
 #honors-01 #honors-01-p {
-  grid-area: hnrs01txt;
+  margin-top: -700px;
+  padding: 100px 30px 0px 30px;
+  color: #F5F5EE;
+}
+@media (min-width: 768px) {
+  #honors-01 #honors-01-p {
+    margin-top: -750px;
+    text-align: left;
+    padding-top: 18%;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-size: 1.0625rem;
+    line-height: 1.4375rem;
+  }
+}
+@media (min-width: 1025px) {
+  #honors-01 #honors-01-p {
+    padding: 0;
+    color: #2E2E41;
+    margin: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 0px 30px;
+  }
+}
+@media (min-width: 1440px) {
+  #honors-01 #honors-01-p {
+    width: 40vw;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /* =============
@@ -3728,22 +3865,138 @@ textarea {
 }
 #honors-logo-design div h3 {
   text-align: right;
-  padding-right: 10px;
+  padding-right: 10%;
+  padding-left: 30%;
+  margin-top: -350px;
+  padding-bottom: 250px;
+  color: #EF777A;
 }
+@media (min-width: 768px) {
+  #honors-logo-design div h3 {
+    color: #D43732;
+    padding-left: 20%;
+    text-align: left;
+    margin-top: -500px;
+  }
+}
+@media (min-width: 1025px) {
+  #honors-logo-design div h3 {
+    margin-top: -400px;
+    padding-left: 28%;
+  }
+}
+#honors-logo-design div #honors-logo-img {
+  width: 50vw;
+  height: 50vh;
+}
+@media (min-width: 768px) {
+  #honors-logo-design div #honors-logo-img {
+    padding-left: auto;
+    margin-left: auto;
+    display: block;
+    width: 50vw;
+    height: 60vh;
+  }
+}
+@media (min-width: 1440px) {
+  #honors-logo-design div #honors-logo-img {
+    margin-right: 10%;
+    width: 35vw;
+  }
+}
+#honors-logo-design div p {
+  color: #D43732;
+}
+@media (min-width: 768px) {
+  #honors-logo-design div p {
+    padding-left: 40px;
+    padding-right: 55%;
+    margin-top: -100px;
+    text-align: right;
+  }
+}
+@media (min-width: 1440px) {
+  #honors-logo-design div p {
+    width: 35vw;
+    padding: 0;
+    margin-top: -150px;
+    padding-left: 12%;
+  }
+}
+
 /* =============
    Rand
 ============= */
 #honors-rand {
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #B9DFE6;
+}
+@media (min-width: 768px) {
+  #honors-rand {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-template-rows: 50% auto;
+    grid-template-areas: "randlogo ." ". randtxt";
+  }
+}
+@media (min-width: 1025px) {
+  #honors-rand {
+    height: 100vh;
+    grid-template-rows: 1fr;
+    grid-template-columns: 40% auto;
+    grid-template-areas: "randlogo randtxt";
+  }
+}
+@media (min-width: 1440px) {
+  #honors-rand {
+    grid-template-columns: 10% 40% auto 10%;
+    grid-template-areas: ". randlogo randtxt .";
+  }
+}
+#honors-rand #honors-rand-img {
+  width: 80vw;
+  margin-top: -50px;
+  padding-bottom: 0px;
+}
+@media (min-width: 768px) {
+  #honors-rand #honors-rand-img {
+    width: 40vw;
+    grid-area: randlogo;
+    margin-top: auto;
+    padding-left: 30%;
+  }
+}
+@media (min-width: 1025px) {
+  #honors-rand #honors-rand-img {
+    margin: 0;
+    padding: 0;
+    width: 30vw;
+    padding-left: 10%;
+  }
 }
 #honors-rand p {
   padding-right: 20px;
   padding-left: 20px;
   color: #D43732;
+}
+@media (min-width: 768px) {
+  #honors-rand p {
+    grid-area: randtxt;
+    margin-bottom: auto;
+    padding-right: 15%;
+  }
+}
+@media (min-width: 1025px) {
+  #honors-rand p {
+    margin: 0;
+    padding: 0;
+    padding-right: 10%;
+  }
 }
 
 /* =============
@@ -3754,17 +4007,179 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   background-color: #EF777A;
+  z-index: 100;
+  position: relative;
+}
+@media (min-width: 768px) {
+  #honors-obama {
+    display: grid;
+    grid-template-columns: auto 30%;
+    grid-template-rows: 50% auto;
+    grid-template-areas: ". oblogo" "obtxt .";
+  }
+}
+@media (min-width: 1025px) {
+  #honors-obama {
+    height: 100vh;
+    grid-template-rows: 1fr;
+    grid-template-areas: "obtxt oblogo";
+  }
+}
+@media (min-width: 1440px) {
+  #honors-obama {
+    padding-left: 10%;
+    padding-right: 15%;
+  }
 }
 #honors-obama p {
   padding-right: 20px;
-  padding-left: 20px;
+  padding-left: 15px;
+  padding-top: 80px;
   color: #2E2E41;
   text-align: right;
 }
+@media (min-width: 768px) {
+  #honors-obama p {
+    text-align: left;
+    padding: 0;
+    grid-area: obtxt;
+    margin-bottom: auto;
+    padding-left: 15%;
+  }
+}
+@media (min-width: 1025px) {
+  #honors-obama p {
+    margin: 0;
+    padding: 0;
+    padding-left: 10%;
+    text-align: right;
+    padding-right: 10%;
+  }
+}
+#honors-obama #honors-obama-img {
+  width: 50vw;
+}
+@media (min-width: 768px) {
+  #honors-obama #honors-obama-img {
+    width: 30vw;
+    grid-area: oblogo;
+    margin-left: -100px;
+  }
+}
+@media (min-width: 1025px) {
+  #honors-obama #honors-obama-img {
+    margin: 0;
+    padding: 0;
+    padding-right: 10%;
+    width: 23vw;
+  }
+}
+
 /* =============
     Critics
 ============= */
 #honors-critics {
   background-color: #F5F5EE;
+  z-index: 100;
+  position: relative;
+}
+#honors-critics div h3 {
+  padding-left: 20px;
+  padding-bottom: 50px;
+  padding-right: 40%;
+}
+@media (min-width: 768px) {
+  #honors-critics div h3 {
+    padding-left: 10%;
+  }
+}
+@media (min-width: 1025px) {
+  #honors-critics div h3 {
+    width: 10%;
+  }
+}
+@media (min-width: 1440px) {
+  #honors-critics div h3 {
+    width: 30%;
+    padding-left: 20%;
+  }
+}
+#honors-critics div #honors-critics-p1 {
+  margin: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  #honors-critics div #honors-critics-p1 {
+    padding-left: 10%;
+    padding-right: 20%;
+  }
+}
+@media (min-width: 1440px) {
+  #honors-critics div #honors-critics-p1 {
+    padding-left: 20%;
+    padding-right: 30%;
+  }
+}
+#honors-critics div #honors-critics-p2 {
+  margin: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 50px;
+}
+@media (min-width: 768px) {
+  #honors-critics div #honors-critics-p2 {
+    padding-left: 20%;
+    padding-right: 10%;
+  }
+}
+@media (min-width: 1440px) {
+  #honors-critics div #honors-critics-p2 {
+    padding-left: 30%;
+    padding-right: 20%;
+  }
+}
+
+#honors-end-quote {
+  height: 80vh;
+  background-color: #B9DFE6;
+  z-index: 100;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  #honors-end-quote {
+    height: 50vh;
+  }
+}
+@media (min-width: 1025px) {
+  #honors-end-quote {
+    height: 70vh;
+  }
+}
+#honors-end-quote div #hnrs-pull-quote {
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 0px 10px;
+  color: #007785;
+}
+@media (min-width: 768px) {
+  #honors-end-quote div #hnrs-pull-quote {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 8%;
+  }
+}
+@media (min-width: 1025px) {
+  #honors-end-quote div #hnrs-pull-quote {
+    padding-left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
 }
