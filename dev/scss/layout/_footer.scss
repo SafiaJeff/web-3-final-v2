@@ -6,32 +6,30 @@ footer {
     background-color: $dark-blue;
     padding: 50px;
 
+    @include md{
+        padding: 20px 90px;
+    }
+
+    
+
     div {
-        @include md {
-            display: flex;
-            // border: red solid 3px;
+        @include md{
+            // padding: 0px 30px;
+            display: grid;
+            grid-template-columns: 80% auto ;
+            grid-template-rows: 20px 1fr;
+            grid-template-areas: "flink flogo"
+                                "fcopy flogo";
         }
 
         @include xl{
             padding: 0 10vw;
         }
 
-        #footer-title {
-            @include md {
-                flex: 1;
-            }
-
-            font-family: 'Fjalla One',
-            sans-serif;
-            color: $off-white;
-            margin: 0;
-            font-size: rem-calc(22);
-            padding-bottom: 20px;
-            line-height: rem-calc(30);
-        }
 
         #footer-links {
             @include md {
+                grid-area: flink;
                 flex: 2;
 
             }
@@ -40,7 +38,7 @@ footer {
 
             #break {
                 @include md {
-                    display: block;
+                    display: none;
                 }
 
                 @include lg {
@@ -57,12 +55,16 @@ footer {
 
 
                 @include md {
+                    // padding-top: 30px;
+                    font-size: rem-calc(18);
                     line-height: rem-calc(25);
                 }
 
                 @include lg {
-                    font-size: rem-calc(22);
+                    // font-size: rem-calc(22);
                 }
+
+                
             }
 
             a:link,
@@ -82,8 +84,9 @@ footer {
         #logos {
             @include md {
                 // flex: 1;
-
-                margin-left: auto;
+                // padding-top: 10px;
+                grid-area: flogo;
+                // margin-left: auto;
                 // margin-right: -100px;
                 // text-align: right;
             }
@@ -99,6 +102,10 @@ footer {
 
                 }
 
+                @include lg{
+                   display: flex;
+                }
+
                 li {
                     flex: 1;
                     font-size: rem-calc(20);
@@ -106,18 +113,36 @@ footer {
 
                     a:link,
                     a:visited {
-                        color: $yellow;
+                        color: $off-white;;
+
+                        @include md{
+                            color: $yellow;
+                        }
 
                         &:hover,
                         &:active {
-                            color: $off-white;
+                            color: $yellow;
+
+                            @include md{
+                                color: $off-white;
+                            }
                         }
                     }
 
                 }
             }
+        }
 
+        #copyright{
+            color: $blue-black;
+            padding-top: 20px;
+            padding-left: 0;
+            margin: 0;
 
+            @include md{
+                grid-area: fcopy;
+                font-size: rem-calc(15);
+            }
         }
     }
 }

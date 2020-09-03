@@ -149,17 +149,6 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/deploy/img/experimentation/experimentation-hero.jpg": {
-		"ft": 16384,
-		"iS": 130642,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/experimentation/experimentation-hero.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
 	"/deploy/img/experimentation/france.jpg": {
 		"ft": 16384,
 		"iS": 118987,
@@ -177,6 +166,17 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/deploy/img/experimentation/handshake.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/experimentation/index-experiment.jpg": {
+		"ft": 16384,
+		"iS": 251989,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/experimentation/index-experiment.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -1127,17 +1127,6 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/dev/js/tinySlider-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/dev/js/typed.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/dev/js/typed-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
