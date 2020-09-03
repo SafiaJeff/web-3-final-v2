@@ -424,114 +424,125 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/deploy/img/impact/change-img-2.jpg": {
+		"ft": 16384,
+		"iS": 3063362,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/impact/change-img-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/deploy/img/impact/change-img.jpg": {
 		"ft": 16384,
-		"iS": 333512,
+		"iS": 806214,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/deploy/img/impact/change-img.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
-	"/deploy/img/impact/hero-1-2.jpg": {
+	"/deploy/img/impact/hero-1.jpg": {
 		"ft": 16384,
-		"iS": 1967671,
+		"iS": 1629327,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/impact/hero-1-2.jpg",
+		"oAP": "/deploy/img/impact/hero-1.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"/deploy/img/impact/hero-2.jpg": {
 		"ft": 16384,
-		"iS": 137746,
+		"iS": 1237591,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/deploy/img/impact/hero-2.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"/deploy/img/impact/impact-intro-mobile.jpg": {
 		"ft": 16384,
-		"iS": 218684,
+		"iS": 2611557,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/deploy/img/impact/impact-intro-mobile.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"/deploy/img/impact/impact-intro.jpg": {
 		"ft": 16384,
-		"iS": 354953,
+		"iS": 3307548,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/deploy/img/impact/impact-intro.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
-	"/deploy/img/impact/moral-img-mobile.jpg": {
+	"/deploy/img/impact/moral-img-1.jpg": {
 		"ft": 16384,
-		"iS": 521289,
+		"iS": 1482984,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/impact/moral-img-mobile.jpg",
+		"oAP": "/deploy/img/impact/moral-img-1.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"/deploy/img/impact/moral-img.jpg": {
 		"ft": 16384,
-		"iS": 239503,
+		"iS": 463984,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/deploy/img/impact/moral-img.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
-	"/deploy/img/impact/sway-img-2-mobile.jpg": {
+	"/deploy/img/impact/sway-img-1.jpg": {
 		"ft": 16384,
-		"iS": 868013,
+		"iS": 1870968,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/impact/sway-img-2-mobile.jpg",
+		"oAP": "/deploy/img/impact/sway-img-1.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
-	"/deploy/img/impact/sway-img-2.jpg": {
+	"/deploy/img/impact/sway-img-mobile.jpg": {
 		"ft": 16384,
-		"iS": 476808,
+		"iS": 1548094,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/impact/sway-img-2.jpg",
+		"oAP": "/deploy/img/impact/sway-img-mobile.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
-	"/deploy/img/index/index-impact.jpg": {
+	"/deploy/img/impact/sway-img.jpg": {
 		"ft": 16384,
-		"iS": 169915,
+		"iS": 832273,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/index/index-impact.jpg",
+		"oAP": "/deploy/img/impact/sway-img.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"/deploy/img/index/intro-index.jpg": {
@@ -2977,7 +2988,7 @@
 	"externalServerAddress": "http://localhost:8888",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
-	"jsCheckerReservedNamesString": "ScrollTrigger, gsap, TweenLite, tns, Typed",
+	"jsCheckerReservedNamesString": "ScrollTrigger, gsap, TweenLite, tns, Typed, ",
 	"jsHintFlags2": {
 		"asi": {
 			"active": 0,
