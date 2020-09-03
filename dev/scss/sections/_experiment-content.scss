@@ -230,6 +230,9 @@
 					text-align: left;
 					padding: 0 100px;
 				}
+				@include lg{
+					height: 100vh;
+				}
 			}
 		}
 	}

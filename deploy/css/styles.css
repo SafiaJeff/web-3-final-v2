@@ -1852,6 +1852,11 @@ progress::-moz-progress-bar {
     padding: 0 100px;
   }
 }
+@media (min-width: 1025px) {
+  #experimentation #section-3-experiment #para-section-3 p {
+    height: 100vh;
+  }
+}
 #experimentation #section-4-experiment {
   background-color: #007785;
   position: relative;
