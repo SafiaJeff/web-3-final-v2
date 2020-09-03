@@ -3755,8 +3755,13 @@ textarea {
 }
 #index-history > div h3 {
   color: #D43732;
-  padding-right: 150px;
   text-align: left;
+}
+@media (min-width: 414px) {
+  #index-history > div h3 {
+    padding-right: 150px;
+    text-align: left;
+  }
 }
 @media (min-width: 768px) {
   #index-history > div h3 {

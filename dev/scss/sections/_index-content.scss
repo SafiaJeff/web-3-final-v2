@@ -556,10 +556,14 @@ height: 100vh;
 
         h3 {
             color: $dark-red;
+            text-align: left;
+
+            @include ip11{
             padding-right: 150px;
             // font-size: rem-calc(39);
             text-align: left;
             // margin-top: -700px;
+            }
 
             @include md {
                 color: $dark-red;
