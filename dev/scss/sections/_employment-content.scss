@@ -25,6 +25,7 @@
                 height: 500px;
                 width: 100vw;
                 background-position-y: -10px;
+                
 
                 @include md {
                     background-size: 200%;
@@ -189,6 +190,7 @@
                     background-position-x: -100px;
                     width: 230px;
                     background-size: 270%;
+                    background-repeat: no-repeat;
 
 
                     @include md {
@@ -201,7 +203,7 @@
                         grid-area: suitcase;
                         width: 42vw;
                         margin-top: 100px;
-                        background-size: 150%;
+                        background-size: 160%;
                         background-position-x: -10px;
 
                     }
@@ -268,7 +270,7 @@
 
             @include lg {
                 padding: 0px 20vw;
-                margin-top: -40px;
+                margin-top: -100px;
             }
 
             @include xl {
