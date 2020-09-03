@@ -111,13 +111,14 @@
 
         @include lg{
             width: 100%;
-            background-size: 200%;
+            background-size: 300%;
             background-position: center;
             background-position-x: -500px;
         }
 
         @include xl{
-            background-position-x: -400px;
+            background-position-x: -800px;
+            background-position-y: -400px;
         }
 
     }
