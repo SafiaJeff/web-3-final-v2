@@ -295,7 +295,7 @@
 	}
 	#section-5-experiment {
 		background-color: $red;
-		height: 100vh;
+		overflow: hidden;
 		@include md {
 			display: grid;
 			gap: 3%;
