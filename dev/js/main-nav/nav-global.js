@@ -2,8 +2,7 @@
 var canYouSeeTheMenu = false;
 
 var navWidth = $("#nav-menu").outerWidth();
-var navHeight = $("#main-nav").outerHeight();
-// var navWidth = navWidthFull / 2;
+var navHeight = $("#nav-img").outerHeight();
 //move the nav off screen on the Y axis
 gsap.set("#nav-menu", {
     x: navWidth
@@ -48,7 +47,7 @@ function hideShowMainNav() {
     }
 }
 
-var menuBackground = document.querySelector("#main-nav");
+var menuBackground = document.querySelector("#nav-menu");
 window.onclick = function (event) {
     if (event.target == menuBackground) {
         hideShowMainNav();
@@ -60,8 +59,8 @@ function reportWindowSize() {
     if (canYouSeeTheMenu === false) {
         //console.log("can't see the main nav");
         //console.log($("#main-nav").outerHeight());
-        navWidth = $("#main-nav").outerWidth();
-        navHeight = $("#main-nav").outerHeight();
+        navWidth = $("#nav-menu").outerWidth();
+        navHeight = $("#nav-img").outerHeight();
         gsap.set("#nav-menu", {
             x: navWidth
         })
