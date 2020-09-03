@@ -4,7 +4,7 @@
 #experimentation {
 	background-color: $off-white;
 	#hero-experiment {
-		padding-top: 90px;
+		padding-top: 70px;
 		@include lg {
 			padding-top: 200px;
 		}
@@ -116,7 +116,7 @@
 			background-position: center;
 			background-position-x: -150px;
 			background-size: cover;
-			height: 50vh;
+			height: 30vh;
 			margin-top: 100px;
 			@include md {
 				grid-column-start: 1;
@@ -130,8 +130,11 @@
 			}
 		}
 		#para-section-1 {
-			padding-top: 100px;
+			p{
+				padding: 15px 15px 0;
+			}
 			@include md {
+				padding-top: 100px;
 				// margin-top: 150px;
 				grid-column-start: 2;
 				grid-row-start: 2;
@@ -147,7 +150,14 @@
 	}
 	#section-2-experiment {
 		#pullquote-section-2 {
-			margin-top: 150px;
+			margin-top: 0px;
+			@include md {
+				margin: auto 3% auto 30%;
+			}
+			@include xl {
+				margin-left: 30%;
+				margin-right: 15%;
+			}
 			h3 {
 				// margin-top: ;
 				color: $green-blue;
@@ -163,13 +173,7 @@
 					margin-bottom: 10vh;
 				}
 			}
-			@include md {
-				margin: auto 3% auto 30%;
-			}
-			@include xl {
-				margin-left: 30%;
-				margin-right: 15%;
-			}
+
 		}
 		#image-section-2 {
 			background-image: url('../img/experimentation/france.jpg');
@@ -198,8 +202,11 @@
 	}
 	#section-3-experiment {
 		background-color: $red;
-		margin: 100px 0;
+		padding: 100px 0;
 		position: relative;
+		@include lg{
+			padding: 150px 0;
+		}
 		#para-section-3 {
 			align-items: center;
 			display: flex;
@@ -213,6 +220,7 @@
 				margin-right: 25%;
 			}
 			p {
+				padding: 0 15px;
 				color: $white;
 				text-align: justify;
 				@include md {
@@ -232,14 +240,18 @@
 			padding-top: 100px;
 		}
 		#pullquote-section-4 {
-			align-items: center;
+			align-items: top;
 			display: flex;
 			height: 100vh;
 			justify-content: center;
+			padding-top: 100px;
+
 			@include md {
+				align-items: center;
 				grid-column-start: 1;
 				grid-row-start: 1;
 				padding-left: 20px;
+				padding-top: auto;
 			}
 			@include lg {
 				height: auto;
@@ -249,6 +261,9 @@
 				padding-left: 10px;
 				padding-right: 10px;
 				text-align: right;
+				font-size: rem-calc(20);
+				line-height: rem-calc(40);
+
 				@include md {
 					color: $dark-blue;
 					font-family: 'Libre Franklin', sans-serif;
@@ -265,7 +280,7 @@
 			background-image: url('../img/experimentation/logos.jpg');
 			background-position: center;
 			background-size: cover;
-			height: 100vh;
+			height: 60vh;
 			@include md {
 				grid-column-start: 2;
 				height: 60vh;
@@ -275,6 +290,14 @@
 			}
 		}
 		#para-section-4 {
+			margin-top: -70vh;
+			p{
+				color: $off-white;
+				@include md{
+					color: $blue-black;
+				}
+			}
+
 			@include md {
 				grid-column-end: 3;
 				grid-column-start: 1;
@@ -296,6 +319,11 @@
 	#section-5-experiment {
 		background-color: $red;
 		overflow: hidden;
+		display: grid;
+		gap: 3%;
+		grid-template-columns: auto;
+		padding: 100px 20px;
+
 		@include md {
 			display: grid;
 			gap: 3%;
@@ -311,6 +339,8 @@
 			background-position: center;
 			background-size: cover;
 			height: 50vh;
+			grid-column-start: 1;
+			grid-row-start: 1;
 			@include md {
 				background-position: -50px;
 				grid-column-start: 1;
@@ -325,6 +355,8 @@
 			background-position: center;
 			background-size: cover;
 			height: 50vh;
+			grid-column-start: 1;
+			grid-row-start: 2;
 			@include md {
 				grid-column-end: 3;
 				grid-column-start: 1;
@@ -342,6 +374,8 @@
 			background-position: center;
 			background-size: cover;
 			height: 50vh;
+			grid-column-start: 1;
+			grid-row-start: 3;
 			@include md {
 				grid-column-start: 2;
 				grid-row-start: 1;
