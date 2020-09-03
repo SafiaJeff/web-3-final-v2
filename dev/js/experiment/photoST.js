@@ -1,3 +1,4 @@
+//animates gallery photos to move up one at a time
 if(experimentChecker){
     const galleryTimeline = gsap.timeline();
 

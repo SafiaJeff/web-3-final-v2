@@ -1,4 +1,4 @@
-
+// animates "as a result" subtitle from left to right
 if(experimentChecker){
     const asAResult = gsap.timeline();
     asAResult.from(".pq1", {xPercent:-10});
@@ -15,7 +15,7 @@ if(experimentChecker){
     });
 }
 
-
+//animates "who can forget" pullquote from left to right
 if(experimentChecker){
     const whoCanForget = gsap.timeline();
     whoCanForget.from(".pq2", {alpha: 0, xPercent:-10});

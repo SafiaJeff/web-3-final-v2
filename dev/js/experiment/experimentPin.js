@@ -18,7 +18,7 @@ if(experimentChecker){
             id:"afterObama"
     });
 } 
-
+// pins "as a result" section with photo
 if(experimentChecker){
     
     gsap.to("#section-2-experiment",{ease: "none", scrollTrigger:{
