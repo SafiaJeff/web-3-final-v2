@@ -209,6 +209,7 @@
 		}
 		@include lg{
 			padding: 150px 0;
+			height: 70vh;
 		}
 		#para-section-3 {
 			align-items: center;
@@ -232,6 +233,7 @@
 				}
 				@include lg{
 					height: 100vh;
+					margin-top: 30vh;
 				}
 			}
 		}

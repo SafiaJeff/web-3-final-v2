@@ -1822,6 +1822,7 @@ progress::-moz-progress-bar {
 @media (min-width: 1025px) {
   #experimentation #section-3-experiment {
     padding: 150px 0;
+    height: 70vh;
   }
 }
 #experimentation #section-3-experiment #para-section-3 {
@@ -1855,6 +1856,7 @@ progress::-moz-progress-bar {
 @media (min-width: 1025px) {
   #experimentation #section-3-experiment #para-section-3 p {
     height: 100vh;
+    margin-top: 30vh;
   }
 }
 #experimentation #section-4-experiment {

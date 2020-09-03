@@ -1,7 +1,6 @@
 //pins pink quote box momentarily on scroll 
 
 if(experimentChecker){
-    
     // const afterObama = gsap.timeline();
     // afterObama.from(".para-3-experiment", {alpha: 1});
     
@@ -57,7 +56,7 @@ if(experimentChecker){
         pinSpacing: false,
             start: "top 40%",
             end: "bottom 40%",
-            //markers: true,
+            markers: true,
             //scrub: 1
             id:"afterObama"
       });  
@@ -78,16 +77,3 @@ if(experimentChecker){
         id:"as-result-2"
     }})
 }
-// pins "who can forget" section with logo photo
-// if(experimentChecker){
-    
-//     gsap.to("#section-4-experiment",{ease: "none", scrollTrigger:{
-//         trigger:"#section-4-experiment",
-//         pin: true,
-//         pinSpacing: false,
-//         start: "top 76",
-//         end: "bottom 76",
-//         // markers:true
-//         id:"as-result-2"
-//     }})
-// }
