@@ -3702,6 +3702,11 @@ textarea {
     grid-template-columns: "ho1img ho1txt";
   }
 }
+@media (min-width: 1025px) {
+  #honors-01 {
+    grid-template-columns: 30% auto;
+  }
+}
 #honors-01 #honors-01-img {
   background-image: url("../img/safi/tablet-mac.jpg");
   background-position: center;
@@ -3726,6 +3731,11 @@ textarea {
     background-size: 200%;
     background-position: center;
     background-position-x: -500px;
+  }
+}
+@media (min-width: 1440px) {
+  #honors-01 #honors-01-img {
+    background-position-x: -400px;
   }
 }
 #honors-01 #honors-01-p {
@@ -3754,6 +3764,14 @@ textarea {
     padding: 0px 30px;
   }
 }
+@media (min-width: 1440px) {
+  #honors-01 #honors-01-p {
+    width: 40vw;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 /* =============
     Logo Design 101
@@ -3777,6 +3795,12 @@ textarea {
     margin-top: -500px;
   }
 }
+@media (min-width: 1025px) {
+  #honors-logo-design div h3 {
+    margin-top: -400px;
+    padding-left: 28%;
+  }
+}
 #honors-logo-design div #honors-logo-img {
   width: 50vw;
   height: 50vh;
@@ -3790,6 +3814,12 @@ textarea {
     height: 60vh;
   }
 }
+@media (min-width: 1440px) {
+  #honors-logo-design div #honors-logo-img {
+    margin-right: 10%;
+    width: 35vw;
+  }
+}
 #honors-logo-design div p {
   color: #D43732;
 }
@@ -3799,6 +3829,14 @@ textarea {
     padding-right: 55%;
     margin-top: -100px;
     text-align: right;
+  }
+}
+@media (min-width: 1440px) {
+  #honors-logo-design div p {
+    width: 35vw;
+    padding: 0;
+    margin-top: -150px;
+    padding-left: 12%;
   }
 }
 
@@ -3828,6 +3866,12 @@ textarea {
     grid-template-rows: 1fr;
     grid-template-columns: 40% auto;
     grid-template-areas: "randlogo randtxt";
+  }
+}
+@media (min-width: 1440px) {
+  #honors-rand {
+    grid-template-columns: 10% 40% auto 10%;
+    grid-template-areas: ". randlogo randtxt .";
   }
 }
 #honors-rand #honors-rand-img {
@@ -3897,6 +3941,12 @@ textarea {
     grid-template-areas: "obtxt oblogo";
   }
 }
+@media (min-width: 1440px) {
+  #honors-obama {
+    padding-left: 10%;
+    padding-right: 15%;
+  }
+}
 #honors-obama p {
   padding-right: 20px;
   padding-left: 15px;
@@ -3962,6 +4012,12 @@ textarea {
     width: 10%;
   }
 }
+@media (min-width: 1440px) {
+  #honors-critics div h3 {
+    width: 30%;
+    padding-left: 20%;
+  }
+}
 #honors-critics div #honors-critics-p1 {
   margin: 0;
   padding-left: 15px;
@@ -3971,6 +4027,12 @@ textarea {
   #honors-critics div #honors-critics-p1 {
     padding-left: 10%;
     padding-right: 20%;
+  }
+}
+@media (min-width: 1440px) {
+  #honors-critics div #honors-critics-p1 {
+    padding-left: 20%;
+    padding-right: 30%;
   }
 }
 #honors-critics div #honors-critics-p2 {
@@ -3983,6 +4045,12 @@ textarea {
   #honors-critics div #honors-critics-p2 {
     padding-left: 20%;
     padding-right: 10%;
+  }
+}
+@media (min-width: 1440px) {
+  #honors-critics div #honors-critics-p2 {
+    padding-left: 30%;
+    padding-right: 20%;
   }
 }
 

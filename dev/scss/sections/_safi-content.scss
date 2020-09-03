@@ -84,6 +84,10 @@
         grid-template-columns: "ho1img ho1txt";
     }
 
+    @include lg{
+        grid-template-columns: 30% auto;
+    }
+
     
 
     #honors-01-img {
@@ -112,6 +116,10 @@
             background-position-x: -500px;
         }
 
+        @include xl{
+            background-position-x: -400px;
+        }
+
     }
 
     #honors-01-p {
@@ -138,6 +146,13 @@
             margin-bottom: auto;
             padding: 0px 30px;
             // display: flex;
+        }
+
+        @include xl{
+            width: 40vw;
+            padding: 0;
+            margin-left: auto;
+            margin-right: auto;
         }
            
     }
@@ -171,6 +186,11 @@
                 text-align: left;
                 margin-top: -500px;
             }
+
+            @include lg{
+                margin-top: -400px;
+                padding-left: 28%;
+            }
         }
 
         #honors-logo-img {
@@ -185,6 +205,11 @@
                width: 50vw;
                height: 60vh;
             }
+
+            @include xl{
+                margin-right: 10%;
+                width: 35vw;
+            }
         }
 
         p {
@@ -195,6 +220,13 @@
                 padding-right: 55%;
                 margin-top: -100px;
                 text-align: right;
+            }
+
+            @include xl{
+                width: 35vw;
+                padding:0;
+                margin-top: -150px;
+                padding-left: 12%;
             }
         }
     }
@@ -227,6 +259,13 @@
         grid-template-columns: 40% auto;
         grid-template-areas: "randlogo randtxt";
     }
+
+    @include xl{
+        grid-template-columns: 10% 40% auto 10%;
+        grid-template-areas: ". randlogo randtxt .";
+    }
+
+    
 
     #honors-rand-img {
         width: 80vw;
@@ -294,6 +333,10 @@
         grid-template-rows: 1fr;
         grid-template-areas: "obtxt oblogo";
     }
+    @include xl{
+        padding-left: 10%;
+        padding-right: 15%;
+    }
 
     p {
         padding-right: 20px;
@@ -360,6 +403,11 @@
             @include lg{
                 width: 10%;
             }
+
+            @include xl{
+                width: 30%;
+                padding-left: 20%;
+            }
         }
 
         #honors-critics-p1 {
@@ -370,6 +418,11 @@
                 padding-left: 10%;
                 padding-right: 20%;
 
+            }
+
+            @include xl{
+                padding-left: 20%;
+                padding-right: 30%;
             }
         }
 
@@ -384,6 +437,11 @@
                 padding-right: 10%;
                 
             }
+            @include xl{
+                padding-left: 30%;
+                padding-right: 20%;
+            }
+            
         }
     }
 }
