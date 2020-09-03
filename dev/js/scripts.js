@@ -38,11 +38,15 @@
 // @codekit-prepend "gallery/gallerySwipe.js"; 
 // @codekit-prepend "gallery/galleryPin.js"; 
 // @codekit-prepend "gallery/galleryPara.js"; 
+<<<<<<< Updated upstream
 
 // @codekit-prepend "safi/safi-headers.js"; 
 // @codekit-prepend "safi/safi-paragraphs.js"; 
 // @codekit-prepend "safi/safi-pins.js"; 
 // @codekit-prepend "safi/safi-pullquotes.js"; 
 // @codekit-prepend "typed.js"; 
+=======
+// @codekit-prepend "typed.js";
+>>>>>>> Stashed changes
 
 

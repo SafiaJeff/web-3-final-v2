@@ -8,10 +8,17 @@ expParaTimeline.from(".para1", {yPercent:30, alpha:0});
 ScrollTrigger.create({
     animation: expParaTimeline,
     toggleActions: "play play none none",
+<<<<<<< Updated upstream
     trigger:"#section-1-experiment",
     // pin: true,
     //     pinSpacing: true,
         start: "top 10%"
+=======
+    trigger:"#pullquote-section-1",
+    pin: true,
+        pinSpacing: true,
+        start: "top 75%"
+>>>>>>> Stashed changes
         //end: "bottom top",
         //scrub: 1
 });
@@ -27,7 +34,7 @@ ScrollTrigger.create({
     animation: expPara2Timeline,
     toggleActions: "play play none none",
     trigger:"#image-section-4",
-        start: "top top"
+        start: "top 75%"
         //end: "bottom top",
         //scrub: 1
 });
