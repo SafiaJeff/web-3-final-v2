@@ -3634,9 +3634,9 @@ textarea {
   background-position: center;
   background-size: 400%;
   background-repeat: no-repeat;
-  height: 800px;
+  height: 100vh;
   width: 100vw;
-  background-position-y: 50px;
+  background-position-y: -90px;
 }
 @media (min-width: 768px) {
   #honors-hero #honors-hero-img {
@@ -3648,14 +3648,23 @@ textarea {
     background-position-y: -50px;
   }
 }
+@media (min-width: 1025px) {
+  #honors-hero #honors-hero-img {
+    width: 90%;
+    background-size: 150%;
+    background-position-y: -150px;
+    background-position-x: -150px;
+  }
+}
 #honors-hero #honors-title {
-  color: #2E2E41;
+  color: #D43732;
   bottom: 200px;
-  font-size: 4.375rem;
+  font-size: 5.625rem;
   text-align: left;
   margin-top: -500px;
   margin-bottom: 100px;
   padding: 0px 5px;
+  padding-left: 20px;
 }
 @media (min-width: 768px) {
   #honors-hero #honors-title {
@@ -3670,6 +3679,7 @@ textarea {
 @media (min-width: 1025px) {
   #honors-hero #honors-title {
     font-size: 9.375rem;
+    margin-top: -600px;
   }
 }
 
@@ -3683,6 +3693,13 @@ textarea {
 @media (min-width: 768px) {
   #honors-01 {
     height: 80vh;
+  }
+}
+@media (min-width: 1025px) {
+  #honors-01 {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-columns: "ho1img ho1txt";
   }
 }
 #honors-01 #honors-01-img {
@@ -3703,6 +3720,14 @@ textarea {
     background-position-x: -700px;
   }
 }
+@media (min-width: 1025px) {
+  #honors-01 #honors-01-img {
+    width: 100%;
+    background-size: 200%;
+    background-position: center;
+    background-position-x: -500px;
+  }
+}
 #honors-01 #honors-01-p {
   margin-top: -700px;
   padding: 100px 30px 0px 30px;
@@ -3719,6 +3744,16 @@ textarea {
     line-height: 1.4375rem;
   }
 }
+@media (min-width: 1025px) {
+  #honors-01 #honors-01-p {
+    padding: 0;
+    color: #2E2E41;
+    margin: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 0px 30px;
+  }
+}
 
 /* =============
     Logo Design 101
@@ -3729,7 +3764,7 @@ textarea {
 #honors-logo-design div h3 {
   text-align: right;
   padding-right: 10%;
-  padding-left: 10%;
+  padding-left: 30%;
   margin-top: -350px;
   padding-bottom: 250px;
   color: #EF777A;
@@ -3780,11 +3815,19 @@ textarea {
 }
 @media (min-width: 768px) {
   #honors-rand {
-    height: 80vh;
+    height: 100vh;
     display: grid;
     grid-template-columns: 30% auto;
     grid-template-rows: 50% auto;
     grid-template-areas: "randlogo ." ". randtxt";
+  }
+}
+@media (min-width: 1025px) {
+  #honors-rand {
+    height: 100vh;
+    grid-template-rows: 1fr;
+    grid-template-columns: 40% auto;
+    grid-template-areas: "randlogo randtxt";
   }
 }
 #honors-rand #honors-rand-img {
@@ -3800,6 +3843,14 @@ textarea {
     padding-left: 30%;
   }
 }
+@media (min-width: 1025px) {
+  #honors-rand #honors-rand-img {
+    margin: 0;
+    padding: 0;
+    width: 30vw;
+    padding-left: 10%;
+  }
+}
 #honors-rand p {
   padding-right: 20px;
   padding-left: 20px;
@@ -3810,6 +3861,13 @@ textarea {
     grid-area: randtxt;
     margin-bottom: auto;
     padding-right: 15%;
+  }
+}
+@media (min-width: 1025px) {
+  #honors-rand p {
+    margin: 0;
+    padding: 0;
+    padding-right: 10%;
   }
 }
 
@@ -3826,11 +3884,17 @@ textarea {
 }
 @media (min-width: 768px) {
   #honors-obama {
-    height: 80vh;
     display: grid;
     grid-template-columns: auto 30%;
     grid-template-rows: 50% auto;
     grid-template-areas: ". oblogo" "obtxt .";
+  }
+}
+@media (min-width: 1025px) {
+  #honors-obama {
+    height: 100vh;
+    grid-template-rows: 1fr;
+    grid-template-areas: "obtxt oblogo";
   }
 }
 #honors-obama p {
@@ -3849,6 +3913,15 @@ textarea {
     padding-left: 15%;
   }
 }
+@media (min-width: 1025px) {
+  #honors-obama p {
+    margin: 0;
+    padding: 0;
+    padding-left: 10%;
+    text-align: right;
+    padding-right: 10%;
+  }
+}
 #honors-obama #honors-obama-img {
   width: 50vw;
 }
@@ -3857,6 +3930,14 @@ textarea {
     width: 30vw;
     grid-area: oblogo;
     margin-left: -100px;
+  }
+}
+@media (min-width: 1025px) {
+  #honors-obama #honors-obama-img {
+    margin: 0;
+    padding: 0;
+    padding-right: 10%;
+    width: 23vw;
   }
 }
 
@@ -3874,6 +3955,11 @@ textarea {
 @media (min-width: 768px) {
   #honors-critics div h3 {
     padding-left: 10%;
+  }
+}
+@media (min-width: 1025px) {
+  #honors-critics div h3 {
+    width: 10%;
   }
 }
 #honors-critics div #honors-critics-p1 {
@@ -3901,7 +3987,7 @@ textarea {
 }
 
 #honors-end-quote {
-  height: 60vh;
+  height: 80vh;
   background-color: #B9DFE6;
   display: flex;
   justify-content: center;
@@ -3910,6 +3996,11 @@ textarea {
 @media (min-width: 768px) {
   #honors-end-quote {
     height: 50vh;
+  }
+}
+@media (min-width: 1025px) {
+  #honors-end-quote {
+    height: 70vh;
   }
 }
 #honors-end-quote div #hnrs-pull-quote {
@@ -3921,6 +4012,15 @@ textarea {
 @media (min-width: 768px) {
   #honors-end-quote div #hnrs-pull-quote {
     text-align: left;
-    padding-left: 10%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 1025px) {
+  #honors-end-quote div #hnrs-pull-quote {
+    padding-left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
   }
 }
