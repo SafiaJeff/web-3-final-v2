@@ -3449,6 +3449,8 @@ textarea {
 @media (min-width: 1025px) {
   #index-publicity {
     height: 95vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 #index-publicity > div #publicity-photo {
@@ -3650,6 +3652,7 @@ textarea {
 }
 @media (min-width: 1025px) {
   #index-gallery-slider > div {
+    padding-top: 150px;
     padding-bottom: 150px;
   }
 }
