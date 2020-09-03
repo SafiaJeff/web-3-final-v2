@@ -166,9 +166,15 @@
     @include lg{
         margin-bottom: -150px;
     }
+<<<<<<< Updated upstream
 
     div{
         overflow: hidden;
+=======
+    overflow: hidden;
+    div{
+        
+>>>>>>> Stashed changes
 
         @include md{
             display: grid;

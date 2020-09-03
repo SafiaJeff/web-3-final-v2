@@ -2731,6 +2731,12 @@ textarea {
   z-index: 300;
   background-color: #F5F5EE;
   padding-top: 1px;
+  overflow: hidden;
+}
+@media (min-width: 1025px) {
+  #moral-section {
+    margin-bottom: -150px;
+  }
 }
 @media (min-width: 1025px) {
   #moral-section {
