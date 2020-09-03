@@ -13,14 +13,15 @@ img{
         position: relative;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-end;
         @include md{
             display: flex;
-            justify-content: flex-end;
+            justify-content: flex-start;
         }
         img{
             display: none;
             @include md {
+                object-position: left center;
                 display: block;
                 height: 550px;
                 width: 90%;
@@ -32,12 +33,16 @@ img{
         }
         >div{
             background-image: url(../img/gallery/hero-1.jpg);
+           
+            background-position: left top;
+            background-size: cover;
+
             width: 100vw;
-            height: 70vh;
+            height: 80vh;
             @include md{
                 height: auto;
                 display: flex;
-                justify-content: flex-start;
+                justify-content: flex-end;
                 align-items: center;
                 background-image: none;
                 position: absolute;
@@ -45,21 +50,22 @@ img{
             }
             h1{
                 text-align: center;
-                color: $red;
+                color: $dark-red;
+                padding-bottom: 100px;
                 @include md{
+                    padding-bottom: 0px;
                     text-align: left;
-                    margin: 300px 0 0 6%;
+                    margin: 40vh 7% 0 0;
                 }
             }
         }
         p{
-            margin: 0 15%;
+            margin: 0 12%;
             text-align: justify;
-            color: $red;
+            color: $dark-red;
             @include md{
                 width: 550px;
-                text-align: right;
-                margin-right: 10%;
+                margin-left: 10%;
             }
         }
     }
@@ -73,19 +79,21 @@ img{
         background-position: top center;
         display: flex;
         align-items: center;
+        justify-content: flex-end;
+        overflow: hidden;
         @include md{
             height: 100vh;
         }
         p{
             width: auto;
-            margin: 5%;
+            margin: 0 10%;
             color: $off-white;
             @include md{
-                margin-left: 10%;
-                width: 70vw;
+                text-align: right;
+                margin-right: 10%;
+                margin-left: 36%;
             }
             @include lg{
-                
                 width: 500px;
             }
         }
@@ -141,33 +149,80 @@ img{
 }
 #gallery-content-2{
     background-color: $green-blue;
-    height: 70vh;
+    height: 80vh;
+    position: relative;
     display: flex;
     align-items: center;
-    
+    justify-content: center;
     @include lg{
         height: 100vh;
     }
     img{
-        width: 40%;
-        height: 70vh;
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        left: 0;
+        width: 30%;
+        height: 80vh;
         @include md{
-            width: 60%;
+            width: 45%;
         }
         @include lg{
+            width: 55%;
             height: 100vh;
         }
     }
-    p{
-        width: 230px;
-        margin-left: -16%;
-        text-align: justify;
+    #gallery-content-2-text{
+        //position: absolute;
+        height: auto;
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 40% auto 15px;
+        grid-template-rows: "auto auto";
+        grid-template-areas: 
+        "content-2-1 content-2-1 content-2-1" 
+        ". content-2-2 .";
         @include md{
-            text-align: left;
-            width: 350px;
-            margin-left: -5%;
+            display: grid;
+            grid-template-columns: 35% 20% auto;
+            grid-template-rows: "auto auto";
+            grid-template-areas: 
+            ". content-2-1 content-2-1"
+            ". . content-2-2";
+        }
+        @include lg{
+            display: grid;
+            grid-template-columns: 45% 20% auto;
+            grid-template-rows: "auto auto";
+            grid-template-areas: 
+            ". content-2-1 content-2-1"
+            ". . content-2-2";
+        }
+        
+        h3{
+            color: $blue-black;
+            padding-left: 10%;
+            width: 340px;
+            @include md{
+                width: unset;
+                padding: 0 10% 0 0;
+                grid-area: content-2-1;
+            }
+        }
+        p{
+            grid-area: content-2-2;
+            color: $blue-black;
+            @include md{
+                margin-top: -12%;
+                padding-right: 10%;
+                text-align: left;
+            }
+            @include lg{
+                width: 380px;
+            }
         }
     }
+    
 }
 #gallery-content-3{
     background-color: $blue;
@@ -205,16 +260,21 @@ img{
             height: auto;
         }
         p{
+            padding: 50px 5%;
             text-align: justify;
-            padding-left: 5%;
-            padding-right: 5%;
             width: auto;
             color: $off-white;
-            line-height: rem-calc(28);
+            line-height: rem-calc(25);
             @include md{
+                line-height: rem-calc(28);
+                padding-top: 100px;
+                padding-bottom: 100px;
                 text-align: left;
                 width: 50%;
                 padding-left: 15%;
+            }
+            @include lg{
+                padding-top: 150px;
             }
             
         }
@@ -368,18 +428,17 @@ img{
         }
         h3{
             color: $yellow;
-            font-size: rem-calc(49);
             position: absolute;
             text-align: right;
-            top: -3%;
+            top: -5%;
             right: 8%;
             @include md{
-                top: 9%;
-                right: 8%;
+                top: 7%;
+                right: 12%;
             }
             @include lg{
-                top: 12%;
-                left: 8%;
+                top: 10%;
+                left: 5%;
                 right: unset;
             }
             @include xl{

@@ -13,7 +13,7 @@ if(galleryChecker){
         }
     })
     
-
+    
     ScrollTrigger.matchMedia({
         //just desktop = NO MOBILE OR TABLET
         "(min-width: 1025px)": function () {
@@ -31,25 +31,50 @@ if(galleryChecker){
                     id: "content-2-pin"
                 }
             }, "content2Scroll")
-            gsap.from("#content-2-quote", {
-                yPercent: 100,
+            gsap.from("#content-2-header", {
+                xPercent: 10,
                 alpha: 0,
                 duration:0.5,
                 scrollTrigger: {
                     trigger: "#gallery-content-2",
                     start: "top 50%",
-                    scrub: 1,
+                    //scrub: 1,
                     toggleActions: "play none none none",
                     //markers:true,
                     id: "content-3-text"
                 }
             }, "content2Scroll")
+            gsap.from("#content-2-quote", {
+                yPercent: 100,
+                alpha: 0,
+                scrollTrigger: {
+                    trigger: "#gallery-content-2",
+                    start: "top 75%",
+                    scrub: 1,
+                    toggleActions: "play none none none",
+                    //markers:true,
+                    id: "content-3-text"
+                }
+            })
+            
             
         },
         //just mobile and tablet = NO DESKTOP
         "(max-width: 1024px)": function () {
             //just the "what goes into a good.." moves; the section is not pinned
-            
+            gsap.from("#content-2-header", {
+                xPercent: 10,
+                alpha: 0,
+                duration:0.5,
+                scrollTrigger: {
+                    trigger: "#gallery-content-2",
+                    start: "top 30%",
+                    //scrub: 1,
+                    toggleActions: "play none none none",
+                    //markers:true,
+                    id: "content-3-text"
+                }
+            })
             gsap.from("#content-2-quote", {
                 yPercent: 100,
                 alpha: 0,
@@ -63,6 +88,7 @@ if(galleryChecker){
                     id: "content-3-text"
                 }
             })
+           
         }}
     )
 
