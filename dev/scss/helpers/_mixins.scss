@@ -97,11 +97,11 @@ html {
 
 /* ---------------- Media Queries ---------------- */
 // Very small devices
-// @mixin extrasm {
-//     @media (min-width: #{$screen-extrasm-min}) {
-//         @content;
-//     }
-// }
+@mixin extrasm {
+    @media (min-width: #{$screen-extrasm-min}) {
+        @content;
+    }
+}
 //Usage
 // @include extrasm{
 //     grid-template-columns: 100%;

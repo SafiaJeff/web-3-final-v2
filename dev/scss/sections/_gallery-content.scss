@@ -157,6 +157,9 @@ img{
     @include lg{
         height: 100vh;
     }
+    // @include sm{
+    //     height: 80vh;
+    // }
     img{
         position: absolute;
         z-index: 0;
