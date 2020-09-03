@@ -23,7 +23,7 @@ indexParaTimeline2.from(".indexPara2", {alpha:0, yPercent:10});
 
 ScrollTrigger.create({
     trigger: ".indexPara2",
-    start: "top 70%",
+    start: "top 80%",
     end: "bottom 50%",
     animation: indexParaTimeline2,
     toggleActions: "play play none none",
@@ -41,7 +41,7 @@ indexParaTimeline3.from(".indexPara3", {alpha:0, yPercent:10});
 
 ScrollTrigger.create({
     trigger: ".indexPara3",
-    start: "top 70%",
+    start: "top 80%",
     end: "bottom 50%",
     animation: indexParaTimeline3,
     toggleActions: "play play none none",
@@ -59,7 +59,7 @@ indexParaTimeline4.from(".indexPara4", {alpha:0, yPercent:10});
 
 ScrollTrigger.create({
     trigger: ".indexPara4",
-    start: "top 50%",
+    start: "top 70%",
     end: "bottom 50%",
     animation: indexParaTimeline4,
     toggleActions: "play play none none",

@@ -523,6 +523,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/deploy/img/index/handshake2.jpg": {
+		"ft": 16384,
+		"iS": 670177,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/index/handshake2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/deploy/img/index/index-impact.jpg": {
 		"ft": 16384,
 		"iS": 169915,

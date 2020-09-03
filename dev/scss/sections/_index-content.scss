@@ -10,16 +10,8 @@
 /* --------------------------
     Intro
  --------------------------*/
- #index-opening {
+#index-opening {
     height: 100vh;
-
-    @include md {
-        height: 75vh;
-    }
-
-    @include lg {
-        height: 100vh;
-    }
 
     >div {
         align-items: center;
@@ -28,21 +20,21 @@
             background-image: url('../img/index/intro-index.jpg');
             background-size: cover;
             background-position-x: -200px;
-            // background-position: right center;
             background-repeat: no-repeat;
-            height: 50vh;
-            // width: 100vw;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            height: 60vh;
 
             @include md {
-                background-size: 100%;
-                height: 50vh;
+                background-size: 200%;
+                height: 70vh;
                 background-position: center bottom;
             }
 
             @include lg {
+                height: 65vh;
+                background-position-y: -500px;
+            }
+
+            @include xl {
                 height: 100vh;
             }
         }
@@ -50,8 +42,8 @@
         h1 {
             font-size: rem-calc(50);
             color: $blue-black;
-            margin-top: -200px;
-            padding-bottom: 90px;
+            margin-top: -350px;
+            padding-bottom: 140px;
             text-align: right;
             padding-right: 20px;
 
@@ -59,7 +51,7 @@
                 font-size: rem-calc(80);
                 // font-size: rem-calc(100);
                 text-align: left;
-                margin-top:-300px;
+                margin-top: -350px;
                 padding: 0px 50px 100px 50px
             }
 
@@ -67,15 +59,16 @@
                 font-size: rem-calc(100);
                 text-align: left;
                 width: 80vw;
-                margin-top: -500px;
+                margin-top: -400px;
                 padding-left: 10vw;
             }
 
-            @include xl {font-size: rem-calc(125);
+            @include xl {
+                font-size: rem-calc(125);
                 padding-right: 20vw;
                 padding-left: 20vw;
                 width: auto;
-                margin-top:-650px;
+                margin-top: -650px;
             }
         }
 
@@ -93,19 +86,21 @@
                 text-align: left;
                 padding-right: 20%;
                 padding-left: 20%;
-                color: $blue-black;
+                // color: $blue-black;
 
             }
 
             @include lg {
                 padding-left: 10vw;
-                margin-top: -50px;
+                margin-top: 0px;
                 width: 50vw;
                 text-align: left;
             }
 
-            @include xl{
+            @include xl {
                 padding-left: 20vw;
+                //     margin-bottom: 100px;
+                //     padding-bottom: 100px;
             }
 
 
@@ -119,23 +114,37 @@
  --------------------------*/
 #index-experimentation {
     //height: 100vh;
-    @include md{
+
+    margin-top: -50px;
+
+    @include md {
         margin-bottom: 0;
     }
+
+    @include lg {
+        margin-top: -150px;
+    }
+
+    @include xl {
+        margin-top: 100px;
+    }
+
     // background-color: $blue;
     >div {
         // padding-top: 100px;
         padding-bottom: 250px;
-                
-        @include md {padding-top: 100px;
+
+        @include md {
+            padding-top: 100px;
             display: grid;
             grid-template-columns: 50% auto;
             grid-template-areas:
                 "e-t e-im"
                 "e-c e-im";
-                padding-bottom: 150px;
+            padding-bottom: 150px;
         }
-        @include lg{
+
+        @include lg {
             padding-top: 150px;
             padding-bottom: 150px;
         }
@@ -160,7 +169,7 @@
 
             }
 
-            @include xl{
+            @include xl {
                 margin-right: 10%;
                 width: 100%;
                 margin-left: -20%;
@@ -180,21 +189,24 @@
                 justify-content: center;
                 align-items: flex-end;
                 text-align: right;
-                margin-right: -70px;
+                margin-right: -105px;
                 color: $dark-blue;
             }
 
             @include lg {
                 margin-right: -40vw;
-                padding-top: 100px;
-                padding-left: 50vw;
+                padding-top: 70px;
+                padding-left: 65vw;
+                text-align: left;
 
             }
 
-            @include xl{
+            @include xl {
                 margin-right: 0;
+                text-align: right;
                 padding: 0;
-                padding-left: 30%;
+                padding-left: 40%;
+                width: 20%;
             }
         }
 
@@ -203,27 +215,29 @@
             padding-top: 50px;
             text-align: right;
             padding-right: 20px;
-            padding-left: 20px;
+            padding-left: 30px;
             color: $dark-red;
-            
 
 
-            @include md { padding-top: 20px;
+
+            @include md {
+                padding-top: 20px;
                 text-align: right;
                 width: auto;
             }
 
             @include lg {
                 text-align: right;
-                padding: 20px 100px 0 9vw;
-                margin-top: -300px;
+                padding: 20px 100px 0 5vw;
+                margin-top: -250px;
             }
 
-            @include xl{
+            @include xl {
                 margin-top: 0px;
                 padding-top: 20px;
-                margin-right: -10%;
-                padding-left: 30%;
+                // margin-right: -10%;
+                padding-left: 40%;
+                width: 400px;
             }
         }
     }
@@ -232,42 +246,65 @@
 /* --------------------------
   Impact
  --------------------------*/
- #index-impact {
-    
-    margin-top: -170px;
+#index-impact {
 
-    @include md{
+    margin-top: -170px;
+    height: 100vh;
+    // overflow: hidden;
+
+    @include md {
         margin-top: 0;
     }
 
+    @include xl {
+        width: 100vw;
+    }
+
+
     >div {
         background-image: url('../img/index/index-impact.jpg');
-        background-size: cover;
-        background-position: -60px center ;
+        background-size: 330%;
+        background-position: -60px center;
         background-repeat: no-repeat;
-        height: 60vh;
+        background-position-y: -100px;
+        height: 100vh;
         width: 100vw;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
 
+        @include md {
+            background-size: 200%;
+        }
+
         @include lg {
             background-position: center;
-            height: 70vh;
+            // height: 70vh;
+            background-size: 120%;
             width: 100vw;
         }
+
+        @include xl {
+            width: 100vw;
+        }
+
 
         h3 {
             color: $dark-red;
             // font-size: rem-calc(39);
             // margin-top: -100px;
-            width:80vw;
+            // width:80vw
+            padding-left: 50px;
+            ;
             text-align: right;
+            margin-top: 200px;
+
+            // margin-top: -200px;
             @include md {
                 color: $dark-red;
                 // font-size: rem-c alc(50);
-               
+
                 padding-left: 20vw;
             }
 
@@ -276,10 +313,10 @@
                 margin-top: -10vh;
             }
 
-            @include xl{
+            @include xl {
                 text-align: right;
-               
-               
+
+
             }
         }
 
@@ -301,9 +338,9 @@
                 text-align: right;
             }
 
-            @include xl{
+            @include xl {
                 padding-left: 50vw;
-             
+
             }
 
             span {
@@ -341,44 +378,37 @@
     position: relative;
     background-color: $off-white;
 
-    // @include lg {
-    //     height: 100vh;
-    // }
+    @include md {
+        
+        padding-bottom: 100px;
+        // padding-top: 20px;
+    }
+
+    @include lg{
+        padding: 0;
+    }
 
     >div {
 
-        // @include md{
-        //     display: grid;
-        //     grid-template-columns: 50% auto;
-        //     grid-template-areas: 
-        //     "p-i p-t"
-        //     "p-i p-p";
-
-        // }
-
-        @include lg{
-            margin: 0 0 150px 0;
+        @include lg {
+            // margin: 0 0 150px 0;
 
         }
 
         // height: 100vh;
-        #publicity-photo {grid-area: p-i;
-            background-image: url('../img/experimentation/handshake.jpg');
+        #publicity-photo {
+            grid-area: p-i;
+            background-image: url('../img/index/handshake2.jpg');
             background-size: cover;
             background-position: center -240px;
             background-repeat: no-repeat;
             height: 30vh;
             width: 100vw;
             border: none;
-            
-            // margin-top: 200px;
-            // display: flex;
-            // justify-content: center;
-            // align-items: flex-start;
-            // flex-direction: column;
             margin-top: 100px;
-            
-            @include md { margin-top: -50px;
+
+            @include md {
+                margin-top: -30px;
                 margin-right: 30vw;
                 width: 50vw;
                 height: 80vh;
@@ -386,21 +416,24 @@
             }
 
             @include lg {
-                margin-right: 0;
+               
                 margin-right: 70vw;
-                height: 70vh;
-                width: 35vw;
+                margin-left: 10vw;
+                height: 60vh;
+                width: 40vw;
                 margin-top: 0;
                 background-position: center -140px;
             }
 
-            @include xl{
-                margin-left: 10%;
+            @include xl {
+                margin-left: 15%;
+                width: 30vw;
             }
         }
 
-        h3 {grid-area: p-t;
-            color: $dark-blue;
+        h3 {
+            grid-area: p-t;
+            color: $blue-black;
             // font-size: rem-calc(39);
             text-align: right;
             padding-left: 50px;
@@ -409,30 +442,32 @@
             padding-bottom: 100px;
 
             @include md {
-               
+
                 font-size: rem-calc(50);
                 text-align: left;
-                padding-right: 10vw;
-                padding-left: 40vw;
-                margin-top: -775px;
+                padding-right: 2vw;
+                padding-left: 55vw;
+                margin-top: -700px;
             }
 
             @include lg {
-                padding-left: 25vw;
+                padding-left: 60vw;
                 padding-top: 150px;
-                margin-top: -650px;
+                margin-top: -500px;
                 text-align: left;
-                padding-right: 35vw;
+                padding-right: 5vw;
             }
 
-            @include xl{
-                padding-left: 30%;
-                padding-right: 40vw;
-                padding-bottom: 50px;
+            @include xl {
+                padding-left: 35%;
+                margin-top: -620px;
+                padding-right: 35vw;
+                // padding-bottom: 100pxpx;
             }
         }
 
-        p {grid-area: p-p;
+        p {
+            grid-area: p-p;
             padding-top: 100px;
             padding-left: 20px;
             padding-right: 40px;
@@ -440,13 +475,27 @@
             @include md {
                 text-align: left;
                 padding-left: 40vw;
+                padding-top: 0px;
+                margin-top: -10px;
             }
 
             @include lg {
-                padding-left: 50vw;
+                // padding-left: 50vw;
                 text-align: left;
-                padding-top: 0;
-                padding-right: 10vw;
+                padding: 0;
+                // padding-top: 100px;
+                margin-top: 5%;
+                margin-left: auto;
+                margin-right: auto;
+                padding-left: 20vw;
+                padding-right: 20vw;
+                // padding-right: 10vw;
+            }
+
+            @include xl{
+                padding-left: 50vw;
+                margin-top: -100px;
+                padding-bottom: 50px;
             }
 
             span {
@@ -464,40 +513,44 @@
   history
  --------------------------*/
 #index-history {
+    z-index: 200;
+    position: relative;
     background-color: $off-white;
-    // height: 100vh;
+height: 100vh;
 
     >div {
         background-image: url('../img/impact/moral-img.jpg');
         background-size: cover;
-        background-position:-110px center;
+        background-position: -260px center;
         // background-position-x: -950px;
         background-repeat: no-repeat;
 
-        height: 70vh;
+        height: 100vh;
         width: 100vw;
         display: flex;
         justify-content: center;
         align-items: flex-start;
         flex-direction: column;
         padding: 20px 0;
-        @include md {align-items: center;
+
+        @include md {
+            align-items: center;
             // margin-top: 80px;
-            background-size: 200%;
-            background-position-x:-200px;
-         
+            background-size: 250%;
+            background-position-x: -350px;
+
             width: 100vw;
-            height: 70vh;
+            height: 100vh;
         }
 
         @include lg {
-            height: 70vh;
-            width: 100vw;
-            background-size: 120%;
-            background-position-x: -0px;
+            // height: 70vh;
+            // width: 100vw;
+            background-size: 150%;
+            background-position-x: -100px;
             margin-top: 0px;
             margin-left: 0vw;
-      
+
         }
 
 
@@ -514,12 +567,13 @@
                 text-align: left;
                 // padding-right: 15vw;
                 padding-left: 10vw;
-            //    padding-top: 50px;
+                //    padding-top: 50px;
             }
 
             @include lg {
                 padding-left: 0;
-                margin-left: -20vw;
+                width: 35%;
+                // padding-left: 10vw;
                 text-align: left;
                 // margin-top: -600px;
             }
@@ -532,7 +586,8 @@
             text-align: left;
             width: 60vw;
 
-            @include md {width: auto;
+            @include md {
+                width: auto;
                 text-align: left;
                 padding-left: 10vw;
                 padding-right: 50vw;
@@ -540,13 +595,13 @@
             }
 
             @include lg {
-                padding-left: 10vw;
+                padding-left: 11vw;
                 text-align: left;
                 padding-right: 50vw;
             }
         }
 
-       
+
     }
 }
 
@@ -556,37 +611,43 @@
     background-color: $blue;
     position: relative;
     z-index: 400;
-    margin: 100px 0 0 0;
-    
-    @include lg{
-        margin: 150px 0 0 0;
+   margin: 0;
+
+    @include lg {
+        // margin: 150px 0 0 0;
     }
-    
+
     >div {
         padding-bottom: 100px;
 
-        @include lg{
+        @include lg {
             padding-top: 100px;
             padding-bottom: 100px;
         }
-        h3{
+
+        h3 {
             display: flex;
+            
             justify-content: center;
             font-weight: 400;
             padding-bottom: 30px;
             text-align: center;
             color: $blue-black;
-            @include md{
+
+            @include md {
                 padding-bottom: 30px;
             }
-            @include lg{
+
+            @include lg {
                 padding-bottom: 60px;
             }
         }
+
         .index-slider {
 
             div {
                 height: 300px;
+
                 @include md {
                     height: 50vh;
                 }
@@ -594,7 +655,7 @@
                 @include lg {
                     height: 65vh;
                 }
-                
+
                 img {
                     height: 100%;
                     width: 100%;
@@ -603,9 +664,13 @@
                 }
             }
         }
-        #gallery-swipe{ font-size: rem-calc(20);
+
+        #gallery-swipe {
+            font-size: rem-calc(20);
             text-align: center;
-            color: $blue-black;
+            color: $dark-blue;
+            font-family: 'Exo', sans-serif;
+
             @include md {
                 font-size: rem-calc(25);
             }
@@ -613,8 +678,9 @@
             @include lg {
                 font-size: rem-calc(30);
             }
-            
+
         }
+
         .tns-controls [aria-controls] {
             display: none;
             // align-items: center;
