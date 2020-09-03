@@ -52,7 +52,7 @@ if(safiChecker){
         start: "top 80%",
         end: "bottom 50%",
         animation: safiParagraph3Timeline,
-        markers: true,
+        // markers: true,
         toggleActions: "play play none none"
        
     });
@@ -71,7 +71,7 @@ if(safiChecker){
         start: "top 80%",
         end: "bottom 50%",
         animation: safiParagraph4Timeline,
-        markers: true,
+        // markers: true,
         toggleActions: "play play none none"
        
     });
