@@ -12,16 +12,16 @@ if(indexChecker){
 
 }
 
-if(indexChecker){
+// if(indexChecker){
     
-    ScrollTrigger.create({
-        trigger:"#index-history",
-        pin: true,
-        pinSpacing: false,
-        start: "top top",
-        end: "bottom 1"
-        // markers:true
+//     ScrollTrigger.create({
+//         trigger:"#index-history",
+//         pin: true,
+//         pinSpacing: false,
+//         start: "top top",
+//         end: "bottom 1"
+//         // markers:true
     
-    });
+//     });
 
-}
+// }

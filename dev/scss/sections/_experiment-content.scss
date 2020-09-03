@@ -202,38 +202,28 @@
 	}
 	#section-3-experiment {
 		background-color: $red;
-		padding: 100px 0;
 		position: relative;
-		@include md{
-			//height: 50vh;
-		}
-		@include lg{
-			padding: 150px 0;
-			height: 70vh;
-		}
+
 		#para-section-3 {
 			align-items: center;
 			display: flex;
 			justify-content: center;
+			height: 100vh;
+			border: 1px solid blue;
+			padding: 0 20px;
+
 			@include md {
-				height: 100vh;
-			}
-			@include xl {
-				height: 100vh;
-				margin-left: 25%;
-				margin-right: 25%;
+				width: 50%;
+				margin: 0 auto;
 			}
 			p {
-				padding: 0 15px;
 				color: $white;
 				text-align: justify;
 				@include md {
 					text-align: left;
-					padding: 0 100px;
 				}
 				@include lg{
-					height: 100vh;
-					margin-top: 30vh;
+					border: 1px solid red;
 				}
 			}
 		}

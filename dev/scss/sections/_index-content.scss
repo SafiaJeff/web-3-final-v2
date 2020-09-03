@@ -513,96 +513,32 @@
   history
  --------------------------*/
 #index-history {
-    z-index: 200;
-    position: relative;
-    background-color: $off-white;
-height: 100vh;
+  
 
-    >div {
-        background-image: url('../img/impact/moral-img.jpg');
-        background-size: cover;
-        background-position: -260px center;
-        // background-position-x: -950px;
-        background-repeat: no-repeat;
+    background-image: url('../img/impact/moral-img.jpg');
+    background-size: cover;
+    background-position: -100px center;
+    background-repeat: no-repeat;
+    height: 70vh !important;
 
-        height: 100vh;
-        width: 100vw;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        flex-direction: column;
-        padding: 20px 0;
+        article{
 
-        @include md {
-            align-items: center;
-            // margin-top: 80px;
-            background-size: 250%;
-            background-position-x: -350px;
+            padding-top: 40px;
 
-            width: 100vw;
-            height: 100vh;
-        }
-
-        @include lg {
-            // height: 70vh;
-            // width: 100vw;
-            background-size: 150%;
-            background-position-x: -100px;
-            margin-top: 0px;
-            margin-left: 0vw;
-
-        }
-
-
-        h3 {
-            color: $dark-red;
-            padding-right: 150px;
-            // font-size: rem-calc(39);
-            text-align: left;
-            // margin-top: -700px;
-
-            @include md {
-                color: $dark-red;
-                // font-size: rem-calc(50);
-                text-align: left;
-                // padding-right: 15vw;
-                padding-left: 10vw;
-                //    padding-top: 50px;
+            @include md{
+                width: 80%;  
             }
 
-            @include lg {
-                padding-left: 0;
-                width: 35%;
-                // padding-left: 10vw;
-                text-align: left;
-                // margin-top: -600px;
+            h3{
+                //color: $dark-red;
+            }
+
+            p{
+                @include md{
+                    padding-right: 20%;
+                }
             }
         }
-
-        p {
-            padding-top: 20px;
-            padding-left: 20px;
-            padding-right: 40px;
-            text-align: left;
-            width: 60vw;
-
-            @include md {
-                width: auto;
-                text-align: left;
-                padding-left: 10vw;
-                padding-right: 50vw;
-                color: $blue-black;
-            }
-
-            @include lg {
-                padding-left: 11vw;
-                text-align: left;
-                padding-right: 50vw;
-            }
-        }
-
-
-    }
 }
 
 
