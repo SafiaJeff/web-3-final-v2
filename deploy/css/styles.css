@@ -1922,7 +1922,7 @@ progress::-moz-progress-bar {
 }
 #experimentation #section-5-experiment {
   background-color: #EF777A;
-  height: 100vh;
+  overflow: hidden;
 }
 @media (min-width: 768px) {
   #experimentation #section-5-experiment {
