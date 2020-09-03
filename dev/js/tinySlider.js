@@ -14,8 +14,8 @@ if(indexSlider.length > 0){
             "items": 1
           },
           "768": {
-            "items": 3,
-            gutter:50
+            "items": 2,
+            gutter:20
           },
           "1040": {
             "items": 3,

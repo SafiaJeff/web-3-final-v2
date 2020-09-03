@@ -140,7 +140,7 @@
 		},
 	"/deploy/img/experimentation/denmark.jpg": {
 		"ft": 16384,
-		"iS": 345034,
+		"iS": 6216,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/deploy/img/experimentation/denmark.jpg",
@@ -168,7 +168,7 @@
 		"oAP": "/deploy/img/experimentation/france.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"/deploy/img/experimentation/handshake.jpg": {
@@ -424,125 +424,114 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/deploy/img/impact/change-img-2.jpg": {
-		"ft": 16384,
-		"iS": 3063362,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/impact/change-img-2.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
 	"/deploy/img/impact/change-img.jpg": {
 		"ft": 16384,
-		"iS": 806214,
+		"iS": 333512,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/deploy/img/impact/change-img.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
-	"/deploy/img/impact/hero-1.jpg": {
+	"/deploy/img/impact/hero-1-2.jpg": {
 		"ft": 16384,
-		"iS": 1629327,
+		"iS": 1967671,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/impact/hero-1.jpg",
+		"oAP": "/deploy/img/impact/hero-1-2.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/deploy/img/impact/hero-2.jpg": {
 		"ft": 16384,
-		"iS": 1237591,
+		"iS": 137746,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/deploy/img/impact/hero-2.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/deploy/img/impact/impact-intro-mobile.jpg": {
 		"ft": 16384,
-		"iS": 2611557,
+		"iS": 218684,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/deploy/img/impact/impact-intro-mobile.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/deploy/img/impact/impact-intro.jpg": {
 		"ft": 16384,
-		"iS": 3307548,
+		"iS": 354953,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/deploy/img/impact/impact-intro.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
-	"/deploy/img/impact/moral-img-1.jpg": {
+	"/deploy/img/impact/moral-img-mobile.jpg": {
 		"ft": 16384,
-		"iS": 1482984,
+		"iS": 521289,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/impact/moral-img-1.jpg",
+		"oAP": "/deploy/img/impact/moral-img-mobile.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/deploy/img/impact/moral-img.jpg": {
 		"ft": 16384,
-		"iS": 463984,
+		"iS": 239503,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/deploy/img/impact/moral-img.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
-	"/deploy/img/impact/sway-img-1.jpg": {
+	"/deploy/img/impact/sway-img-2-mobile.jpg": {
 		"ft": 16384,
-		"iS": 1870968,
+		"iS": 868013,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/impact/sway-img-1.jpg",
+		"oAP": "/deploy/img/impact/sway-img-2-mobile.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
-	"/deploy/img/impact/sway-img-mobile.jpg": {
+	"/deploy/img/impact/sway-img-2.jpg": {
 		"ft": 16384,
-		"iS": 1548094,
+		"iS": 476808,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/impact/sway-img-mobile.jpg",
+		"oAP": "/deploy/img/impact/sway-img-2.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
-	"/deploy/img/impact/sway-img.jpg": {
+	"/deploy/img/index/index-impact.jpg": {
 		"ft": 16384,
-		"iS": 832273,
+		"iS": 169915,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/impact/sway-img.jpg",
+		"oAP": "/deploy/img/index/index-impact.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/deploy/img/index/intro-index.jpg": {
@@ -553,7 +542,7 @@
 		"oAP": "/deploy/img/index/intro-index.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"/deploy/img/safi/mac-hero.jpg": {
@@ -2988,7 +2977,7 @@
 	"externalServerAddress": "http://localhost:8888",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
-	"jsCheckerReservedNamesString": "ScrollTrigger, gsap, TweenLite, tns, Typed, ",
+	"jsCheckerReservedNamesString": "ScrollTrigger, gsap, TweenLite, tns, Typed",
 	"jsHintFlags2": {
 		"asi": {
 			"active": 0,

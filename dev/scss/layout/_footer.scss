@@ -5,7 +5,8 @@
 footer {
     background-color: $dark-blue;
     padding: 50px;
-
+z-index: 2000;
+position: relative;
     @include md{
         padding: 20px 90px;
     }
