@@ -2507,8 +2507,9 @@ img {
 @media (min-width: 1025px) {
   #gallery-form > div h3 {
     top: 10%;
-    left: 5%;
+    left: -5%;
     right: unset;
+    width: 400px;
   }
 }
 @media (min-width: 1440px) {

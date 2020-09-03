@@ -151,7 +151,7 @@
 		},
 	"/deploy/img/experimentation/experimentation-hero.jpg": {
 		"ft": 16384,
-		"iS": 521936,
+		"iS": 130642,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/deploy/img/experimentation/experimentation-hero.jpg",
@@ -184,13 +184,13 @@
 		},
 	"/deploy/img/experimentation/index-experiment.jpg": {
 		"ft": 16384,
-		"iS": 359424,
+		"iS": 251989,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/deploy/img/experimentation/index-experiment.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"/deploy/img/experimentation/logos.jpg": {
@@ -1213,7 +1213,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/dev/js/typed-min.js",
 		"oF": 0,
 		"sC": 3,
@@ -2240,7 +2240,7 @@
 			"optionString": "{'allowParens': true}"
 			},
 		"no-console": {
-			"active": 1,
+			"active": 0,
 			"optionString": "{'allow': ['warn', 'error']}"
 			},
 		"no-const-assign": {
@@ -2688,7 +2688,7 @@
 			"optionString": ""
 			},
 		"no-unused-vars": {
-			"active": 1,
+			"active": 0,
 			"optionString": "{'vars': 'all', 'args': 'after-used', 'caughtErrors': 'none', 'ignoreRestSiblings': false}"
 			},
 		"no-use-before-define": {
@@ -2988,7 +2988,7 @@
 	"externalServerAddress": "http://localhost:8888",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
-	"jsCheckerReservedNamesString": "ScrollTrigger, gsap, TweenLite",
+	"jsCheckerReservedNamesString": "ScrollTrigger, gsap, TweenLite, tns, Typed, ",
 	"jsHintFlags2": {
 		"asi": {
 			"active": 0,

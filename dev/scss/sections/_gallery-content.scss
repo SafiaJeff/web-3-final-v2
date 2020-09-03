@@ -438,8 +438,9 @@ img{
             }
             @include lg{
                 top: 10%;
-                left: 5%;
+                left: -5%;
                 right: unset;
+                width: 400px;
             }
             @include xl{
                 top: 18%;
