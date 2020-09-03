@@ -384,17 +384,21 @@
         // padding-top: 20px;
     }
 
+    @include lg{
+        padding: 0;
+    }
+
     >div {
 
         @include lg {
-            margin: 0 0 150px 0;
+            // margin: 0 0 150px 0;
 
         }
 
         // height: 100vh;
         #publicity-photo {
             grid-area: p-i;
-            background-image: url('../img/experimentation/handshake.jpg');
+            background-image: url('../img/index/handshake2.jpg');
             background-size: cover;
             background-position: center -240px;
             background-repeat: no-repeat;
@@ -412,22 +416,24 @@
             }
 
             @include lg {
-                margin-right: 0;
+               
                 margin-right: 70vw;
-                height: 70vh;
-                width: 35vw;
+                margin-left: 10vw;
+                height: 60vh;
+                width: 40vw;
                 margin-top: 0;
                 background-position: center -140px;
             }
 
             @include xl {
-                margin-left: 10%;
+                margin-left: 15%;
+                width: 30vw;
             }
         }
 
         h3 {
             grid-area: p-t;
-            color: $dark-blue;
+            color: $blue-black;
             // font-size: rem-calc(39);
             text-align: right;
             padding-left: 50px;
@@ -440,22 +446,23 @@
                 font-size: rem-calc(50);
                 text-align: left;
                 padding-right: 2vw;
-                padding-left: 40vw;
+                padding-left: 55vw;
                 margin-top: -700px;
             }
 
             @include lg {
-                padding-left: 25vw;
+                padding-left: 60vw;
                 padding-top: 150px;
-                margin-top: -650px;
+                margin-top: -500px;
                 text-align: left;
-                padding-right: 35vw;
+                padding-right: 5vw;
             }
 
             @include xl {
-                padding-left: 30%;
-                padding-right: 40vw;
-                padding-bottom: 50px;
+                padding-left: 35%;
+                margin-top: -620px;
+                padding-right: 35vw;
+                // padding-bottom: 100pxpx;
             }
         }
 
@@ -468,14 +475,27 @@
             @include md {
                 text-align: left;
                 padding-left: 40vw;
-                padding-top: 70px;
+                padding-top: 0px;
+                margin-top: -10px;
             }
 
             @include lg {
-                padding-left: 50vw;
+                // padding-left: 50vw;
                 text-align: left;
-                padding-top: 0;
-                padding-right: 10vw;
+                padding: 0;
+                // padding-top: 100px;
+                margin-top: 5%;
+                margin-left: auto;
+                margin-right: auto;
+                padding-left: 20vw;
+                padding-right: 20vw;
+                // padding-right: 10vw;
+            }
+
+            @include xl{
+                padding-left: 50vw;
+                margin-top: -100px;
+                padding-bottom: 50px;
             }
 
             span {
@@ -496,16 +516,16 @@
     z-index: 200;
     position: relative;
     background-color: $off-white;
-
+height: 100vh;
 
     >div {
         background-image: url('../img/impact/moral-img.jpg');
         background-size: cover;
-        background-position: -110px center;
+        background-position: -260px center;
         // background-position-x: -950px;
         background-repeat: no-repeat;
 
-        height: 70vh;
+        height: 100vh;
         width: 100vw;
         display: flex;
         justify-content: center;
@@ -516,18 +536,18 @@
         @include md {
             align-items: center;
             // margin-top: 80px;
-            background-size: 200%;
-            background-position-x: -200px;
+            background-size: 250%;
+            background-position-x: -350px;
 
             width: 100vw;
-            height: 70vh;
+            height: 100vh;
         }
 
         @include lg {
-            height: 70vh;
-            width: 100vw;
-            background-size: 120%;
-            background-position-x: -0px;
+            // height: 70vh;
+            // width: 100vw;
+            background-size: 150%;
+            background-position-x: -100px;
             margin-top: 0px;
             margin-left: 0vw;
 
@@ -552,7 +572,8 @@
 
             @include lg {
                 padding-left: 0;
-                margin-left: -20vw;
+                width: 35%;
+                // padding-left: 10vw;
                 text-align: left;
                 // margin-top: -600px;
             }
@@ -574,7 +595,7 @@
             }
 
             @include lg {
-                padding-left: 10vw;
+                padding-left: 11vw;
                 text-align: left;
                 padding-right: 50vw;
             }
@@ -590,10 +611,10 @@
     background-color: $blue;
     position: relative;
     z-index: 400;
-    margin: 100px 0 0 0;
+   margin: 0;
 
     @include lg {
-        margin: 150px 0 0 0;
+        // margin: 150px 0 0 0;
     }
 
     >div {
