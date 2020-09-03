@@ -97,8 +97,8 @@ html {
 
 /* ---------------- Media Queries ---------------- */
 // Very small devices
-@mixin extrasm {
-    @media (min-width: #{$screen-extrasm-min}) {
+@mixin ip11 {
+    @media (min-width: #{$screen-ip11-min}) {
         @content;
     }
 }
