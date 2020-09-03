@@ -57,7 +57,7 @@ if(experimentChecker){
         pinSpacing: false,
             start: "top 40%",
             end: "bottom 40%",
-            markers: true,
+            //markers: true,
             //scrub: 1
             id:"afterObama"
       });  
