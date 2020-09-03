@@ -149,7 +149,7 @@ img{
 }
 #gallery-content-2{
     background-color: $green-blue;
-    height: 80vh;
+    height: 100vh;
     position: relative;
     display: flex;
     align-items: center;
@@ -157,15 +157,27 @@ img{
     @include lg{
         height: 100vh;
     }
+
+    @include ip11{
+        height: 80vh;
+    }
+
+    @include md{
+        height: 80vh;
+        
+    }
     img{
         position: absolute;
         z-index: 0;
         top: 0;
         left: 0;
         width: 30%;
-        height: 80vh;
+        height: 100vh;
         @include md{
             width: 45%;
+        }
+        @include ip11{
+            height: 80vh;
         }
         @include lg{
             width: 55%;
@@ -173,7 +185,6 @@ img{
         }
     }
     #gallery-content-2-text{
-        //position: absolute;
         height: auto;
         width: 100vw;
         display: grid;
