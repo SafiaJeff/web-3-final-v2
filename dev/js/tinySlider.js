@@ -6,6 +6,7 @@ if(indexSlider.length > 0){
     gutter: 15,
     edgePadding: 50,
     nav: false,
+    controls: false,
     controlsPosition: "bottom",
     navPosition: "bottom",
     mouseDrag: true,
@@ -14,8 +15,8 @@ if(indexSlider.length > 0){
             "items": 1
           },
           "768": {
-            "items": 3,
-            gutter:50
+            "items": 2,
+            gutter:20
           },
           "1040": {
             "items": 3,
