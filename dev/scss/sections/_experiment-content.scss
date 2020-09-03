@@ -3,462 +3,351 @@
 ============= */
 #experimentation {
 	background-color: $off-white;
-
 	#hero-experiment {
 		padding-top: 90px;
-
 		@include lg {
 			padding-top: 200px;
 		}
-
 		#hero-image-experiment {
 			background-image: url('../img/experimentation/experimentation-hero.jpg');
 			background-position: center;
 			background-size: cover;
 			height: 350px;
 			width: 100%;
-
 			@include md {
 				width: 75vw;
 			}
-
 			@include lg {
-				// padding-top: 00px;
 				height: 500px;
 				width: 90vw;
 			}
-
 			@include xl {
-				// width: 80vw;
 				margin-left: 10%;
 			}
 		}
-
 		#title-experiment {
 			bottom: 200px;
 			margin-bottom: 90px;
 			margin-top: -500px;
 			padding: 0px 5px;
-
 			@include md {
-				padding-top: 100px;
 				margin-bottom: 180px;
-				// margin-right: 20%;
-
+				padding-top: 100px;
 			}
-
 			@include lg {
 				margin-left: 0%;
 			}
-
 			@include xl {
 				margin-left: 0px;
 				margin-top: -400px;
 				text-align: center;
 			}
-
 			h1 {
 				color: $red;
 				text-align: left;
-
-
 				@include md {
 					text-align: center;
-					// font-size: rem-calc(85);
 				}
-
 				@include lg {
-					// font-size: rem-calc(135);
 				}
-
-
 			}
 		}
-
 		#subtitle-experiment {
 			margin-top: -50px;
 			padding: 100px 20px 0px 20px;
 			text-align: left;
-
-
 			@include md {
 				padding-left: 15%;
 				padding-right: 30%;
 				padding-top: 3%;
 			}
-
 			@include lg {
 				margin-top: -50px;
 				padding-right: 400px;
 			}
-
 			@include xl {
-				padding: 0px;
-				margin-top: -120px;
 				margin-left: 50%;
 				margin-right: 10%;
+				margin-top: -120px;
+				padding: 0px;
 			}
 		}
 	}
-
 	#section-1-experiment {
 		@include md {
 			display: grid;
 			grid-template-columns: 40% auto;
 		}
-
 		@include lg {
-			margin: auto 5%;
 			column-gap: 10%;
+			margin: auto 5%;
 		}
-
 		#pullquote-section-1 {
-
 			@include md {
 				grid-column-end: 3;
 				grid-column-start: 1;
 				grid-row-start: 1;
-
 			}
-
 			@include lg {
 				margin-right: -5%;
 				padding-bottom: 100px;
 			}
-
 			p {
-				text-align: left;
 				color: $red;
-				padding-right: 20px;
 				padding-left: 20px;
-
+				padding-right: 20px;
+				text-align: left;
 				@include md {
+					padding-left: 40%;
+					padding-right: 10%;
 					padding-top: 0px;
 					text-align: right;
-					padding-right: 10%;
-					padding-left: 40%;
 				}
-
 				@include xl {
-					padding-top: 40px;
-					padding: 0;
 					margin: 0;
+					padding: 0;
+					padding-top: 40px;
 					text-align: center;
 				}
 			}
 		}
-
 		#image-section-1 {
 			background-image: url('../img/experimentation/obama.jpg');
 			background-position: center;
+			background-position-x: -150px;
 			background-size: cover;
 			height: 50vh;
 			margin-top: 100px;
-			background-position-x: -150px;
-
 			@include md {
-				padding-top: 100px;
 				grid-column-start: 1;
 				grid-row-start: 2;
 				height: 30vh;
-			}
-
-			@include lg {
-				margin-top: 0px;
-				height: 400px;
-			}
-		}
-
-		#para-section-1 {
-
-			padding-top: 100px;
-
-			@include md {
-				padding-left: 20px;
-				grid-column-start: 2;
-				grid-row-start: 2;
-				// margin-top: 150px;
 				padding-top: 100px;
 			}
-
 			@include lg {
-				padding-right: 15%;
+				height: 400px;
 				margin-top: 0px;
+			}
+		}
+		#para-section-1 {
+			padding-top: 100px;
+			@include md {
+				// margin-top: 150px;
+				grid-column-start: 2;
+				grid-row-start: 2;
+				padding-left: 20px;
+				padding-top: 100px;
+			}
+			@include lg {
+				margin-top: 0px;
+				padding-right: 15%;
 				padding-top: 60px;
 			}
 		}
 	}
-
 	#section-2-experiment {
 		#pullquote-section-2 {
 			margin-top: 150px;
-
 			h3 {
-				color: $green-blue;
-				padding-right: 20px;
-				padding-left: 20px;
 				// margin-top: ;
+				color: $green-blue;
 				margin-bottom: -400px;
-				text-align: right;
-				background-color: $off-white;
 				padding: 10px;
-
+				padding-left: 20px;
+				padding-right: 20px;
+				text-align: right;
 				@include md {
 					margin-bottom: 0px;
 				}
-				@include lg{
-					background-color: transparent;
+				@include lg {
 					margin-bottom: 10vh;
 				}
-
 			}
-
 			@include md {
 				margin: auto 3% auto 30%;
 			}
-
 			@include xl {
-				margin-left: 40%;
+				margin-left: 30%;
 				margin-right: 15%;
 			}
 		}
-
 		#image-section-2 {
 			background-image: url('../img/experimentation/france.jpg');
 			background-position: center;
 			background-size: cover;
 			height: 70vh;
-			// margin-top: -250px;
-
 			@include md {
 				height: 60vh;
 				margin: -20% 10% auto;
 				margin-bottom: 100px;
 			}
-
 			@include lg {
+				height: 80vh;
 				margin: 0px;
 				margin-top: -100px;
 				width: 100vw;
-				height: 80vh;
-				// margin-right: 5%;
 			}
-
 			@include xl {
+				margin-bottom: 150px;
 				margin-left: 10%;
-				width: auto;
 				margin-right: 10%;
 				margin-top: -115px;
-				margin-bottom: 150px;
+				width: auto;
 			}
 		}
-
 	}
-
 	#section-3-experiment {
-		position: relative;
-		//z-index: 500;
 		background-color: $red;
 		margin: 100px 0;
-
+		position: relative;
 		#para-section-3 {
-			//background-color: $red;
+			align-items: center;
 			display: flex;
 			justify-content: center;
-			align-items: center;
-
 			@include md {
 				height: 100vh;
-				//padding: 0px 150px;
-
 			}
-
 			@include xl {
+				height: 100vh;
 				margin-left: 25%;
 				margin-right: 25%;
-				height: 100vh;
-				//margin-bottom: 50%;
 			}
-
 			p {
 				color: $white;
 				text-align: justify;
-
 				@include md {
 					text-align: left;
 				}
 			}
-
 		}
 	}
-
 	#section-4-experiment {
 		background-color: $dark-blue;
 		position: relative;
-
 		@include md {
+			background-color: $off-white;
 			column-gap: 20px;
 			display: grid;
 			grid-template-columns: repeat(2, 1fr);
 			padding-top: 100px;
-			background-color: $off-white;
 		}
-
 		#pullquote-section-4 {
-			display: flex;
-			justify-content: center;
 			align-items: center;
+			display: flex;
 			height: 100vh;
-
+			justify-content: center;
 			@include md {
 				grid-column-start: 1;
 				grid-row-start: 1;
-				// background-color: $off-white;
-				// padding-top: 100px;
 				padding-left: 20px;
 			}
-
 			@include lg {
 				height: auto;
 			}
-
-			// background-color: $dark-blue;
-
 			h3 {
+				color: $blue;
 				padding-left: 10px;
 				padding-right: 10px;
 				text-align: right;
-				color: $blue;
-
 				@include md {
 					color: $dark-blue;
-					line-height: rem-calc(40);
-					font-size: rem-calc(20);
 					font-family: 'Libre Franklin', sans-serif;
 					font-size: rem-calc(25);
 					line-height: rem-calc(45);
 				}
-
 				@include lg {
 					padding: 100px;
 					text-align: right;
 				}
-
 			}
 		}
-
 		#image-section-4 {
 			background-image: url('../img/experimentation/logos.jpg');
 			background-position: center;
 			background-size: cover;
 			height: 100vh;
-
 			@include md {
 				grid-column-start: 2;
 				height: 60vh;
-				// background-color: $blue;
 			}
-
 			@include xl {
 				margin-right: 10%;
 			}
-
-
 		}
-
 		#para-section-4 {
 			@include md {
 				grid-column-end: 3;
 				grid-column-start: 1;
-				// padding-top: 100px;
 				margin-top: -200px;
 				padding-left: 50px;
 				padding-right: 50px;
 			}
-
 			#ps4p2 {
+				padding-top: 50px;
 				@include md {
 					padding-left: 100px;
 				}
-
-				padding-top: 50px;
 			}
-
 			@include lg {
 				margin: auto 20%;
 			}
 		}
 	}
-
 	#section-5-experiment {
 		background-color: $red;
-		height: 100vh;
-
+		overflow: hidden;
 		@include md {
 			display: grid;
 			gap: 3%;
 			grid-template-columns: 40% auto;
 			padding: 100px 20px;
 		}
-
 		@include lg {
 			grid-template-columns: repeat(3, 1fr);
-			// margin: auto 5%;
 			padding: 150px 20px;
-
 		}
-
 		#image-1-section-5 {
 			background-image: url('../img/experimentation/scotland.jpg');
 			background-position: center;
 			background-size: cover;
 			height: 50vh;
-
 			@include md {
 				background-position: -50px;
 				grid-column-start: 1;
 				grid-row-start: 1;
 			}
-
 			@include lg {
 				grid-column-start: 1;
 			}
 		}
-
 		#image-2-section-5 {
 			background-image: url('../img/experimentation/denmark.jpg');
 			background-position: center;
 			background-size: cover;
 			height: 50vh;
-
 			@include md {
 				grid-column-end: 3;
 				grid-column-start: 1;
 				grid-row-end: 3;
 				grid-row-start: 2;
 			}
-
 			@include lg {
 				grid-column-start: 2;
 				grid-row-end: 1;
 				grid-row-start: 1;
 			}
 		}
-
 		#image-3-section-5 {
 			background-image: url('../img/experimentation/aroha.jpg');
 			background-position: center;
 			background-size: cover;
 			height: 50vh;
-
 			@include md {
 				grid-column-start: 2;
 				grid-row-start: 1;
 			}
-
 			@include lg {
 				grid-column-start: 3;
-
 			}
 		}
 	}
