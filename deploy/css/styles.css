@@ -2230,7 +2230,7 @@ img {
 
 #gallery-content-2 {
   background-color: #22C9C6;
-  height: 80vh;
+  height: 100vh;
   position: relative;
   display: flex;
   align-items: center;
@@ -2241,17 +2241,32 @@ img {
     height: 100vh;
   }
 }
+@media (min-width: 414px) {
+  #gallery-content-2 {
+    height: 80vh;
+  }
+}
+@media (min-width: 768px) {
+  #gallery-content-2 {
+    height: 80vh;
+  }
+}
 #gallery-content-2 img {
   position: absolute;
   z-index: 0;
   top: 0;
   left: 0;
   width: 30%;
-  height: 80vh;
+  height: 100vh;
 }
 @media (min-width: 768px) {
   #gallery-content-2 img {
     width: 45%;
+  }
+}
+@media (min-width: 414px) {
+  #gallery-content-2 img {
+    height: 80vh;
   }
 }
 @media (min-width: 1025px) {
