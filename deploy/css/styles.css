@@ -3210,9 +3210,10 @@ textarea {
 #index-opening > div h2 {
   font-size: 1.4375rem;
   text-align: left;
-  padding: 20px 30px;
+  padding: 30px 30px 0;
   padding-bottom: 100px;
   color: #007785;
+  height: 10vh;
 }
 @media (min-width: 768px) {
   #index-opening > div h2 {
@@ -3241,18 +3242,14 @@ textarea {
 /* --------------------------
    Experimentation
  --------------------------*/
-#index-experimentation {
-  height: 100vh;
-  margin-bottom: 100px;
-}
 @media (min-width: 768px) {
   #index-experimentation {
     margin-bottom: 0;
   }
 }
 #index-experimentation > div {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 @media (min-width: 768px) {
   #index-experimentation > div {
@@ -3432,7 +3429,7 @@ textarea {
   publicity
  --------------------------*/
 #index-publicity {
-  padding-top: 50px;
+  padding-top: 100px;
   z-index: 200;
   position: relative;
   background-color: #F5F5EE;
@@ -3631,12 +3628,16 @@ textarea {
   background-color: #B9DFE6;
   position: relative;
   z-index: 900;
+  padding-top: 100px;
+}
+#index-gallery-slider > div {
+  padding-bottom: 200px;
 }
 #index-gallery-slider > div h3 {
   display: flex;
   justify-content: center;
   font-weight: 400;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   color: #2E2E41;
 }
 @media (min-width: 768px) {
@@ -3646,7 +3647,7 @@ textarea {
 }
 @media (min-width: 768px) {
   #index-gallery-slider > div h3 {
-    padding-bottom: 40px;
+    padding-bottom: 60px;
   }
 }
 #index-gallery-slider > div .index-slider div {

@@ -49,7 +49,7 @@
                 text-align: left;
                 margin-top: -600px;
                 padding: 0px 50px 100px 50px
-            }
+            } 
 
             @include lg {
                 font-size: rem-calc(100);
@@ -69,10 +69,10 @@
         h2 {
             font-size: rem-calc(23);
             text-align: left;
-            padding: 20px 30px;
+            padding: 30px 30px 0;
             padding-bottom: 100px;
             color: $dark-blue;
-
+            height: 10vh;
 
             @include md {
                 font-size: rem-calc(30);
@@ -105,18 +105,15 @@
    Experimentation
  --------------------------*/
 #index-experimentation {
-    height: 100vh;
-    margin-bottom: 100px;
-
+    //height: 100vh;
     @include md{
         margin-bottom: 0;
     }
     // background-color: $blue;
     >div {
-        padding-top: 100px;
-        padding-bottom: 100px;
+        padding-top: 200px;
+        padding-bottom: 200px;
         
-
         @include md {
             display: grid;
             grid-template-columns: 50% auto;
@@ -220,14 +217,11 @@
  --------------------------*/
 #index-impact {
     height: 100vh;
-    
-
     >div {
 
         display: flex;
         justify-content: center;
         align-items: center;
-
         background-image: url('../img/impact/impact-intro-mobile.jpg');
         background-size: cover;
         background-position: center;
@@ -323,7 +317,7 @@
   publicity
  --------------------------*/
 #index-publicity {
-    padding-top: 50px;
+    padding-top: 100px;
     z-index: 200;
     position: relative;
     background-color: $off-white;
@@ -590,6 +584,7 @@
     background-color: $blue;
     position: relative;
     z-index: 900;
+    padding-top: 100px;
     
         // padding-bottom: 60px;
         // @include md{
@@ -597,27 +592,24 @@
         // }
     
     >div {
+        padding-bottom: 200px;
         h3{
             display: flex;
             justify-content: center;
             font-weight: 400;
-            padding-bottom: 20px;
+            padding-bottom: 30px;
             color: $blue-black;
-            
-            
-
             @include md{
                 padding-bottom: 30px;
             }
             @include md{
-                padding-bottom: 40px;
+                padding-bottom: 60px;
             }
         }
         .index-slider {
 
             div {
                 height: 300px;
-
                 @include md {
                     height: 200px;
                 }
@@ -631,8 +623,6 @@
                     width: 100%;
                     object-fit: auto;
                     object-position: center;
-                  
-                    
                 }
             }
         }
