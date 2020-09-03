@@ -3248,8 +3248,8 @@ textarea {
   }
 }
 #index-experimentation > div {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 150px;
+  padding-bottom: 150px;
 }
 @media (min-width: 768px) {
   #index-experimentation > div {
@@ -3429,14 +3429,14 @@ textarea {
   publicity
  --------------------------*/
 #index-publicity {
-  padding-top: 100px;
+  padding-top: 50px;
   z-index: 200;
   position: relative;
   background-color: #F5F5EE;
 }
 @media (min-width: 1025px) {
   #index-publicity {
-    height: 100vh;
+    height: 95vh;
   }
 }
 #index-publicity > div #publicity-photo {
@@ -3628,10 +3628,10 @@ textarea {
   background-color: #B9DFE6;
   position: relative;
   z-index: 900;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 #index-gallery-slider > div {
-  padding-bottom: 200px;
+  padding-bottom: 150px;
 }
 #index-gallery-slider > div h3 {
   display: flex;
