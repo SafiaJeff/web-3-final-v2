@@ -27,6 +27,7 @@ if(impactChecker){
     gsap.to("#sway-img",{ease: "none", scrollTrigger:{
         trigger:"#sway-img",
         pin: true,
+        pinSpacing: false,
         start: "top top",
         end: "bottom 10",
         // markers:true,
