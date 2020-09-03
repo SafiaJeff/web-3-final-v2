@@ -1,0 +1,1 @@
+if(safiChecker){var hnrsPullQuoteTimeline=gsap.timeline();hnrsPullQuoteTimeline.from("#hnrs-pull-quote",{alpha:0,xPercent:5}),ScrollTrigger.create({trigger:"#hnrs-pull-quote",start:"top 60%",end:"bottom 70%",animation:hnrsPullQuoteTimeline,toggleActions:"play none none none",markers:!0})}
