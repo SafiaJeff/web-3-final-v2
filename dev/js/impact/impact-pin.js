@@ -29,12 +29,13 @@ if(impactChecker){
         pin: true,
         pinSpacing: false,
         start: "top top",
-        end: "bottom 10",
+        end: "bottom top",
         // markers:true,
         id:"obama-pin"
         // scrub: true
     }})
 }
+
 // pinning thesis
 if(impactChecker){
     gsap.to("#impact-thesis",{ease: "none", scrollTrigger:{
@@ -49,14 +50,21 @@ if(impactChecker){
 }
 
 if(impactChecker){
-    gsap.to("#change-img",{scrollTrigger:{
-        trigger:"#change-img",
-        pin: true,
-        pinSpacing: false,
-        start: "top top",
-        end: "bottom top",
-        // markers:true,
-        id:"change-pin"
-    }})
+    ScrollTrigger.matchMedia({
+        "(min-width: 1000px)": function(){
+            
+            gsap.to("#change-img",{scrollTrigger:{
+                trigger:"#change-img",
+                pin: true,
+                pinSpacing: false,
+                start: "top top",
+                end: "bottom top",
+                // markers:true,
+                id:"change-pin"
+            }})
+            
+        }
+            
+        })
 }
 
