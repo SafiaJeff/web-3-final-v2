@@ -13,10 +13,10 @@ header{
     div{
         display: flex;
         align-items: center;
-        justify-items: flex-end;
+        justify-content: flex-end;
+        justify-content: space-between;
         padding: 20px;
         #logo-container{
-            width: 100%;
             a{
                 h1{
                     color: $yellow;

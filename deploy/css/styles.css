@@ -714,11 +714,9 @@ header {
 header div {
   display: flex;
   align-items: center;
-  justify-items: flex-end;
+  justify-content: flex-end;
+  justify-content: space-between;
   padding: 20px;
-}
-header div #logo-container {
-  width: 100%;
 }
 header div #logo-container a {
   text-decoration: none;

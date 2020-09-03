@@ -1,10 +1,10 @@
 //can you see the menu?
 var canYouSeeTheMenu = false;
 
-var navHeight = $("#main-nav").outerHeight();
+var navWidth = $("#main-nav").outerWidth();
 //move the nav off screen on the Y axis
 gsap.set("#main-nav", {
-    y: -navHeight
+    x: navWidth
 })
 
 
@@ -13,7 +13,7 @@ var mainNavTimeline = gsap.timeline({
 })
 mainNavTimeline.to("#main-nav", {
     duration: 0.5,
-    y: 0
+    x: 0
 })
 
 function hideShowMainNav() {
@@ -21,7 +21,7 @@ function hideShowMainNav() {
     //toggles the css display property
     if (canYouSeeTheMenu === false) {
 
-        //burgerAnimationTimeline.play("burgerToX");
+        burgerAnimationTimeline.play("burgerToX");
 
         //play the main nav animation into view; pull it down
         mainNavTimeline.play();
@@ -46,13 +46,13 @@ window.onclick = function (event) {
 }
 
 function reportWindowSize() {
-    console.log("test");
+    //console.log("test");
     if (canYouSeeTheMenu === false) {
-        console.log("can't see the main nav");
-        console.log($("#main-nav").outerHeight());
-        navHeight = $("#main-nav").outerHeight();
+        //console.log("can't see the main nav");
+        //console.log($("#main-nav").outerHeight());
+        navWidth = $("#main-nav").outerWidth();
         gsap.set("#main-nav", {
-            y: -navHeight
+            x: -navWidth
         });
     }
 }
