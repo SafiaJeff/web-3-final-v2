@@ -556,6 +556,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/deploy/img/index/nav-img.jpg": {
+		"ft": 16384,
+		"iS": 307014,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/index/nav-img.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/deploy/img/safi/mac-hero.jpg": {
 		"ft": 16384,
 		"iS": 126094,

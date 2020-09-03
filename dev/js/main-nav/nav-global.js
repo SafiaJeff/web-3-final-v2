@@ -1,19 +1,29 @@
 //can you see the menu?
 var canYouSeeTheMenu = false;
 
-var navWidth = $("#main-nav").outerWidth();
+var navWidth = $("#nav-menu").outerWidth();
+var navHeight = $("#main-nav").outerHeight();
+// var navWidth = navWidthFull / 2;
 //move the nav off screen on the Y axis
-gsap.set("#main-nav", {
+gsap.set("#nav-menu", {
     x: navWidth
+})
+gsap.set("#nav-img", {
+    y: -navHeight
 })
 
 
 var mainNavTimeline = gsap.timeline({
     paused: true
 })
-mainNavTimeline.to("#main-nav", {
+
+mainNavTimeline.to("#nav-menu", {
     duration: 0.5,
     x: 0
+})
+.to("#nav-img", {
+    duration:0.5,
+    y: 0
 })
 
 function hideShowMainNav() {
@@ -51,9 +61,13 @@ function reportWindowSize() {
         //console.log("can't see the main nav");
         //console.log($("#main-nav").outerHeight());
         navWidth = $("#main-nav").outerWidth();
-        gsap.set("#main-nav", {
-            x: -navWidth
-        });
+        navHeight = $("#main-nav").outerHeight();
+        gsap.set("#nav-menu", {
+            x: navWidth
+        })
+        gsap.set("#nav-img", {
+            y: -navHeight
+        })
     }
 }
 
