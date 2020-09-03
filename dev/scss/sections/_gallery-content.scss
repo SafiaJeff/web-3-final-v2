@@ -154,18 +154,18 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
-    @include lg{
-        height: 100vh;
-    }
+    overflow:hidden;
 
     @include ip11{
         height: 80vh;
     }
-
     @include md{
         height: 80vh;
-        
     }
+    @include lg{
+        height: 100vh;
+    }
+
     img{
         position: absolute;
         z-index: 0;
@@ -173,11 +173,11 @@ img{
         left: 0;
         width: 30%;
         height: 100vh;
-        @include md{
-            width: 45%;
-        }
         @include ip11{
             height: 80vh;
+        }
+        @include md{
+            width: 45%;
         }
         @include lg{
             width: 55%;
