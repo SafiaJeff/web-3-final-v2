@@ -125,10 +125,23 @@
     }
 
     #honors-01-p {
+
+        padding-top: 0px;
+        margin-top: -680px;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: $off-white;
+
+        @include ip11{
+
+        
         margin-top: -700px;
         padding: 100px 30px 0px 30px;
         color: $off-white;
         // height: 100vh;
+        }
+
+      
         @include md {
             // display: fle
             margin-top: -750px;
