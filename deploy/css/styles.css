@@ -3106,7 +3106,7 @@ textarea {
 #index-opening > div #index-opening-hero {
   background-image: url("../img/index/intro-index.jpg");
   background-size: 500%;
-  background-position-x: -200px;
+  background-position-x: -1500px;
   background-repeat: no-repeat;
   height: 500px;
 }
@@ -3114,6 +3114,7 @@ textarea {
   #index-opening > div #index-opening-hero {
     background-size: 200%;
     height: 100vh;
+    background-position-y: -900px;
   }
 }
 #index-opening > div h1 {

@@ -22,7 +22,7 @@
         #index-opening-hero {
             background-image: url('../img/index/intro-index.jpg');
             background-size: 500%;
-            background-position-x: -200px;
+            background-position-x: -1500px;
             // background-position: right center;
             background-repeat: no-repeat;
             height: 500px;
@@ -31,6 +31,7 @@
             @include md {
                 background-size: 200%;
                 height: 100vh;
+                background-position-y: -900px;
             }
         }
 
