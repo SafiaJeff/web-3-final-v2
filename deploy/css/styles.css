@@ -3822,7 +3822,8 @@ textarea {
 #index-gallery-slider > div #gallery-swipe {
   font-size: 1.25rem;
   text-align: center;
-  color: #2E2E41;
+  color: #007785;
+  font-family: "Exo", sans-serif;
 }
 @media (min-width: 768px) {
   #index-gallery-slider > div #gallery-swipe {

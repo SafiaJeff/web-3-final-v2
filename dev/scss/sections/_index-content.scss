@@ -627,6 +627,7 @@ height: 100vh;
 
         h3 {
             display: flex;
+            
             justify-content: center;
             font-weight: 400;
             padding-bottom: 30px;
@@ -667,7 +668,8 @@ height: 100vh;
         #gallery-swipe {
             font-size: rem-calc(20);
             text-align: center;
-            color: $blue-black;
+            color: $dark-blue;
+            font-family: 'Exo', sans-serif;
 
             @include md {
                 font-size: rem-calc(25);
