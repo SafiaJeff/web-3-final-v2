@@ -12,7 +12,7 @@ if(experimentChecker){
         pin: true,
         pinSpacing: false,
             start: "top top",
-            end: "bottom bottom",
+            end: "bottom 50%",
             //markers: true,
             //scrub: 1
             id:"afterObama"

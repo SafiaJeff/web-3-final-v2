@@ -204,6 +204,9 @@
 		background-color: $red;
 		padding: 100px 0;
 		position: relative;
+		@include md{
+			//height: 50vh;
+		}
 		@include lg{
 			padding: 150px 0;
 		}
@@ -225,6 +228,7 @@
 				text-align: justify;
 				@include md {
 					text-align: left;
+					padding: 0 100px;
 				}
 			}
 		}
@@ -280,7 +284,7 @@
 			background-image: url('../img/experimentation/logos.jpg');
 			background-position: center;
 			background-size: cover;
-			height: 60vh;
+			height: 50vh;
 			@include md {
 				grid-column-start: 2;
 				height: 60vh;
@@ -297,11 +301,10 @@
 					color: $blue-black;
 				}
 			}
-
 			@include md {
 				grid-column-end: 3;
 				grid-column-start: 1;
-				margin-top: -200px;
+				margin-top: -400px;
 				padding-left: 50px;
 				padding-right: 50px;
 			}
@@ -336,13 +339,13 @@
 		}
 		#image-1-section-5 {
 			background-image: url('../img/experimentation/scotland.jpg');
-			background-position: center;
+			background-position: -500px;
 			background-size: cover;
 			height: 50vh;
 			grid-column-start: 1;
 			grid-row-start: 1;
 			@include md {
-				background-position: -50px;
+				background-position: 0px;
 				grid-column-start: 1;
 				grid-row-start: 1;
 			}

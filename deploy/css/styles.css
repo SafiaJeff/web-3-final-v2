@@ -1853,6 +1853,7 @@ progress::-moz-progress-bar {
 @media (min-width: 768px) {
   #experimentation #section-3-experiment #para-section-3 p {
     text-align: left;
+    padding: 0 100px;
   }
 }
 #experimentation #section-4-experiment {
@@ -1915,7 +1916,7 @@ progress::-moz-progress-bar {
   background-image: url("../img/experimentation/logos.jpg");
   background-position: center;
   background-size: cover;
-  height: 60vh;
+  height: 50vh;
 }
 @media (min-width: 768px) {
   #experimentation #section-4-experiment #image-section-4 {
@@ -1943,7 +1944,7 @@ progress::-moz-progress-bar {
   #experimentation #section-4-experiment #para-section-4 {
     grid-column-end: 3;
     grid-column-start: 1;
-    margin-top: -200px;
+    margin-top: -400px;
     padding-left: 50px;
     padding-right: 50px;
   }
@@ -1985,7 +1986,7 @@ progress::-moz-progress-bar {
 }
 #experimentation #section-5-experiment #image-1-section-5 {
   background-image: url("../img/experimentation/scotland.jpg");
-  background-position: center;
+  background-position: -500px;
   background-size: cover;
   height: 50vh;
   grid-column-start: 1;
@@ -1993,7 +1994,7 @@ progress::-moz-progress-bar {
 }
 @media (min-width: 768px) {
   #experimentation #section-5-experiment #image-1-section-5 {
-    background-position: -50px;
+    background-position: 0px;
     grid-column-start: 1;
     grid-row-start: 1;
   }
