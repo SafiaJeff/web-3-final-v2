@@ -151,7 +151,7 @@
 		},
 	"/deploy/img/experimentation/experimentation-hero.jpg": {
 		"ft": 16384,
-		"iS": 130642,
+		"iS": 521936,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/deploy/img/experimentation/experimentation-hero.jpg",
@@ -184,13 +184,13 @@
 		},
 	"/deploy/img/experimentation/index-experiment.jpg": {
 		"ft": 16384,
-		"iS": 251989,
+		"iS": 359424,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/deploy/img/experimentation/index-experiment.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/deploy/img/experimentation/logos.jpg": {
@@ -2240,7 +2240,7 @@
 			"optionString": "{'allowParens': true}"
 			},
 		"no-console": {
-			"active": 0,
+			"active": 1,
 			"optionString": "{'allow': ['warn', 'error']}"
 			},
 		"no-const-assign": {
@@ -2988,7 +2988,7 @@
 	"externalServerAddress": "http://localhost:8888",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
-	"jsCheckerReservedNamesString": "ScrollTrigger, gsap, TweenLite, tns",
+	"jsCheckerReservedNamesString": "ScrollTrigger, gsap, TweenLite",
 	"jsHintFlags2": {
 		"asi": {
 			"active": 0,
