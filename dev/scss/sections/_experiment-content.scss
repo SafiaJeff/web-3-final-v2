@@ -209,7 +209,7 @@
 			display: flex;
 			justify-content: center;
 			height: 100vh;
-			border: 1px solid blue;
+			//border: 1px solid blue;
 			padding: 0 20px;
 
 			@include md {
@@ -223,7 +223,7 @@
 					text-align: left;
 				}
 				@include lg{
-					border: 1px solid red;
+					//border: 1px solid red;
 				}
 			}
 		}
