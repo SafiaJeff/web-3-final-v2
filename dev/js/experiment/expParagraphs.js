@@ -1,7 +1,7 @@
 // animates paragraph next to obama photo to move 30% upwards on scroll
 
 if(experimentChecker){
-    const expParaTimeline = gsap.timeline();
+const expParaTimeline = gsap.timeline();
 
 expParaTimeline.from(".para1", {yPercent:30, alpha:0});
 
@@ -9,11 +9,7 @@ ScrollTrigger.create({
     animation: expParaTimeline,
     toggleActions: "play play none none",
     trigger:"#section-1-experiment",
-    // pin: true,
-    //     pinSpacing: true,
-        start: "top 10%"
-        //end: "bottom top",
-        //scrub: 1
+    start: "top 10%"
 });
 }
 
@@ -28,7 +24,5 @@ ScrollTrigger.create({
     toggleActions: "play play none none",
     trigger:"#image-section-4",
         start: "top top"
-        //end: "bottom top",
-        //scrub: 1
 });
 }

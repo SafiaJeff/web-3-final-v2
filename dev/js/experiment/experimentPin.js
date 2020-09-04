@@ -1,5 +1,4 @@
 //pins pink quote box momentarily on scroll 
-
 if(experimentChecker){
       
       ScrollTrigger.create({

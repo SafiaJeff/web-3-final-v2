@@ -7,11 +7,7 @@ if(experimentChecker){
         animation: asAResult,
         toggleActions: "play none none none",
         trigger:"#section-2-experiment",
-        // pin: true,
-        //     pinSpacing: true,
-            start: "top 10%"
-            //end: "bottom 60%",
-            //scrub: 1
+        start: "top 10%"
     });
 }
 
@@ -24,10 +20,6 @@ if(experimentChecker){
         animation: whoCanForget,
         toggleActions: "play none none none",
         trigger:"#section-4-experiment",
-        // pin: true,
-        //     pinSpacing: true,
-            start: "top 10%"
-            //end: "bottom 60%",
-            //scrub: 1
+        start: "top 10%"
     });
 }

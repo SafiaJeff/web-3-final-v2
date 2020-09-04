@@ -135,7 +135,6 @@
 			}
 			@include md {
 				padding-top: 100px;
-				// margin-top: 150px;
 				grid-column-start: 2;
 				grid-row-start: 2;
 				padding-left: 20px;
@@ -159,7 +158,6 @@
 				margin-right: 15%;
 			}
 			h3 {
-				// margin-top: ;
 				color: $green-blue;
 				margin-bottom: -400px;
 				padding: 10px;
@@ -209,7 +207,6 @@
 			display: flex;
 			justify-content: center;
 			height: 100vh;
-			//border: 1px solid blue;
 			padding: 0 20px;
 
 			@include md {
@@ -221,9 +218,6 @@
 				text-align: justify;
 				@include md {
 					text-align: left;
-				}
-				@include lg{
-					//border: 1px solid red;
 				}
 			}
 		}
