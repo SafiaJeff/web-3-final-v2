@@ -1,45 +1,49 @@
 /* =============
     Header
 ============= */
-
-header{
-    width: 100%;
-    top: 0;
+header {
+    background-color: $dark-blue;
     left: 0;
     position: fixed;
-    background-color: $dark-blue;
+    top: 0;
+    width: 100%;
     z-index: 2000;
-   
-    div{
-        display: flex;
+
+    div {
         align-items: center;
-        justify-content: flex-end;
+        display: flex;
         justify-content: space-between;
         padding: 20px;
-        #logo-container{
-            a{
-                h1{
+
+        #logo-container {
+            a {
+                text-decoration: none;
+
+                h1 {
                     color: $yellow;
-                    font-weight: 400;
+                    cursor: pointer;
                     font-size: rem-calc(20);
+                    font-weight: 400;
                     line-height: rem-calc(27);
                     text-align: left;
                     transition: 0.25s;
-                    cursor: pointer;
+
                     &:hover,
                     &:active {
                         color: $off-white;
                     }
                 }
-                text-decoration: none;
             }
         }
-        #burger-container{
+
+        #burger-container {
+            align-items: center;
             display: flex;
             justify-content: flex-end;
-            align-items: center;
-            #burger{
+
+            #burger {
                 cursor: pointer;
+
                 #lines {
                     stroke: $yellow;
                     transition: 0.25s;
@@ -51,7 +55,6 @@ header{
                     }
                 }
             }
-           
         }
     }
 }

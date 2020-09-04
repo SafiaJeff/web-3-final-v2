@@ -573,18 +573,18 @@ h4 {
 ============= */
 .button {
   align-items: center;
-  font-family: "Exo", sans-serif;
-  font-size: 1.25rem;
   background-color: #FFDA37;
   color: #EF777A;
   cursor: pointer;
+  font-family: "Exo", sans-serif;
+  font-size: 1.25rem;
   padding: 10px 20px;
   text-align: center;
   transition: 0.25s;
 }
 .button:hover, .button:active {
-  color: #D43732;
   background-color: #F5F5EE;
+  color: #D43732;
 }
 
 /* =============
@@ -609,16 +609,16 @@ textarea {
     Navigation
 ============= */
 #main-nav > div {
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 900;
-  background-color: #007785;
-  width: 80vw;
-  height: 100%;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  background-color: #007785;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 80vw;
+  z-index: 900;
 }
 @media (min-width: 768px) {
   #main-nav > div {
@@ -627,8 +627,8 @@ textarea {
 }
 #main-nav ul {
   display: grid;
-  grid-template-rows: repeat(4, auto);
   grid-template-areas: "n1" "n2" "n3" "n4";
+  grid-template-rows: repeat(4, auto);
   height: auto;
 }
 #main-nav ul li {
@@ -637,16 +637,16 @@ textarea {
 #main-nav ul li a:link,
 #main-nav ul li a:visited {
   color: #FFDA37;
+  cursor: pointer;
   text-decoration: none;
   transition: 0.25s;
-  cursor: pointer;
 }
 #main-nav ul li a:link > div,
 #main-nav ul li a:visited > div {
-  padding: 30px;
   border-bottom: 2px solid #F5F5EE;
-  text-align: right;
   font-size: 1.875rem;
+  padding: 30px;
+  text-align: right;
 }
 @media (min-width: 768px) {
   #main-nav ul li a:link > div,
@@ -698,15 +698,15 @@ textarea {
   border-bottom: none;
 }
 #main-nav #nav-img {
+  background-image: url(../img/index/nav-img.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  left: 0;
   position: fixed;
   top: 0;
-  left: 0;
-  z-index: 900;
   width: 20vw;
-  height: 100vh;
-  background-image: url(../img/index/nav-img.jpg);
-  background-size: cover;
-  background-position: center;
+  z-index: 900;
 }
 @media (min-width: 768px) {
   #main-nav #nav-img {
@@ -718,17 +718,16 @@ textarea {
     Header
 ============= */
 header {
-  width: 100%;
-  top: 0;
+  background-color: #007785;
   left: 0;
   position: fixed;
-  background-color: #007785;
+  top: 0;
+  width: 100%;
   z-index: 2000;
 }
 header div {
-  display: flex;
   align-items: center;
-  justify-content: flex-end;
+  display: flex;
   justify-content: space-between;
   padding: 20px;
 }
@@ -737,20 +736,20 @@ header div #logo-container a {
 }
 header div #logo-container a h1 {
   color: #FFDA37;
-  font-weight: 400;
+  cursor: pointer;
   font-size: 1.25rem;
+  font-weight: 400;
   line-height: 1.6875rem;
   text-align: left;
   transition: 0.25s;
-  cursor: pointer;
 }
 header div #logo-container a h1:hover, header div #logo-container a h1:active {
   color: #F5F5EE;
 }
 header div #burger-container {
+  align-items: center;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
 }
 header div #burger-container #burger {
   cursor: pointer;
@@ -2068,14 +2067,17 @@ img {
   font-weight: 700;
 }
 
+/* ------------------
+    Gallery Hero
+----------------- */
 #gallery-hero {
   background-color: #F5F5EE;
 }
 #gallery-hero div {
-  position: relative;
+  align-items: flex-end;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  position: relative;
 }
 @media (min-width: 768px) {
   #gallery-hero div {
@@ -2088,9 +2090,9 @@ img {
 }
 @media (min-width: 768px) {
   #gallery-hero div img {
-    object-position: left center;
     display: block;
     height: 550px;
+    object-position: left center;
     width: 90%;
   }
 }
@@ -2103,54 +2105,57 @@ img {
   background-image: url(../img/gallery/hero-1.jpg);
   background-position: left top;
   background-size: cover;
-  width: 100vw;
   height: 80vh;
+  width: 100vw;
 }
 @media (min-width: 768px) {
   #gallery-hero div > div {
-    height: auto;
-    display: flex;
-    justify-content: flex-end;
     align-items: center;
     background-image: none;
+    display: flex;
+    height: auto;
+    justify-content: flex-end;
     position: absolute;
     top: 0;
   }
 }
 #gallery-hero div > div h1 {
-  text-align: center;
   color: #D43732;
   padding-bottom: 100px;
+  text-align: center;
 }
 @media (min-width: 768px) {
   #gallery-hero div > div h1 {
+    margin: 40vh 7% 0 0;
     padding-bottom: 0px;
     text-align: left;
-    margin: 40vh 7% 0 0;
   }
 }
 #gallery-hero div p {
+  color: #D43732;
   margin: 0 12%;
   text-align: justify;
-  color: #D43732;
 }
 @media (min-width: 768px) {
   #gallery-hero div p {
-    width: 550px;
     margin-left: 10%;
+    width: 550px;
   }
 }
 
+/* ------------------
+    Gallery content 1: pull quote 1 and main gallery
+----------------- */
 #gallery-content-1 #gallery-quote-1 {
-  width: 100%;
-  height: 80vh;
-  background-image: url(../img/gallery/hero-2.jpg);
-  background-size: cover;
-  background-position: top center;
-  display: flex;
   align-items: center;
+  background-image: url(../img/gallery/hero-2.jpg);
+  background-position: top center;
+  background-size: cover;
+  display: flex;
+  height: 80vh;
   justify-content: flex-end;
   overflow: hidden;
+  width: 100%;
 }
 @media (min-width: 768px) {
   #gallery-content-1 #gallery-quote-1 {
@@ -2158,15 +2163,15 @@ img {
   }
 }
 #gallery-content-1 #gallery-quote-1 p {
-  width: auto;
-  margin: 0 10%;
   color: #F5F5EE;
+  margin: 0 10%;
+  width: auto;
 }
 @media (min-width: 768px) {
   #gallery-content-1 #gallery-quote-1 p {
-    text-align: right;
-    margin-right: 10%;
     margin-left: 36%;
+    margin-right: 10%;
+    text-align: right;
   }
 }
 @media (min-width: 1025px) {
@@ -2175,10 +2180,10 @@ img {
   }
 }
 #gallery-content-1 #gallery-container {
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
   background-color: #F5F5EE;
+  height: 100vh;
+  overflow: hidden;
+  width: 100vw;
 }
 #gallery-content-1 #gallery-container h3 {
   color: #D43732;
@@ -2190,20 +2195,20 @@ img {
   text-align: left;
 }
 #gallery-content-1 #gallery-container ul {
-  display: flex;
   align-items: center;
-  height: 100vh;
   background-color: #F5F5EE;
+  display: flex;
+  height: 100vh;
 }
 #gallery-content-1 #gallery-container ul li {
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   margin-right: 35px;
 }
 #gallery-content-1 #gallery-container ul li img {
-  width: 50vw;
   height: 60vh;
+  width: 50vw;
 }
 @media (min-width: 768px) {
   #gallery-content-1 #gallery-container ul li img {
@@ -2212,8 +2217,8 @@ img {
 }
 @media (min-width: 1025px) {
   #gallery-content-1 #gallery-container ul li img {
-    width: 25vw;
     height: 60vh;
+    width: 25vw;
   }
 }
 @media (min-width: 1440px) {
@@ -2228,14 +2233,17 @@ img {
   text-align: right;
 }
 
+/* ------------------
+    Gallery content 2
+----------------- */
 #gallery-content-2 {
-  background-color: #22C9C6;
-  height: 100vh;
-  position: relative;
-  display: flex;
   align-items: center;
+  background-color: #22C9C6;
+  display: flex;
+  height: 100vh;
   justify-content: center;
   overflow: hidden;
+  position: relative;
 }
 @media (min-width: 414px) {
   #gallery-content-2 {
@@ -2253,12 +2261,12 @@ img {
   }
 }
 #gallery-content-2 img {
-  position: absolute;
-  z-index: 0;
-  top: 0;
-  left: 0;
-  width: 30%;
   height: 100vh;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 30%;
+  z-index: 0;
 }
 @media (min-width: 414px) {
   #gallery-content-2 img {
@@ -2272,32 +2280,32 @@ img {
 }
 @media (min-width: 1025px) {
   #gallery-content-2 img {
-    width: 55%;
     height: 100vh;
+    width: 55%;
   }
 }
 #gallery-content-2 #gallery-content-2-text {
-  height: auto;
-  width: 100vw;
   display: grid;
+  grid-template-areas: "content-2-1 content-2-1 content-2-1" ". content-2-2 .";
   grid-template-columns: 40% auto 15px;
   grid-template-rows: "auto auto";
-  grid-template-areas: "content-2-1 content-2-1 content-2-1" ". content-2-2 .";
+  height: auto;
+  width: 100vw;
 }
 @media (min-width: 768px) {
   #gallery-content-2 #gallery-content-2-text {
     display: grid;
+    grid-template-areas: ". content-2-1 content-2-1" ". . content-2-2";
     grid-template-columns: 35% 20% auto;
     grid-template-rows: "auto auto";
-    grid-template-areas: ". content-2-1 content-2-1" ". . content-2-2";
   }
 }
 @media (min-width: 1025px) {
   #gallery-content-2 #gallery-content-2-text {
     display: grid;
+    grid-template-areas: ". content-2-1 content-2-1" ". . content-2-2";
     grid-template-columns: 45% 20% auto;
     grid-template-rows: "auto auto";
-    grid-template-areas: ". content-2-1 content-2-1" ". . content-2-2";
   }
 }
 #gallery-content-2 #gallery-content-2-text h3 {
@@ -2307,14 +2315,14 @@ img {
 }
 @media (min-width: 768px) {
   #gallery-content-2 #gallery-content-2-text h3 {
-    width: unset;
-    padding: 0 10% 0 0;
     grid-area: content-2-1;
+    padding: 0 10% 0 0;
+    width: unset;
   }
 }
 #gallery-content-2 #gallery-content-2-text p {
-  grid-area: content-2-2;
   color: #2E2E41;
+  grid-area: content-2-2;
 }
 @media (min-width: 768px) {
   #gallery-content-2 #gallery-content-2-text p {
@@ -2329,6 +2337,9 @@ img {
   }
 }
 
+/* ------------------
+    Gallery content 3
+----------------- */
 #gallery-content-3 {
   background-color: #B9DFE6;
   display: grid;
@@ -2336,57 +2347,57 @@ img {
 }
 @media (min-width: 768px) {
   #gallery-content-3 {
-    display: flex;
     align-items: center;
+    display: flex;
   }
 }
 #gallery-content-3 img {
-  width: 100vw;
   grid-area: hope;
+  width: 100vw;
 }
 @media (min-width: 768px) {
   #gallery-content-3 img {
-    width: 40%;
     margin-left: -20vw;
+    width: 40%;
   }
 }
 @media (min-width: 1025px) {
   #gallery-content-3 img {
-    width: 350px;
     margin-left: -16vw;
+    width: 350px;
   }
 }
 #gallery-content-3 > div {
-  grid-area: content-3;
   background-color: #EF777A;
+  grid-area: content-3;
 }
 @media (min-width: 768px) {
   #gallery-content-3 > div {
-    width: auto;
     height: auto;
+    width: auto;
   }
 }
 @media (min-width: 1025px) {
   #gallery-content-3 > div {
-    width: 80vw;
     height: auto;
+    width: 80vw;
   }
 }
 #gallery-content-3 > div p {
+  color: #F5F5EE;
+  line-height: 1.5625rem;
   padding: 50px 5%;
   text-align: justify;
   width: auto;
-  color: #F5F5EE;
-  line-height: 1.5625rem;
 }
 @media (min-width: 768px) {
   #gallery-content-3 > div p {
     line-height: 1.75rem;
-    padding-top: 100px;
     padding-bottom: 100px;
+    padding-left: 15%;
+    padding-top: 100px;
     text-align: left;
     width: 50%;
-    padding-left: 15%;
   }
 }
 @media (min-width: 1025px) {
@@ -2401,11 +2412,14 @@ img {
   padding-top: 0;
 }
 
+/* ------------------
+    Gallery pull quote 2
+----------------- */
 #gallery-quote-2 {
-  background-color: #007785;
-  height: 70vh;
-  display: flex;
   align-items: center;
+  background-color: #007785;
+  display: flex;
+  height: 70vh;
   justify-content: center;
 }
 @media (min-width: 1025px) {
@@ -2414,13 +2428,13 @@ img {
   }
 }
 #gallery-quote-2 p {
+  color: #B9DFE6;
   font-size: 1.875rem;
   line-height: 2.5rem;
-  padding: 0 7%;
   margin: 0;
-  width: auto;
-  color: #B9DFE6;
+  padding: 0 7%;
   text-align: center;
+  width: auto;
 }
 @media (min-width: 768px) {
   #gallery-quote-2 p {
@@ -2435,6 +2449,9 @@ img {
   }
 }
 
+/* ------------------
+    Gallery content 4
+----------------- */
 #gallery-content-4 {
   background-color: #F5F5EE;
   position: relative;
@@ -2451,15 +2468,15 @@ img {
 }
 #gallery-content-4 #gallery-logo-1 {
   display: grid;
+  grid-gap: 20px;
   grid-template-areas: "p1" "i1";
   grid-template-rows: auto 300px;
-  grid-gap: 20px;
 }
 @media (min-width: 768px) {
   #gallery-content-4 #gallery-logo-1 {
+    grid-template-areas: "i1 p1";
     grid-template-columns: 50% auto;
     grid-template-rows: 200px;
-    grid-template-areas: "i1 p1";
   }
 }
 @media (min-width: 1025px) {
@@ -2470,12 +2487,12 @@ img {
 }
 #gallery-content-4 #gallery-logo-1 img {
   grid-area: i1;
-  width: 100%;
   height: 100%;
+  width: 100%;
 }
 #gallery-content-4 #gallery-logo-1 p {
-  line-height: 1.75rem;
   grid-area: p1;
+  line-height: 1.75rem;
   margin: 0 5%;
 }
 @media (min-width: 768px) {
@@ -2490,27 +2507,27 @@ img {
 }
 #gallery-content-4 #gallery-logo-2 {
   display: grid;
-  grid-template-rows: 300px auto 500px;
-  grid-template-areas: "i3" "p2" "i2";
   grid-gap: 20px;
+  grid-template-areas: "i3" "p2" "i2";
+  grid-template-rows: 300px auto 500px;
 }
 @media (min-width: 768px) {
   #gallery-content-4 #gallery-logo-2 {
+    grid-template-areas: "p2 p2" "i2 i3";
     grid-template-columns: 50% auto;
     grid-template-rows: auto 500px;
-    grid-template-areas: "p2 p2" "i2 i3";
   }
 }
 @media (min-width: 1025px) {
   #gallery-content-4 #gallery-logo-2 {
+    grid-template-areas: "p2 i2 i3" "p2 i2 i4";
     grid-template-columns: auto 25% 25%;
     grid-template-rows: unset;
-    grid-template-areas: "p2 i2 i3" "p2 i2 i4";
   }
 }
 #gallery-content-4 #gallery-logo-2 img {
-  width: 100%;
   height: 100%;
+  width: 100%;
 }
 #gallery-content-4 #gallery-logo-2 #i2 {
   grid-area: i2;
@@ -2522,9 +2539,9 @@ img {
   grid-area: i4;
 }
 #gallery-content-4 #gallery-logo-2 p {
+  grid-area: p2;
   line-height: 1.75rem;
   margin: 5%;
-  grid-area: p2;
 }
 @media (min-width: 768px) {
   #gallery-content-4 #gallery-logo-2 p {
@@ -2537,19 +2554,22 @@ img {
   }
 }
 
+/* ------------------
+    Gallery form
+----------------- */
 @media (min-width: 1440px) {
   #gallery-form {
+    background-color: #EF777A;
     display: grid;
     grid-template-areas: ". container .";
     grid-template-columns: auto 1440px auto;
-    background-color: #EF777A;
   }
 }
 #gallery-form > div {
-  margin-bottom: 100px;
   background-color: #EF777A;
   display: flex;
   justify-content: flex-end;
+  margin-bottom: 100px;
   position: relative;
 }
 @media (min-width: 768px) {
@@ -2561,28 +2581,28 @@ img {
 @media (min-width: 1440px) {
   #gallery-form > div {
     background-color: unset;
-    justify-content: center;
     grid-area: container;
+    justify-content: center;
   }
 }
 #gallery-form > div h3 {
   color: #FFDA37;
   position: absolute;
+  right: 8%;
   text-align: right;
   top: -5%;
-  right: 8%;
 }
 @media (min-width: 768px) {
   #gallery-form > div h3 {
-    top: 7%;
     right: 12%;
+    top: 7%;
   }
 }
 @media (min-width: 1025px) {
   #gallery-form > div h3 {
-    top: 10%;
     left: -5%;
     right: unset;
+    top: 10%;
     width: 400px;
   }
 }
@@ -2592,8 +2612,8 @@ img {
   }
 }
 #gallery-form > div form {
-  width: 100%;
   background-color: #007785;
+  width: 100%;
 }
 @media (min-width: 768px) {
   #gallery-form > div form {
@@ -2614,17 +2634,17 @@ img {
 }
 #gallery-form > div form p {
   color: #F5F5EE;
+  font-family: "Libre Baskerville", sans-serif;
   font-size: 1.5rem;
   line-height: 3.5rem;
-  font-family: "Libre Baskerville", sans-serif;
+  margin: 0 5%;
   text-align: left;
   width: 550px;
-  margin: 0 5%;
 }
 @media (min-width: 768px) {
   #gallery-form > div form p {
-    text-align: center;
     margin: 0;
+    text-align: center;
   }
 }
 #gallery-form > div form section {
@@ -2637,18 +2657,18 @@ img {
 }
 #gallery-form > div form section input,
 #gallery-form > div form section textarea {
-  border-radius: 0;
-  font-size: 1.5rem;
-  font-family: "Libre Baskerville", sans-serif;
-  text-align: center;
-  padding: 10px 10px;
-  outline: none;
   background-color: #22C9C6;
+  border-radius: 0;
+  font-family: "Libre Baskerville", sans-serif;
+  font-size: 1.5rem;
+  outline: none;
+  padding: 10px 10px;
+  text-align: center;
 }
 #gallery-form > div form section textarea {
+  margin: 20px 5%;
   padding: 10px 0;
   width: 440px;
-  margin: 20px 5%;
 }
 @media (min-width: 768px) {
   #gallery-form > div form section textarea {
@@ -2679,15 +2699,15 @@ textarea {
 
 .button {
   align-items: center;
-  font-family: "Exo", sans-serif;
-  font-size: 1.25rem;
   background-color: #FFDA37;
   color: #EF777A;
   cursor: pointer;
+  font-family: "Exo", sans-serif;
+  font-size: 1.25rem;
+  margin-left: 5%;
   padding: 10px 20px;
   text-align: center;
   transition: 0.25s;
-  margin-left: 5%;
 }
 @media (min-width: 768px) {
   .button {
@@ -2695,8 +2715,8 @@ textarea {
   }
 }
 .button:hover, .button:active {
-  color: #D43732;
   background-color: #F5F5EE;
+  color: #D43732;
 }
 
 /* =============

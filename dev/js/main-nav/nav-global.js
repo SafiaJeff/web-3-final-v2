@@ -17,13 +17,13 @@ var mainNavTimeline = gsap.timeline({
 })
 
 mainNavTimeline.to("#nav-menu", {
-    duration: 0.5,
-    x: 0
-})
-.to("#nav-img", {
-    duration:0.5,
-    y: 0
-})
+        duration: 0.5,
+        x: 0
+    })
+    .to("#nav-img", {
+        duration: 0.5,
+        y: 0
+    })
 
 function hideShowMainNav() {
     //console.log("hide or show nav");
