@@ -379,12 +379,12 @@
     background-color: $off-white;
 
     @include md {
-        
+
         padding-bottom: 100px;
         // padding-top: 20px;
     }
 
-    @include lg{
+    @include lg {
         padding: 0;
     }
 
@@ -416,7 +416,7 @@
             }
 
             @include lg {
-               
+
                 margin-right: 70vw;
                 margin-left: 10vw;
                 height: 60vh;
@@ -492,7 +492,7 @@
                 // padding-right: 10vw;
             }
 
-            @include xl{
+            @include xl {
                 padding-left: 50vw;
                 margin-top: -100px;
                 padding-bottom: 50px;
@@ -516,7 +516,7 @@
     z-index: 200;
     position: relative;
     background-color: $off-white;
-height: 100vh;
+    height: 100vh;
 
     >div {
         background-image: url('../img/impact/moral-img.jpg');
@@ -556,7 +556,14 @@ height: 100vh;
 
         h3 {
             color: $dark-red;
-            padding-right: 150px;
+            margin-top: -200px;
+
+
+            @include ip11 {
+                padding-right: 150px;
+                margin-top: 0px;
+            }
+
             // font-size: rem-calc(39);
             text-align: left;
             // margin-top: -700px;
@@ -580,13 +587,28 @@ height: 100vh;
         }
 
         p {
+
+            font-size: rem-calc(16);
+            line-height: rem-calc(22);
+            // padding-right: 200px;
+
+            @include ip11 {
+                line-height: rem-calc(40);
+                font-size: rem-calc(20);
+                width: 60vw;
+                padding-top: 20px;
+                padding-right: 40px;
+            }
+
             padding-top: 20px;
             padding-left: 20px;
-            padding-right: 40px;
+            padding-right: 150px;
             text-align: left;
-            width: 60vw;
+            // width: 60vw;
 
             @include md {
+                font-size: rem-calc(25);
+                line-height: rem-calc(45);
                 width: auto;
                 text-align: left;
                 padding-left: 10vw;
@@ -595,6 +617,9 @@ height: 100vh;
             }
 
             @include lg {
+                font-weight: 100;
+                font-size: rem-calc(30);
+                line-height: rem-calc(54);
                 padding-left: 11vw;
                 text-align: left;
                 padding-right: 50vw;
@@ -605,13 +630,11 @@ height: 100vh;
     }
 }
 
-
-
 #index-gallery-slider {
     background-color: $blue;
     position: relative;
     z-index: 400;
-   margin: 0;
+    margin: 0;
 
     @include lg {
         // margin: 150px 0 0 0;
@@ -627,7 +650,7 @@ height: 100vh;
 
         h3 {
             display: flex;
-            
+
             justify-content: center;
             font-weight: 400;
             padding-bottom: 30px;
