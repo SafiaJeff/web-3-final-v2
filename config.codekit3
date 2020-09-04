@@ -83,12 +83,34 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/deploy/img/employment/map.jpg": {
+		"ft": 16384,
+		"iS": 230699,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/employment/map.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/deploy/img/employment/stickers-hero.jpg": {
 		"ft": 16384,
 		"iS": 152906,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/deploy/img/employment/stickers-hero.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/employment/suitcase-old.jpg": {
+		"ft": 16384,
+		"iS": 53040,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/employment/suitcase-old.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -641,6 +663,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/deploy/safi.html",
+		"oF": 0
+		},
+	"/design/web-3-final (Master @ 370d47a).sketch": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/design/web-3-final (Master @ 370d47a).sketch",
 		"oF": 0
 		},
 	"/dev/content/employment-content.kit": {
