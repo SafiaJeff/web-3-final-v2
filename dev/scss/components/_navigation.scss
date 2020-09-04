@@ -1,78 +1,67 @@
 /* =============
     Navigation
 ============= */
-
 #main-nav {
-    
-    >div{
-        position: fixed;
-        top: 0;
-        right: 0;
-        z-index: 900;
-        background-color: $dark-blue;
-        width: 80vw;
-        height: 100%;
-        display: flex;
-        justify-content: center;
+    >div {
         align-items: center;
-        @include md{
+        background-color: $dark-blue;
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 80vw;
+        z-index: 900;
+
+        @include md {
             width: 50vw;
         }
     }
+
     ul {
         display: grid;
+        grid-template-areas: "n1"
+            "n2"
+            "n3"
+            "n4";
         grid-template-rows: repeat(4, auto);
-        grid-template-areas: 
-        "n1" 
-        "n2"
-        "n3" 
-        "n4";
         height: auto;
-        @include md {
-            
-        }
-        @include lg{
-            
-        }
-        
+
         li {
             font-family: 'Exo', sans-serif;
+
             a:link,
             a:visited {
                 color: $yellow;
+                cursor: pointer;
                 text-decoration: none;
                 transition: 0.25s;
-                cursor: pointer;
-                >div{
-                    padding: 30px;
+
+                >div {
                     border-bottom: 2px solid $off-white;
-                    text-align: right;
                     font-size: rem-calc(30);
+                    padding: 30px;
+                    text-align: right;
+
                     @include md {
                         font-size: rem-calc(40);
                     }
-    
+
                     @include lg {
                         font-size: rem-calc(50);
                     }
-    
+
                     @include xl {
                         font-size: rem-calc(60);
                     }
-    
                 }
-            
             }
         }
-        
-        // #nav-home {
-        //     background-color: $white;
-        //     grid-area: n1;
-        // }
 
         #nav-impact {
-            //background-color: $blue;
             grid-area: n1;
+
             a:hover,
             a:active {
                 color: $red;
@@ -80,8 +69,8 @@
         }
 
         #nav-experiment {
-            //background-color: $dark-red;
             grid-area: n2;
+
             a:hover,
             a:active {
                 color: $white;
@@ -90,7 +79,7 @@
 
         #nav-employment {
             grid-area: n3;
-            //background-color: $yellow;
+
             a:hover,
             a:active {
                 color: $dark-red;
@@ -99,42 +88,31 @@
 
         #nav-gallery {
             grid-area: n4;
-            //background-color: $red;
+
             a:hover,
             a:active {
                 color: $green-blue;
             }
-            div{
+
+            div {
                 border-bottom: none;
             }
         }
-
-        // #nav-safi {
-        //     grid-area: n6;
-        //     background-color: $blue-black;
-
-        //     a:link,
-        //     a:visited {
-        //         color: $white;
-        //     }
-        // }
     }
 
-    #nav-img{
+    #nav-img {
+        background-image: url(../img/index/nav-img.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        left: 0;
         position: fixed;
         top: 0;
-        left: 0;
-        z-index: 900;
         width: 20vw;
-        height: 100vh;
-        background-image: url(../img/index/nav-img.jpg);
-        background-size: cover;
-        background-position: center;
-        @include md{
+        z-index: 900;
+
+        @include md {
             width: 50vw;
         }
     }
 }
-// section{
-//     
-// }

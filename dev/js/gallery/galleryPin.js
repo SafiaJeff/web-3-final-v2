@@ -1,5 +1,5 @@
 // pinning quote 1
-if(galleryChecker){
+if (galleryChecker) {
     gsap.to("#gallery-quote-1", {
         ease: "none",
         scrollTrigger: {
@@ -12,15 +12,15 @@ if(galleryChecker){
             id: "quote-1-pin"
         }
     })
-    
-    
+
+
     ScrollTrigger.matchMedia({
         //just desktop = NO MOBILE OR TABLET
         "(min-width: 1025px)": function () {
             // pinning "what goes into a good.." and the quote runs from bottom up
             gsap.to("#gallery-content-2", {
                 ease: "none",
-                
+
                 scrollTrigger: {
                     trigger: "#gallery-content-2",
                     pin: true,
@@ -34,7 +34,7 @@ if(galleryChecker){
             gsap.from("#content-2-header", {
                 xPercent: 10,
                 alpha: 0,
-                duration:0.5,
+                duration: 0.5,
                 scrollTrigger: {
                     trigger: "#gallery-content-2",
                     start: "top 50%",
@@ -56,8 +56,8 @@ if(galleryChecker){
                     id: "content-3-text"
                 }
             })
-            
-            
+
+
         },
         //just mobile and tablet = NO DESKTOP
         "(max-width: 1024px)": function () {
@@ -65,7 +65,7 @@ if(galleryChecker){
             gsap.from("#content-2-header", {
                 xPercent: 10,
                 alpha: 0,
-                duration:0.5,
+                duration: 0.5,
                 scrollTrigger: {
                     trigger: "#gallery-content-2",
                     start: "top 30%",
@@ -78,7 +78,7 @@ if(galleryChecker){
             gsap.from("#content-2-quote", {
                 yPercent: 100,
                 alpha: 0,
-                duration:0.5,
+                duration: 0.5,
                 scrollTrigger: {
                     trigger: "#gallery-content-2",
                     start: "top 50%",
@@ -88,9 +88,9 @@ if(galleryChecker){
                     id: "content-3-text"
                 }
             })
-           
-        }}
-    )
+
+        }
+    })
 
     // pinning pull-quote-2
     gsap.to("#gallery-quote-2", {
