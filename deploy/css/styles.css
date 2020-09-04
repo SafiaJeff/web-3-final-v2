@@ -1831,7 +1831,6 @@ progress::-moz-progress-bar {
   display: flex;
   justify-content: center;
   height: 100vh;
-  border: 1px solid blue;
   padding: 0 20px;
 }
 @media (min-width: 768px) {
@@ -1847,11 +1846,6 @@ progress::-moz-progress-bar {
 @media (min-width: 768px) {
   #experimentation #section-3-experiment #para-section-3 p {
     text-align: left;
-  }
-}
-@media (min-width: 1025px) {
-  #experimentation #section-3-experiment #para-section-3 p {
-    border: 1px solid red;
   }
 }
 #experimentation #section-4-experiment {
